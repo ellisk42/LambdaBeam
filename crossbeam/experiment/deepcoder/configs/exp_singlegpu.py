@@ -33,4 +33,6 @@ def get_config():
   config.random_beam = False
   config.lr = 1e-4
   config.data_name = 't-3600-maxne-5-maxni-3-skip-0.00-lambdaskip-0.00-lambdafrac-0.80'
+  config.verbose = False
+  config.profile = False
   return config

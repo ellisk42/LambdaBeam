@@ -264,8 +264,6 @@ def train_eval_loop(args, device, model, train_files, eval_tasks,
 
     # Training
     pbar = range(args.eval_every) if rank else tqdm(range(args.eval_every))
-    verbose = False  # TODO(kshi)
-    profile = False  # TODO(kshi)
     for inner_step in pbar:
       grad_step_start_time = timeit.default_timer()
       optimizer.zero_grad()
@@ -276,7 +274,7 @@ def train_eval_loop(args, device, model, train_files, eval_tasks,
       for t, trace in zip(batch_tasks, batch_traces):
         with torch.no_grad():
           synthesis_start_time = timeit.default_timer()
-          if profile:
+          if args.profile:
             pr = cProfile.Profile()
             pr.enable()
           training_samples, (all_values, all_signatures), stats = synthesis.synthesize(
@@ -288,10 +286,10 @@ def train_eval_loop(args, device, model, train_files, eval_tasks,
               random_beam=args.random_beam,
               masking=args.type_masking,
               static_weight=args.static_weight)
-          if profile:
+          if args.profile:
             pr.disable()
           synthesis_elapsed_time = timeit.default_timer() - synthesis_start_time
-          if profile and synthesis_elapsed_time > 0.5:
+          if args.profile and synthesis_elapsed_time > 0.5:
             pr.print_stats(sort='cumtime')
             print(f'The above is for a long-running synthesis search of {synthesis_elapsed_time:.2f} seconds.')
             print('Stats:')
@@ -304,7 +302,7 @@ def train_eval_loop(args, device, model, train_files, eval_tasks,
             'elapsed_time': synthesis_elapsed_time,
             'num_unique_values': len(all_values),
         })
-        if verbose:
+        if args.verbose:
           pprint.pprint(stats)
 
         if isinstance(training_samples, list):
@@ -327,7 +325,7 @@ def train_eval_loop(args, device, model, train_files, eval_tasks,
           log_writer.add_scalar('train/loss', loss * args.num_proc, inner_step + cur_step)
         logging.info('train/loss: %.4f at step %d', loss * args.num_proc, inner_step + cur_step)
       grad_step_elapsed_time = timeit.default_timer() - grad_step_start_time
-      if verbose:
+      if args.verbose:
         logging.info(f'Grad step time: {grad_step_elapsed_time:.2f} sec')
         logging.info(f'Synthesis time: {total_synthesis_time:.2f} sec '
               f'({total_synthesis_time * 100 / grad_step_elapsed_time:.1f}% of grad step time)')
