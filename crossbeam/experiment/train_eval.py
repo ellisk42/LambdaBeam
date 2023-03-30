@@ -111,7 +111,7 @@ def do_eval(eval_tasks, domain, model,
             max_search_weight, beam_size, device, verbose=True,
             timeout=None, restarts_timeout=None, max_values_explored=None,
             is_stochastic=False, use_ur=True, use_type_masking=True,
-            static_weight=False):
+            static_weight=False, temperature=1.0):
   if verbose:
     print(f'doing eval on {len(eval_tasks)} tasks...')
 
@@ -136,7 +136,8 @@ def do_eval(eval_tasks, domain, model,
           random_beam=False,
           use_ur=use_ur,
           masking=use_type_masking,
-          static_weight=static_weight)
+          static_weight=static_weight,
+          temperature=temperature)
     elapsed_time = timeit.default_timer() - start_time
     synthesis.update_stats_with_percents(stats)
     if t.solution is None:
@@ -218,7 +219,8 @@ def train_eval_loop(args, device, model, weighted_train_files, weighted_test_fil
                                 is_stochastic=args.stochastic_beam,
                                 use_ur=args.use_ur,
                                 use_type_masking=args.type_masking,
-                                static_weight=args.static_weight)
+                                static_weight=args.static_weight,
+                                temperature=args.temperature)
   if args.do_test: # test only
     assert args.num_proc == 1
     print('Doing test only!')
@@ -334,7 +336,7 @@ def train_eval_loop(args, device, model, weighted_train_files, weighted_test_fil
               is_training=True,
               random_beam=args.random_beam,
               masking=args.type_masking,
-              static_weight=args.static_weight)
+              static_weight=args.static_weight)  # No temperature for training.
           if profile:
             pr.disable()
           synthesis_elapsed_time = timeit.default_timer() - synthesis_start_time

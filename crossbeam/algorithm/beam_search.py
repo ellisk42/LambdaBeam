@@ -22,7 +22,7 @@ N_INF = -1e10
 
 
 def _beam_step(score_model, k, cur_state, choice_embed, prefix_scores,
-               choice_mask=None, is_stochastic=False):
+               choice_mask=None, is_stochastic=False, temperature=1.0):
   """One step of beam search."""
   # scores: a score matrix of size (N-state, N-choice)
   scores = score_model.step_score(cur_state, choice_embed)
@@ -34,7 +34,7 @@ def _beam_step(score_model, k, cur_state, choice_embed, prefix_scores,
   cur_k = joint_scores.shape[0] if k > joint_scores.shape[0] else k
 
   if is_stochastic:
-    prob = torch.softmax(joint_scores, dim=0)
+    prob = torch.softmax(joint_scores / temperature, dim=0)
     arg_selected = torch.multinomial(prob, cur_k)
     prefix_scores = joint_scores[arg_selected]
     prefix_scores, idx_sorted = torch.sort(prefix_scores)
@@ -51,7 +51,8 @@ def _beam_step(score_model, k, cur_state, choice_embed, prefix_scores,
 
 
 def _beam_step_ur(score_model, k, cur_state, choice_embed, prefix_scores,
-                  randomizer, choice_mask=None, is_stochastic=False):
+                  randomizer, choice_mask=None, is_stochastic=False,
+                  temperature=1.0):
   """One step of beam search, using UniqueRandomizer."""
   assert randomizer is not None and k == 1 and not is_stochastic
 
@@ -62,7 +63,7 @@ def _beam_step_ur(score_model, k, cur_state, choice_embed, prefix_scores,
     if choice_mask is not None:
       joint_scores = joint_scores * choice_mask + (1 - choice_mask) * N_INF
     joint_scores = joint_scores.view(-1)
-    prob = torch.softmax(joint_scores, dim=0)
+    prob = torch.softmax(joint_scores / temperature, dim=0)
   else:
     # We already have probabilities stored in the UniqueRandomizer trie node.
     prob = None
@@ -85,7 +86,7 @@ def _beam_step_ur(score_model, k, cur_state, choice_embed, prefix_scores,
 
 def beam_search(arity, k, values, value_embed, special_var_embed, init_embed,
                 score_model, device, choice_masks=None, is_stochastic=False,
-                randomizer=None):
+                randomizer=None, temperature=1.0):
   """Beam search.
 
   Args:
@@ -138,7 +139,8 @@ def beam_search(arity, k, values, value_embed, special_var_embed, init_embed,
       choice_mask = None
     cur_state, prev_index, op_choice, prefix_scores = beam_step_fn(
         score_model, k, cur_state, value_embed, prefix_scores,
-        choice_mask=choice_mask, is_stochastic=is_stochastic)
+        choice_mask=choice_mask, is_stochastic=is_stochastic,
+        temperature=temperature)
     new_arg_choices = arg_choices[prev_index]
     new_arg_choices = torch.cat((new_arg_choices, op_choice.unsqueeze(1)),
                                 axis=1)
@@ -172,7 +174,8 @@ def beam_search(arity, k, values, value_embed, special_var_embed, init_embed,
       sub_new_state, sub_prev_idx, sub_op_choices, sub_prefix_scores = (
           beam_step_fn(score_model, cur_beam_size, sub_cur_state,
                        special_var_embed, sub_prefix_scores,
-                       is_stochastic=is_stochastic))
+                       is_stochastic=is_stochastic,
+                       temperature=temperature))
       prefix_scores = torch.cat(
           [sub_prefix_scores, prefix_scores[stop_indices]], dim=0)
       sub_arg_choices = arg_choices[step_indices]

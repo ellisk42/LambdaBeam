@@ -37,9 +37,11 @@ def get_config():
   config.use_ur = False
   config.stochastic_beam = False
   config.do_test = False
+  config.synthetic_test_tasks = False
   config.json_results_file = ''
   config.timeout = 60
   config.restarts_timeout = 0
+  config.temperature = 1.0
   config.encode_weight = True
   config.train_steps = 1000000
   config.train_data_glob = 'train-*.pkl'
