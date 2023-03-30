@@ -20,7 +20,7 @@ config=${config?}
 name=${name?}
 timeout=${timeout:=60}
 restarts_timeout=${restarts_timeout:=0}
-temperature=${temperature:=1}
+temperature=${temperature:=1.0}
 run=${run:=0}
 runs=${runs:=1}
 
