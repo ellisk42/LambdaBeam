@@ -30,7 +30,7 @@ from tqdm import tqdm
 
 FLAGS = flags.FLAGS
 flags.DEFINE_integer('num_process', 16, 'number of evaluation process')
-
+flags.DEFINE_bool('synthetic_test_tasks', False, 'Handwritten or synthetic test tasks')
 
 def baseline_enumeration_with_timing(task, *args, **kargs):
   start_time = timeit.default_timer()
@@ -105,7 +105,8 @@ def main(argv):
 
   domain = domains.get_domain(FLAGS.domain)
 
-  tasks = deepcoder_tasks.HANDWRITTEN_TASKS
+  tasks = (deepcoder_tasks.SYNTHETIC_TASKS if FLAGS.synthetic_test_tasks
+           else deepcoder_tasks.HANDWRITTEN_TASKS)
   run_synthesis(domain=domain,
                 tasks=tasks,
                 timeout=FLAGS.timeout,
