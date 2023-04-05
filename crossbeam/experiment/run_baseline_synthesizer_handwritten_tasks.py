@@ -41,7 +41,8 @@ def baseline_enumeration_with_timing(task, *args, **kargs):
 
 
 def run_synthesis(domain, tasks, timeout, max_values_explored=None,
-                  max_weight=20, verbose=False, output_file=None):
+                  max_weight=20, verbose=False, output_file=None,
+                  shuffle_ops=False):
   """Performs baseline synthesis on the tasks."""
   num_tasks = len(tasks)
   print('Num tasks: {}'.format(num_tasks))
@@ -54,7 +55,8 @@ def run_synthesis(domain, tasks, timeout, max_values_explored=None,
       domain=domain,
       timeout=timeout,
       max_weight=max_weight,
-      max_values_explored=max_values_explored)
+      max_values_explored=max_values_explored,
+      shuffle_ops=shuffle_ops)
 
   pool = multiprocessing.Pool(FLAGS.num_process)
   for task, result, value_set, stats, elapsed_time in tqdm(
@@ -111,7 +113,8 @@ def main(argv):
                 timeout=FLAGS.timeout,
                 max_values_explored=FLAGS.max_values_explored,
                 verbose=FLAGS.verbose,
-                output_file=FLAGS.json_results_file)
+                output_file=FLAGS.json_results_file,
+                shuffle_ops=FLAGS.shuffle_ops)
 
 
 if __name__ == '__main__':
