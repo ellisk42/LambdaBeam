@@ -60,7 +60,6 @@ def get_config():
     max_search_weight=12,
     num_valid=-1,
     timeout=60.0,
-    restarts_timeout=None,
     max_values_explored=config_dict.FieldReference(None, field_type=int),
     io_encoder='char',
     value_encoder='char',
@@ -75,6 +74,9 @@ def get_config():
     random_beam=False,
     schedule_type='uniform',
     steps_per_curr_stage=0,
+    restarts_timeout=None,
+    temperature=1.0,
+    synthetic_test_tasks=False,
   )
   config = config_dict.ConfigDict(initial_dictionary=cfg_dict)
   return config

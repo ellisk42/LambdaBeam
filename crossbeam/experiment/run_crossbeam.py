@@ -45,6 +45,8 @@ flags.DEFINE_string('model_type', 'char', 'int/char/logic')
 flags.DEFINE_bool('stochastic_beam', False, 'do stochastic beam search during test')
 flags.DEFINE_bool('random_beam', False, 'replace beam search with random choices?')
 flags.DEFINE_float('restarts_timeout', None, 'Timeout per random restart')
+flags.DEFINE_float('temperature', 1.0, 'Temperature for sampling or UR evaluation')
+flags.DEFINE_bool('synthetic_test_tasks', False, 'Use synthetic or handwritten test tasks.')
 
 
 def init_model(args, domain, model_type):
@@ -75,7 +77,8 @@ def init_model(args, domain, model_type):
 def get_eval_tasks(config):
   if config.do_test:
     if config.domain == 'deepcoder':
-      return deepcoder_tasks.HANDWRITTEN_TASKS
+      return (deepcoder_tasks.SYNTHETIC_TASKS if config.synthetic_test_tasks
+              else deepcoder_tasks.HANDWRITTEN_TASKS)
     eval_prefix = 'test-tasks'
   else:
     eval_prefix = 'valid-tasks'

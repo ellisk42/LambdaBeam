@@ -211,7 +211,7 @@ def synthesize_single_restart(
     trace=None, max_weight=15, k=2, is_training=False,
     timeout=None, max_values_explored=None, is_stochastic=False,
     random_beam=False, use_ur=False, masking=True,
-    static_weight=False):
+    static_weight=False, temperature=1.0):
   """Perform CrossBeam synthesis."""
 
   stats = {
@@ -224,6 +224,7 @@ def synthesize_single_restart(
       'num_values_kept': 0,
       'num_kept_concrete': 0,
       'num_kept_lambda': 0,
+      'temperature': temperature,
   }
   verbose = False
   end_time = (None if timeout is None or timeout < 0
@@ -327,7 +328,8 @@ def synthesize_single_restart(
                                device=device,
                                choice_masks=type_masks,
                                is_stochastic=is_stochastic,
-                               randomizer=randomizer)
+                               randomizer=randomizer,
+                               temperature=temperature)
             randomizer.mark_sequence_complete()
             beam = beam.data.cpu().numpy().astype(np.int32)
             assert len(beam) == 1
@@ -354,7 +356,8 @@ def synthesize_single_restart(
                              model.arg(operation),
                              device=device,
                              choice_masks=type_masks,
-                             is_stochastic=is_stochastic)
+                             is_stochastic=is_stochastic,
+                             temperature=temperature)
           for args_and_vars in beam.data.cpu().numpy().astype(np.int32):
             yield args_and_vars
 

@@ -14,14 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-timeout=3600
-num_process=4
+timeout=600
+num_process=6
 
 python3 -m crossbeam.experiment.run_baseline_synthesizer_handwritten_tasks \
   --domain=deepcoder \
   --timeout=${timeout} \
   --num_process=${num_process} \
-  --json_results_file="comparisons/handwritten_baseline_timeout${timeout}_shuffleops.json" \
+  --json_results_file="comparisons/handwritten_baseline_enumeration_timeout${timeout}_shuffleops.json" \
+  --synthetic_test_tasks=False \
   --shuffle_ops \
   --verbose
   $@
