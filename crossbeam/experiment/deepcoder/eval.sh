@@ -20,7 +20,6 @@ config=${config?}
 name=${name?}
 timeout=${timeout:=60}
 restarts_timeout=${restarts_timeout:=0}
-temperature=${temperature:=1.0}
 run=${run:=0}
 runs=${runs:=1}
 
@@ -40,7 +39,6 @@ for i in $(seq ${run} ${limit}); do
         --config.do_test=True \
         --config.timeout=${timeout} \
         --config.restarts_timeout=${restarts_timeout} \
-        --config.temperature=${temperature} \
         --config.num_proc=1 \
         --config.gpu_list=0 \
         --config.gpu=0 \
@@ -48,7 +46,7 @@ for i in $(seq ${run} ${limit}); do
         --config.seed=${i} \
         --config.train_data_glob='' \
         --config.test_data_glob='' \
-        --config.json_results_file=$save_dir/results.${name}.timeout${timeout}-${restarts_timeout}.temp${temperature}.run${i}.json \
+        --config.json_results_file=$save_dir/results.${name}.timeout${timeout}-${restarts_timeout}.run${i}.json \
         --config.load_model=${save_dir}/model-best-valid.ckpt \
         $@
 done

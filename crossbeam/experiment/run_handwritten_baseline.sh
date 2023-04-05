@@ -21,7 +21,7 @@ python3 -m crossbeam.experiment.run_baseline_synthesizer_handwritten_tasks \
   --domain=deepcoder \
   --timeout=${timeout} \
   --num_process=${num_process} \
-  --synthetic_test_tasks=True \
-  --json_results_file="comparisons/synthetic.baseline_enumeration_timeout${timeout}.json" \
+  --synthetic_test_tasks=False \
+  --json_results_file="comparisons/handwritten.baseline_enumeration_timeout${timeout}.json" \
   --verbose
   $@
