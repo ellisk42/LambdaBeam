@@ -32,7 +32,8 @@ flags.DEFINE_integer('num_eval_tasks', 5, 'number of evaluation tasks')
 
 
 def run_synthesis(domain, tasks, timeout, max_values_explored=None,
-                  max_weight=20, verbose=False, output_file=None):
+                  max_weight=20, verbose=False, output_file=None,
+                  shuffle_ops=False):
   """Performs baseline synthesis on the tasks."""
   num_tasks = len(tasks)
   print('Num tasks: {}'.format(num_tasks))
@@ -44,8 +45,7 @@ def run_synthesis(domain, tasks, timeout, max_values_explored=None,
     start_time = timeit.default_timer()
     result, value_set, _, stats = baseline_enumeration.synthesize_baseline(
         task, domain, max_weight=max_weight, timeout=timeout,
-        max_values_explored=max_values_explored,
-        shuffle_ops=False)
+        max_values_explored=max_values_explored, shuffle_ops=shuffle_ops)
     elapsed_time = timeit.default_timer() - start_time
 
     json_dict['results'].append({
@@ -118,7 +118,8 @@ def main(argv):
                 timeout=FLAGS.timeout,
                 max_values_explored=FLAGS.max_values_explored,
                 verbose=FLAGS.verbose,
-                output_file=FLAGS.json_results_file)
+                output_file=FLAGS.json_results_file,
+                shuffle_ops=FLAGS.shuffle_ops)
 
 
 if __name__ == '__main__':
