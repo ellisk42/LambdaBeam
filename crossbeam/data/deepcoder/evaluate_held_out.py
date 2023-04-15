@@ -2,6 +2,7 @@
 
 from collections.abc import Sequence
 import contextlib
+import copy
 import functools
 import json
 import os
@@ -17,6 +18,7 @@ RESULTS_JSON = 'comparisons/results/synthetic/baseline_enumeration_timeout600.js
 HELD_OUT_JSON = 'crossbeam/data/deepcoder/held_out_test_cases.json'
 
 IS_LLM = 'PaLM' in RESULTS_JSON
+TIMEOUT = 300
 
 
 class Timeout:
@@ -95,7 +97,7 @@ def evaluate_result(result, is_llm, verbose=False):
         for example_index in range(num_examples):
           for input_name, input_value in zip(input_names,
                                              held_out_inputs_dict.values()):
-            namespace[input_name] = input_value[example_index]
+            namespace[input_name] = copy.deepcopy(input_value[example_index])
           output = eval(code_to_eval, namespace)  # pylint: disable=eval-used
           if output != held_out_outputs[example_index]:
             success = False
@@ -119,6 +121,7 @@ def main(argv: Sequence[str]) -> None:
   if len(argv) > 1:
     raise app.UsageError('Too many command-line arguments.')
 
+  print(f'Reading from: {RESULTS_JSON}')
   with open(RESULTS_JSON) as f:
     results = json.load(f)['results']
 
@@ -128,7 +131,7 @@ def main(argv: Sequence[str]) -> None:
 
   for result in results:
 
-    if not result['success'] or result['elapsed_time'] > 600:
+    if not result['success'] or result['elapsed_time'] > TIMEOUT:
       num_fail += 1
       continue
 
