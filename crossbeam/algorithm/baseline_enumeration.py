@@ -96,6 +96,25 @@ def arg_vars_options(num_arg_vars, num_free_vars, num_bound_vars):
       available_variables(num_free_vars, num_bound_vars), num_arg_vars))
 
 
+def update_stats_value_explored(stats, value):
+  stats['num_values_explored'] += 1
+  if value is None:
+    stats['num_explored_none'] += 1
+  elif value.num_free_variables:
+    stats['num_explored_lambda'] += 1
+  else:
+    stats['num_explored_concrete'] += 1
+
+
+def update_stats_value_kept(stats, value):
+  # Not including trace elements manually added during training.
+  stats['num_values_kept'] += 1
+  if value.num_free_variables:
+    stats['num_kept_lambda'] += 1
+  else:
+    stats['num_kept_concrete'] += 1
+
+
 def synthesize_baseline(task, domain, max_weight=10, timeout=5,
                         max_values_explored=None,
                         skip_probability=0, lambda_skip_probability=0,
@@ -104,7 +123,15 @@ def synthesize_baseline(task, domain, max_weight=10, timeout=5,
   print('synthesize_baseline for task: {}'.format(task))
   start_time = timeit.default_timer()
   end_time = start_time + timeout if timeout else None
-  stats = {'num_values_explored': 0}
+  stats = {
+      'num_values_explored': 0,
+      'num_explored_none': 0,
+      'num_explored_concrete': 0,
+      'num_explored_lambda': 0,
+      'num_values_kept': 0,
+      'num_kept_concrete': 0,
+      'num_kept_lambda': 0,
+  }
 
   # A list of OrderedDicts mapping Value objects to themselves. The i-th
   # OrderedDict contains all Value objects of weight i.
@@ -210,7 +237,7 @@ def synthesize_baseline(task, domain, max_weight=10, timeout=5,
               continue
 
             value = op.apply(arg_list, arg_vars, free_vars)
-            stats['num_values_explored'] += 1
+            update_stats_value_explored(stats, value)
 
             if value is None:
               continue
@@ -232,6 +259,7 @@ def synthesize_baseline(task, domain, max_weight=10, timeout=5,
             values_by_weight[target_weight][value] = value
             value_set.add(value)
             assert value.get_weight() == target_weight
+            update_stats_value_kept(stats, value)
 
     print('Bottom-up enumeration found {} distinct tasks of weight {}, or {} '
           'distinct tasks total, in {:.2f} seconds total'.format(
