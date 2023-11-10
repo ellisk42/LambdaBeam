@@ -2566,15 +2566,18 @@ def print_stats(tasks):
   op_counts = collections.Counter()
   num_ops = collections.Counter()
   weights = collections.Counter()
+  prefixes = collections.Counter()
   for task in tasks:
     ops_used = re.findall(r'\b([A-Z]\w+)\(', task.solution)
     op_counts.update(ops_used)
     num_ops[len(ops_used)] += 1
     weights[solution_weight.solution_weight(task.solution)] += 1
+    prefixes[task.name.split(':')[0]] += 1
   print(f'There are {len(tasks)} tasks.')
   print(f'Operation usage counts: {op_counts}')
   print(f'Number of operations used: {dict(sorted(num_ops.items()))}')
   print(f'Solution weights: {dict(sorted(weights.items()))}')
+  print(f'Name prefix counts: {prefixes}')
 
 
 if __name__ == '__main__':
