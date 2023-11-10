@@ -88,7 +88,10 @@ def evaluate_property_signatures(value_set, output_value, profile=False):
   print()
 
   print(f'Signature length: {len(lambda_sigs[0])}')
-  assert len(set(len(s) for s in concrete_sigs + lambda_sigs)) == 1
+  assert all(len(s) == property_signatures.LAMBDA_SIGNATURE_LENGTH
+             for s in lambda_sigs)
+  assert all(len(s) == property_signatures.CONCRETE_SIGNATURE_LENGTH
+             for s in concrete_sigs)
   print()
 
   lambda_functionality_dict = collections.defaultdict(list)

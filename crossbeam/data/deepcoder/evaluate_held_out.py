@@ -62,8 +62,8 @@ def evaluate_result(result, is_llm, verbose=False):
   if is_llm:
     task_name = result['name']
   else:
-    solution = deepcoder_utils.simplify(solution)
-    task_name = name_from_task_str(result['task'])
+    task_name = (result['name'] if 'name' in result
+                 else name_from_task_str(result['task']))
   if task_name in deepcoder_tasks.RENAMING_MAP:
     new_name = deepcoder_tasks.RENAMING_MAP[task_name]
     solution = solution.replace(task_name, new_name)
@@ -75,6 +75,12 @@ def evaluate_result(result, is_llm, verbose=False):
   held_out_task = held_out_task[0]
   held_out_inputs_dict = held_out_task['held_out_inputs_dict']
   held_out_outputs = held_out_task['held_out_outputs']
+
+  if not is_llm:
+    renaming_map = {f'x{i+1}': input_name
+                    for i, input_name in enumerate(held_out_inputs_dict)}
+    solution = ' '.join(renaming_map.get(t, t) for t in solution.split())
+    solution = deepcoder_utils.simplify(solution)
 
   success = True
   try:
@@ -103,8 +109,7 @@ def evaluate_result(result, is_llm, verbose=False):
             success = False
             break
     else:
-      outputs = deepcoder_utils.run_program(result['solution'],
-                                            held_out_inputs_dict)
+      outputs = deepcoder_utils.run_program(solution, held_out_inputs_dict)
       success = outputs == held_out_outputs
   except Exception:  # pylint: disable=broad-except
     success = False

@@ -515,7 +515,7 @@ def test():
   start_time = timeit.default_timer()
   sig = property_signature_value(lambda_value, output, fixed_length)
   elapsed_time = timeit.default_timer() - start_time
-  print(f'property_signature_value(lambda_value) -> len {len(sig)}')
+  print(f'property_signature_value(lambda_value) -> len {len(sig)}: {sig}')
   print(f'... took {elapsed_time} seconds')
   print()
 
@@ -526,7 +526,7 @@ def test():
   start_time = timeit.default_timer()
   sig = property_signature_value(concrete_value, output, fixed_length)
   elapsed_time = timeit.default_timer() - start_time
-  print(f'property_signature_value(concrete_value) -> len {len(sig)}')
+  print(f'property_signature_value(concrete_value) -> len {len(sig)}: {sig}')
   print(f'... took {elapsed_time} seconds')
 
 
