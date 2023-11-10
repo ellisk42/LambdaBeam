@@ -16,7 +16,6 @@
 
 import collections
 import functools
-import gc
 import itertools
 import random
 import timeit
@@ -121,7 +120,6 @@ def synthesize_baseline(task, domain, max_weight=10, timeout=5,
                         skip_probability=0, lambda_skip_probability=0,
                         shuffle_ops=False):
   """Synthesizes a solution using normal bottom-up enumerative search."""
-  gc.collect()
   print('synthesize_baseline for task: {}'.format(task))
   start_time = timeit.default_timer()
   end_time = start_time + timeout if timeout else None
@@ -203,6 +201,11 @@ def synthesize_baseline(task, domain, max_weight=10, timeout=5,
       for arg_weights_minus_1 in generate_partitions(remaining_weight - arity,
                                                      arity):
 
+        if (end_time is not None and timeit.default_timer() > end_time) or (
+            max_values_explored is not None and
+            stats['num_values_explored'] >= max_values_explored):
+          return None, value_set, values_by_weight, stats
+
         arg_options_list = []
         arg_weights = [w + 1 for w in arg_weights_minus_1]
         for arg_weight, arg_type, num_bound_variables in zip(
@@ -212,11 +215,6 @@ def synthesize_baseline(task, domain, max_weight=10, timeout=5,
               num_free_vars + num_bound_variables, gather_values_cache))
 
         for arg_list in itertools.product(*arg_options_list):
-
-          if (end_time is not None and timeit.default_timer() > end_time) or (
-              max_values_explored is not None and
-              stats['num_values_explored'] >= max_values_explored):
-            return None, value_set, values_by_weight, stats
 
           arg_vars_options_list = []
           for arg_index, arg in enumerate(arg_list):
