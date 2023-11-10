@@ -4,6 +4,21 @@
 from crossbeam.dsl import operation_base
 
 
+def deepcoder_small_value_filter(x):
+  """Checks whether a single value is ok for DeepCoder."""
+  if x is None:
+    return False
+  if isinstance(x, int):
+    return -256 <= x <= 255
+  if isinstance(x, list):
+    return (len(x) <= 20 and
+            # isinstance(False, int) is True. We don't want booleans in lists.
+            all(type(e) is int  # pylint: disable=unidiomatic-typecheck
+                and deepcoder_small_value_filter(e)
+                for e in x))
+  return True
+
+
 class DeepCoderOperation(operation_base.OperationBase):
   """A base class for DeepCoder operations."""
 
@@ -355,7 +370,12 @@ class Scanl1(DeepCoderOperation):
     f, xs = raw_args
     ys = [xs[0]]
     for n in range(1, len(xs)):
-      ys.append(f(ys[n-1], xs[n]))
+      y = f(ys[n-1], xs[n])
+      if not deepcoder_small_value_filter(y):
+        # Through repeated squaring, scanl1 can produce absurdly large integers
+        # causing timeouts if not caught here.
+        return None
+      ys.append(y)
     return ys
 
 

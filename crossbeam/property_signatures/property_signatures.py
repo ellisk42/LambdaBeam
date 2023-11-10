@@ -390,7 +390,7 @@ def run_lambda(
     lambda_fn = value[example_index]
     try:
       result = lambda_fn(*inputs_list)
-      if not domains.deepcoder_small_value_filter(result):
+      if not deepcoder_operations.deepcoder_small_value_filter(result):
         result = None
       io_with_example_index_list.append((inputs_list, result, example_index))
     except:  # pylint: disable=bare-except
