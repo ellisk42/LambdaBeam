@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Copyright 2021 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,28 +14,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from setuptools import setup
-from distutils.command.build import build
-from setuptools.command.install import install
 
-from setuptools.command.develop import develop
+data_folder=$HOME/data/lambdabeam/arithmetic_synthesis
 
-import os
-BASEPATH = os.path.dirname(os.path.abspath(__file__))
+beam_size=4
+save_dir=$HOME/results/lambdabeam/arithmetic_synthesis/dist-b-$beam_size
 
-setup(name='lambdabeam',
-      py_modules=['lambdabeam'],
-      install_requires=[
-        'absl-py',
-        'matplotlib',
-        'ml_collections',
-        'numpy',
-        'pickle5',
-        'pytest',
-        'seaborn',
-        'tensorboard',
-        'tqdm',
-        'torch',
-        'torch_scatter',
-      ]
-)
+if [ ! -e $save_dir ];
+then
+    mkdir -p $save_dir
+fi
+
+export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+
+python3 -m lambdabeam.experiment.run_lambdabeam \
+    --domain=arithmetic \
+    --model_type=int \
+    --data_folder $data_folder \
+    --save_dir $save_dir \
+    --gpu_list 0,1,2,3,4,5,6,7 \
+    --num_proc 8 \
+    --eval_every 10000 \
+    --train_steps 1000000 \
+    --port 29501 \
+    $@
