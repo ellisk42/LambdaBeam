@@ -4,8 +4,8 @@ import multiprocessing
 import os
 import pickle5 as cp
 
-from crossbeam.data.deepcoder import deepcoder_tasks
-from crossbeam.dsl import deepcoder_utils
+from lambdabeam.data.deepcoder import deepcoder_tasks
+from lambdabeam.dsl import deepcoder_utils
 
 NUM_PROCESSES = 14
 DATA_DIR = '/home/kshi/xlambda-data/deepcoder/t-3600-maxne-5-maxni-3-skip-0.00-lambdaskip-0.00-lambdafrac-0.80'

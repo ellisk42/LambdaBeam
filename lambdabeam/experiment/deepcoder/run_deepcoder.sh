@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Copyright 2021 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,28 +14,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from setuptools import setup
-from distutils.command.build import build
-from setuptools.command.install import install
 
-from setuptools.command.develop import develop
+save_dir=$HOME/xlambda-results/deepcoder/${config_name?}
 
-import os
-BASEPATH = os.path.dirname(os.path.abspath(__file__))
+if [ ! -e $save_dir ];
+then
+    mkdir -p $save_dir
+fi
 
-setup(name='lambdabeam',
-      py_modules=['lambdabeam'],
-      install_requires=[
-        'absl-py',
-        'matplotlib',
-        'ml_collections',
-        'numpy',
-        'pickle5',
-        'pytest',
-        'seaborn',
-        'tensorboard',
-        'tqdm',
-        'torch',
-        'torch_scatter',
-      ]
-)
+export CUDA_VISIBLE_DEVICES=${devices:=0}
+
+
+python3 -m lambdabeam.experiment.run_lambdabeam \
+    --config="configs/${config_name?}.py" \
+    --config.save_dir=${save_dir} \
+    --config.data_root="${HOME}/xlambda-data/deepcoder" \
+    $@

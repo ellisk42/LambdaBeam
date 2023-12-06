@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Copyright 2021 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,28 +14,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from setuptools import setup
-from distutils.command.build import build
-from setuptools.command.install import install
+data_root=$HOME/data/lambdabeam/logic_synthesis_10hr
+output_root=$HOME/data/lambdabeam/logic_synthesis_dedup
 
-from setuptools.command.develop import develop
+if [ ! -e $output_root ];
+then
+	mkdir -p $output_root
+fi
 
-import os
-BASEPATH = os.path.dirname(os.path.abspath(__file__))
+python clean_logic.py \
+  $data_root/train-tasks.pkl \
+  $output_root/train-tasks.pkl \
 
-setup(name='lambdabeam',
-      py_modules=['lambdabeam'],
-      install_requires=[
-        'absl-py',
-        'matplotlib',
-        'ml_collections',
-        'numpy',
-        'pickle5',
-        'pytest',
-        'seaborn',
-        'tensorboard',
-        'tqdm',
-        'torch',
-        'torch_scatter',
-      ]
-)
+python make_shards.py \
+  $output_root
+
+cp $data_root/valid-tasks.pkl $output_root
