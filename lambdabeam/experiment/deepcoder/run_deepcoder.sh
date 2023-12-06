@@ -15,7 +15,7 @@
 # limitations under the License.
 
 
-save_dir=$HOME/xlambda-results/deepcoder/${config_name?}
+save_dir=$HOME/lambdabeam-results/deepcoder/${config_name?}
 
 if [ ! -e $save_dir ];
 then
@@ -28,5 +28,5 @@ export CUDA_VISIBLE_DEVICES=${devices:=0}
 python3 -m lambdabeam.experiment.run_lambdabeam \
     --config="configs/${config_name?}.py" \
     --config.save_dir=${save_dir} \
-    --config.data_root="${HOME}/xlambda-data/deepcoder" \
+    --config.data_root="${HOME}/lambdabeam-data/deepcoder" \
     $@
