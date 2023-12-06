@@ -8,8 +8,8 @@ from lambdabeam.data.deepcoder import deepcoder_tasks
 from lambdabeam.dsl import deepcoder_utils
 
 NUM_PROCESSES = 14
-DATA_DIR = '/home/kshi/xlambda-data/deepcoder/t-3600-maxne-5-maxni-3-skip-0.00-lambdaskip-0.00-lambdafrac-0.80'
-NEW_DATA_DIR = '/home/kshi/xlambda-data/deepcoder/t-3600-maxne-5-maxni-3-skip-0.00-lambdaskip-0.00-lambdafrac-0.80/filtered_train_data/'
+DATA_DIR = '/home/kshi/lambdabeam-data/deepcoder/t-3600-maxne-5-maxni-3-skip-0.00-lambdaskip-0.00-lambdafrac-0.80'
+NEW_DATA_DIR = '/home/kshi/lambdabeam-data/deepcoder/t-3600-maxne-5-maxni-3-skip-0.00-lambdaskip-0.00-lambdafrac-0.80/filtered_train_data/'
 
 
 def task_type_signature(task):

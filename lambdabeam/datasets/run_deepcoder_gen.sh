@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-data_dir=$HOME/xlambda-data/deepcoder
+data_dir=$HOME/lambdabeam-data/deepcoder
 
 tout=3600  # 1 hour.
 maxw=15  # Run until timeout.

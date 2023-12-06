@@ -35,7 +35,7 @@ for i in $(seq ${run} ${limit}); do
     python3 -m lambdabeam.experiment.run_lambdabeam \
         --config="${config}" \
         --config.save_dir=${save_dir} \
-        --config.data_root="${HOME}/xlambda-data/deepcoder" \
+        --config.data_root="${HOME}/lambdabeam-data/deepcoder" \
         --config.do_test=True \
         --config.timeout=${timeout} \
         --config.restarts_timeout=${restarts_timeout} \
