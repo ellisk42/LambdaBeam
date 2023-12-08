@@ -14,6 +14,10 @@
 
 """Property signatures for Crossbeam."""
 
+# Note: this file implements property signatures for CrossBeam, while
+# LambdaBeam's property signature implementation is in the property_signatures/
+# directory.
+
 import enum
 import re
 
