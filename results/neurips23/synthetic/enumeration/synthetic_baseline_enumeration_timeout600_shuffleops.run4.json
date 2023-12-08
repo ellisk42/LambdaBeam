@@ -1,0 +1,907 @@
+{
+    "num_tasks": 100,
+    "num_tasks_solved": 72,
+    "results": [
+        {
+            "elapsed_time": 0.04608955234289169,
+            "num_unique_values": 21,
+            "num_values_explored": 101,
+            "solution": "Map(lambda u1: 1, x1)",
+            "solution_weight": 3,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_3_function_0',\n    inputs_dict={'x1': [[-159, 106, 174, -57, 248], [-138, -159, 174]]},\n    outputs=[[1, 1, 1, 1, 1], [1, 1, 1]],\n    solution='Map(lambda u1: 1, x1)'\n)"
+        },
+        {
+            "elapsed_time": 0.04916636273264885,
+            "num_unique_values": 38,
+            "num_values_explored": 368,
+            "solution": "Drop(4, x1)",
+            "solution_weight": 3,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_3_function_3',\n    inputs_dict={'x1': [[-231, -2, 204, 9, -49, 207, -82, 154, -3], [127, 135, 85, -56, -192, -215, 106, -164], [-101, 111, -187, 37, 7, -122, -213, 238, -18, -150], [-128, -53, -194, 68, 97, 134, -178, -173], [-172, 22, 228, -113, 153, -97]]},\n    outputs=[[-49, 207, -82, 154, -3], [-192, -215, 106, -164], [7, -122, -213, 238, -18, -150], [97, 134, -178, -173], [153, -97]],\n    solution='Drop(4, x1)'\n)"
+        },
+        {
+            "elapsed_time": 0.05028857849538326,
+            "num_unique_values": 36,
+            "num_values_explored": 369,
+            "solution": "Take(x2, x1)",
+            "solution_weight": 3,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_3_function_4',\n    inputs_dict={'x1': [[71], [-234, -233, 18, 213, -64], [206, -26, 90, -63], [179]], 'x2': [-100, -186, -188, 237]},\n    outputs=[[], [], [], [179]],\n    solution='Take(x2, x1)'\n)"
+        },
+        {
+            "elapsed_time": 0.05114542320370674,
+            "num_unique_values": 39,
+            "num_values_explored": 388,
+            "solution": "Access(2, x1)",
+            "solution_weight": 3,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_3_function_2',\n    inputs_dict={'x1': [[-16, -8, -3, -12, -37, -4, -19], [-8, -30, -15, -28, -2, -36], [-34, -5, -39, -32, -2], [0, -9, -28, -45, -13, -29, -17], [-18, -16, -29, -26]]},\n    outputs=[-3, -15, -39, -28, -29],\n    solution='Access(2, x1)'\n)"
+        },
+        {
+            "elapsed_time": 0.05939841456711292,
+            "num_unique_values": 51,
+            "num_values_explored": 748,
+            "solution": "Drop(x1, x2)",
+            "solution_weight": 3,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_3_function_5',\n    inputs_dict={'x1': [1, 1, 1, 1], 'x2': [[53], [25, 26, 94, 94, 98], [48, 49, 64, 35, 78], [38, 77, 92]]},\n    outputs=[[], [26, 94, 94, 98], [49, 64, 35, 78], [77, 92]],\n    solution='Drop(x1, x2)'\n)"
+        },
+        {
+            "elapsed_time": 0.06415575928986073,
+            "num_unique_values": 72,
+            "num_values_explored": 1061,
+            "solution": "Scanl1(lambda u1, u2: x2, x1)",
+            "solution_weight": 3,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_3_function_1',\n    inputs_dict={'x1': [[9, 0, 1, 3], [1, 8, 4, 5], [5, 7, 0, 6]], 'x2': [2, 8, 6]},\n    outputs=[[9, 2, 2, 2], [1, 8, 8, 8], [5, 6, 6, 6]],\n    solution='Scanl1(lambda u1, u2: x2, x1)'\n)"
+        },
+        {
+            "elapsed_time": 0.029288295656442642,
+            "num_unique_values": 49,
+            "num_values_explored": 652,
+            "solution": "Drop(1, x1)",
+            "solution_weight": 3,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_3_function_6',\n    inputs_dict={'x1': [[0, 1], [2, 1, 2, 1, 1]]},\n    outputs=[[1], [1, 2, 1, 1]],\n    solution='Drop(1, x1)'\n)"
+        },
+        {
+            "elapsed_time": 0.027955669909715652,
+            "num_unique_values": 39,
+            "num_values_explored": 444,
+            "solution": "Scanl1(lambda u1, u2: 3, x1)",
+            "solution_weight": 3,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_3_function_8',\n    inputs_dict={'x1': [[1, 10], [9, 10], [6, 0], [4, 2]]},\n    outputs=[[1, 3], [9, 3], [6, 3], [4, 3]],\n    solution='Scanl1(lambda u1, u2: 3, x1)'\n)"
+        },
+        {
+            "elapsed_time": 0.03306294418871403,
+            "num_unique_values": 52,
+            "num_values_explored": 602,
+            "solution": "Access(x1, x2)",
+            "solution_weight": 3,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_3_function_9',\n    inputs_dict={'x1': [0, 1, 2, 2, 0], 'x2': [[108, 205, 206, 224, 125, 247, 140, 174, 212, 212], [112, 173, 167, 246, 143, 126, 134, 209], [112, 231, 117, 158, 171, 164, 180], [113, 233, 195, 207, 124], [109, 176, 116]]},\n    outputs=[108, 173, 117, 195, 109],\n    solution='Access(x1, x2)'\n)"
+        },
+        {
+            "elapsed_time": 0.034815242514014244,
+            "num_unique_values": 56,
+            "num_values_explored": 775,
+            "solution": "Drop(2, x1)",
+            "solution_weight": 3,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_3_function_7',\n    inputs_dict={'x1': [[2, 2, 1, 4], [1, -1, 1, 0]]},\n    outputs=[[1, 4], [1, 0]],\n    solution='Drop(2, x1)'\n)"
+        },
+        {
+            "elapsed_time": 0.05162718705832958,
+            "num_unique_values": 104,
+            "num_values_explored": 1556,
+            "solution": "Subtract(2, Sum(x1))",
+            "solution_weight": 4,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_4_function_5',\n    inputs_dict={'x1': [[-213, -36], [-13, -37], [-100, 0]]},\n    outputs=[251, 52, 102],\n    solution='Subtract(2, Sum(x1))'\n)"
+        },
+        {
+            "elapsed_time": 0.07456721737980843,
+            "num_unique_values": 50,
+            "num_values_explored": 2162,
+            "solution": "Max(x1, Square(4))",
+            "solution_weight": 4,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_4_function_1',\n    inputs_dict={'x1': [34, 14]},\n    outputs=[34, 16],\n    solution='Max(x1, Square(4))'\n)"
+        },
+        {
+            "elapsed_time": 0.059657175093889236,
+            "num_unique_values": 130,
+            "num_values_explored": 1454,
+            "solution": "Scanl1(lambda u1, u2: Minimum(x1), x2)",
+            "solution_weight": 4,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_4_function_4',\n    inputs_dict={'x1': [[2, 4, 9, 8, 7, 6], [8, 1, 1, 7, 2], [8, 4, 7, 9, 4, 6, 5], [9, 9, 2, 8, 2], [8, 8, 8, 4, 3]], 'x2': [[65, 144], [47, 112], [109, 198], [55, 35], [197, 208]]},\n    outputs=[[65, 2], [47, 1], [109, 4], [55, 2], [197, 3]],\n    solution='Scanl1(lambda u1, u2: Minimum(x1), x2)'\n)"
+        },
+        {
+            "elapsed_time": 0.09131960943341255,
+            "num_unique_values": 257,
+            "num_values_explored": 3098,
+            "solution": "Multiply(4, Minimum(x1))",
+            "solution_weight": 4,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_4_function_2',\n    inputs_dict={'x1': [[2, 9, 8], [9, 2, 6, 4, 7, 5, 4], [2, 1, 2, 5, 5, 2], [1, 7, 4, 4, 1, 2, 7]]},\n    outputs=[8, 8, 4, 4],\n    solution='Multiply(4, Minimum(x1))'\n)"
+        },
+        {
+            "elapsed_time": 0.11551770381629467,
+            "num_unique_values": 286,
+            "num_values_explored": 4904,
+            "solution": "IntDivide(Head(x2), x1)",
+            "solution_weight": 4,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_4_function_0',\n    inputs_dict={'x1': [-36, -13, 10, 21], 'x2': [[14, -26], [-8, -27], [-35, -39], [18, 10]]},\n    outputs=[-1, 0, -4, 0],\n    solution='IntDivide(Head(x2), x1)'\n)"
+        },
+        {
+            "elapsed_time": 0.10185280069708824,
+            "num_unique_values": 213,
+            "num_values_explored": 4145,
+            "solution": "IntDivide(4, Sum(x1))",
+            "solution_weight": 4,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_4_function_3',\n    inputs_dict={'x1': [[0, 1], [2, 1, 2, 1, 1]]},\n    outputs=[4, 0],\n    solution='IntDivide(4, Sum(x1))'\n)"
+        },
+        {
+            "elapsed_time": 0.046804867684841156,
+            "num_unique_values": 76,
+            "num_values_explored": 1496,
+            "solution": "Take(Sum(x1), x2)",
+            "solution_weight": 4,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_4_function_9',\n    inputs_dict={'x1': [[0, 1, 0], [1, 0, 0, 1]], 'x2': [[0, 1, 1], [1, 1, 0, 0]]},\n    outputs=[[0], [1, 1]],\n    solution='Take(Sum(x1), x2)'\n)"
+        },
+        {
+            "elapsed_time": 0.09053260087966919,
+            "num_unique_values": 440,
+            "num_values_explored": 4528,
+            "solution": "Scanl1(lambda u1, u2: Sum(x2), x1)",
+            "solution_weight": 4,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_4_function_6',\n    inputs_dict={'x1': [[-71], [-43, 97, 45, -93, 8, -34]], 'x2': [[-37, -42, -27, -57, -85], [-69, -12, -52]]},\n    outputs=[[-71], [-43, -133, -133, -133, -133, -133]],\n    solution='Scanl1(lambda u1, u2: Sum(x2), x1)'\n)"
+        },
+        {
+            "elapsed_time": 0.10083953477442265,
+            "num_unique_values": 297,
+            "num_values_explored": 4599,
+            "solution": "Sum(Drop(x1, x2))",
+            "solution_weight": 4,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_4_function_8',\n    inputs_dict={'x1': [-51, -130, 234], 'x2': [[3, 0, 3, 4, 0], [0, 3, 1, 3], [5, 3, 3, 5, 5, 3]]},\n    outputs=[10, 7, 0],\n    solution='Sum(Drop(x1, x2))'\n)"
+        },
+        {
+            "elapsed_time": 0.10806810855865479,
+            "num_unique_values": 194,
+            "num_values_explored": 4076,
+            "solution": "Take(-1, Sort(x1))",
+            "solution_weight": 4,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_4_function_7',\n    inputs_dict={'x1': [[72, 110, 199], [164, 67, 251], [76, 252, 170]]},\n    outputs=[[72, 110], [67, 164], [76, 170]],\n    solution='Take(-1, Sort(x1))'\n)"
+        },
+        {
+            "elapsed_time": 0.30463149957358837,
+            "num_unique_values": 559,
+            "num_values_explored": 12136,
+            "solution": "Take(Head(x1), Reverse(x2))",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_5_function_0',\n    inputs_dict={'x1': [[81, 51, 51, 23], [1], [93, 75, 70, 43, 14]], 'x2': [[-51, -37], [-97, -33], [-88, -16]]},\n    outputs=[[-37, -51], [-33], [-16, -88]],\n    solution='Take(Head(x1), Reverse(x2))'\n)"
+        },
+        {
+            "elapsed_time": 0.40437687188386917,
+            "num_unique_values": 1256,
+            "num_values_explored": 14834,
+            "solution": "Scanl1(lambda u1, u2: Square(Minimum(x1)), x2)",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_5_function_3',\n    inputs_dict={'x1': [[-9, 0, -4, -7, -6, -3, -5, -10], [0, -8, -7, -10, -4, -3, -2], [-2, -6, -7, -8, -4, -10, 0, -1, -3], [0, -3, -8, -4, -1, -6, -7, -9, -2], [0, -10, -1, -9, -7, -8, -5, -3]], 'x2': [[-4, -1, -8, -9, -6, -7, -3, -10], [-1, -8, -9, -10, -3, -4, -7], [-6, -10, -3, -7, 0, -5, -2, -1, -4], [-1, -10, -5, -3, 0, -6, -4, -8, -2], [-10, -6, -5, -1, -7, 0, -2, -3]]},\n    outputs=[[-4, 100, 100, 100, 100, 100, 100, 100], [-1, 100, 100, 100, 100, 100, 100], [-6, 100, 100, 100, 100, 100, 100, 100, 100], [-1, 81, 81, 81, 81, 81, 81, 81, 81], [-10, 100, 100, 100, 100, 100, 100, 100]],\n    solution='Scanl1(lambda u1, u2: Square(Minimum(x1)), x2)'\n)"
+        },
+        {
+            "elapsed_time": 0.4838113021105528,
+            "num_unique_values": 832,
+            "num_values_explored": 17596,
+            "solution": "IntDivide(Square(4), Minimum(x1))",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_5_function_2',\n    inputs_dict={'x1': [[-5, -5, -4, -4, -3, -3, -2, -1], [-7, -5, -4, -4, -4, -3, -2, -1], [-9, -8, -6, -4, -4, -2], [-5, -5, -4, -4, -3, -2, -2], [-8, -8, -8, -7, -7, -7, -4, -4, -3, -2]]},\n    outputs=[-4, -3, -2, -4, -2],\n    solution='IntDivide(Square(4), Head(x1))'\n)"
+        },
+        {
+            "elapsed_time": 0.4861410800367594,
+            "num_unique_values": 934,
+            "num_values_explored": 21522,
+            "solution": "Scanl1(lambda u1, u2: IntDivide(2, x1), x2)",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_5_function_4',\n    inputs_dict={'x1': [4, 1], 'x2': [[3, 1, 0, 1], [2, 5, 4, 0]]},\n    outputs=[[3, 0, 0, 0], [2, 2, 2, 2]],\n    solution='Scanl1(lambda u1, u2: IntDivide(2, x1), x2)'\n)"
+        },
+        {
+            "elapsed_time": 0.15528493374586105,
+            "num_unique_values": 493,
+            "num_values_explored": 5422,
+            "solution": "Subtract(4, IntDivide(x1, 4))",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_5_function_7',\n    inputs_dict={'x1': [81, -44, -38, -91, 6]},\n    outputs=[-16, 15, 14, 27, 3],\n    solution='Subtract(4, IntDivide(x1, 4))'\n)"
+        },
+        {
+            "elapsed_time": 0.3150224331766367,
+            "num_unique_values": 1023,
+            "num_values_explored": 12657,
+            "solution": "Subtract(Last(x2), Last(x1))",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_5_function_6',\n    inputs_dict={'x1': [[45, 21], [-2, -8, -31, -40], [-33, -49], [-46, 18, 0, -2], [23]], 'x2': [[32], [-32, 14, 8, -29, -18], [-45], [-41, -42], [46, 7]]},\n    outputs=[11, 22, 4, -40, -16],\n    solution='Subtract(Last(x2), Last(x1))'\n)"
+        },
+        {
+            "elapsed_time": 0.6347808949649334,
+            "num_unique_values": 1098,
+            "num_values_explored": 29926,
+            "solution": "Drop(IntDivide(x1, x3), x2)",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_5_function_5',\n    inputs_dict={'x1': [-61, 88], 'x2': [[189, -11], [182, -26]], 'x3': [-47, -3]},\n    outputs=[[-11], [182, -26]],\n    solution='Drop(IntDivide(x1, x3), x2)'\n)"
+        },
+        {
+            "elapsed_time": 0.401599008589983,
+            "num_unique_values": 786,
+            "num_values_explored": 16104,
+            "solution": "Filter(lambda u1: (lambda v1: IsOdd(v1))(u1), x1)",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_5_function_8',\n    inputs_dict={'x1': [[-45, 22, 21, -1], [-48, -3, -30, -14, 9], [21, 22]]},\n    outputs=[[-45, 21, -1], [-3, 9], [21]],\n    solution='Filter(lambda u1: (lambda v1: IsOdd(v1))(u1), x1)'\n)"
+        },
+        {
+            "elapsed_time": 0.9255120921880007,
+            "num_unique_values": 1212,
+            "num_values_explored": 37220,
+            "solution": "IntDivide(Sum(x1), Head(x2))",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_5_function_1',\n    inputs_dict={'x1': [[21, 3, 3, 33], [31, 17, 8, 0], [36, 2, 28, 40], [23, 0, 25, 20]], 'x2': [[20, 33, 29, 29], [22, 32, 5, 50], [21, 46, 9, 4], [27, 43, 28, 14]]},\n    outputs=[3, 2, 5, 2],\n    solution='IntDivide(Sum(x1), Head(x2))'\n)"
+        },
+        {
+            "elapsed_time": 0.8247590251266956,
+            "num_unique_values": 1755,
+            "num_values_explored": 31595,
+            "solution": "Subtract(Last(x2), Square(x1))",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_5_function_9',\n    inputs_dict={'x1': [6, 9, 0, -1, 2], 'x2': [[38, -36, -9, -6, -25, 10, -18, 11], [22, 22, -24, 2, -25, -40, 36, -42, 6, 35], [37, -39, -46, 50, -42, 42, -46, -34], [41, 48, -2, -37, -36, -19, 34, 9], [-12, -2, 40, -18, 44, -33, -18]]},\n    outputs=[-25, -46, -34, 8, -22],\n    solution='Subtract(Last(x2), Square(x1))'\n)"
+        },
+        {
+            "elapsed_time": 0.913282722234726,
+            "num_unique_values": 1452,
+            "num_values_explored": 43137,
+            "solution": "Multiply(Square(4), Add(x1, 3))",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_6_function_1',\n    inputs_dict={'x1': [-2, 4]},\n    outputs=[16, 112],\n    solution='Multiply(Square(4), Add(x1, 3))'\n)"
+        },
+        {
+            "elapsed_time": 1.552092431113124,
+            "num_unique_values": 1960,
+            "num_values_explored": 49824,
+            "solution": "Scanl1(lambda u1, u2: (lambda v1: Subtract(v1, x2))(u2), x1)",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_6_function_2',\n    inputs_dict={'x1': [[1, 0, 1, 0, 0, 0, 1], [0, 0, 0, 1, 1, 1, 0, 1], [0, 1, 1, 0, 1, 1, 1, 1], [0, 1, 1, 0, 0, 0, 1, 0, 1, 0], [1, 1, 1, 1, 0, 0, 0, 1, 1, 1]], 'x2': [0, 0, 0, 1, 1]},\n    outputs=[[1, 0, 1, 0, 0, 0, 1], [0, 0, 0, 1, 1, 1, 0, 1], [0, 1, 1, 0, 1, 1, 1, 1], [0, 0, 0, -1, -1, -1, 0, -1, 0, -1], [1, 0, 0, 0, -1, -1, -1, 0, 0, 0]],\n    solution='Scanl1(lambda u1, u2: (lambda v1: Subtract(v1, x2))(u2), x1)'\n)"
+        },
+        {
+            "elapsed_time": 1.6179952882230282,
+            "num_unique_values": 2245,
+            "num_values_explored": 70574,
+            "solution": "Scanl1(lambda u1, u2: (lambda v1: IntDivide(v1, 3))(u1), x1)",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_6_function_4',\n    inputs_dict={'x1': [[5, 9, 3, 4, 1], [9, 2, 8, 2]]},\n    outputs=[[5, 1, 0, 0, 0], [9, 3, 1, 0]],\n    solution='Scanl1(lambda u1, u2: (lambda v1: IntDivide(v1, 3))(u1), x1)'\n)"
+        },
+        {
+            "elapsed_time": 1.3908219151198864,
+            "num_unique_values": 1814,
+            "num_values_explored": 44479,
+            "solution": "Scanl1(lambda u1, u2: (lambda v1: Subtract(-1, v1))(u2), x1)",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_6_function_5',\n    inputs_dict={'x1': [[1, 1, 0], [1, 1, 1], [1, 0, 1, 1], [1, 0, 0, 0, 0]]},\n    outputs=[[1, -2, -1], [1, -2, -2], [1, -1, -2, -2], [1, -1, -1, -1, -1]],\n    solution='Scanl1(lambda u1, u2: (lambda v1: Subtract(-1, v1))(u2), x1)'\n)"
+        },
+        {
+            "elapsed_time": 1.2576036378741264,
+            "num_unique_values": 1869,
+            "num_values_explored": 43405,
+            "solution": "Scanl1(lambda u1, u2: Min(x2, Sum(x1)), x1)",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_6_function_6',\n    inputs_dict={'x1': [[1, 3, 4, 4, 5, 7], [1, 2, 2, 3, 6, 6, 7, 7, 9, 9], [2, 3, 4, 5, 6, 7], [1, 1, 1, 1, 3, 3, 4, 5, 9], [1, 1, 1, 2, 3, 6, 7, 8, 8]], 'x2': [90, 95, 10, 77, 67]},\n    outputs=[[1, 24, 24, 24, 24, 24], [1, 52, 52, 52, 52, 52, 52, 52, 52, 52], [2, 10, 10, 10, 10, 10], [1, 28, 28, 28, 28, 28, 28, 28, 28], [1, 37, 37, 37, 37, 37, 37, 37, 37]],\n    solution='Scanl1(lambda u1, u2: Min(x2, Sum(x1)), x1)'\n)"
+        },
+        {
+            "elapsed_time": 0.7520066164433956,
+            "num_unique_values": 1482,
+            "num_values_explored": 32861,
+            "solution": "Scanl1(lambda u1, u2: (lambda v1: IntDivide(v1, 2))(u1), x1)",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_6_function_8',\n    inputs_dict={'x1': [[2, 0, 9], [-8, -5, -7]]},\n    outputs=[[2, 1, 0], [-8, -4, -2]],\n    solution='Scanl1(lambda u1, u2: (lambda v1: IntDivide(v1, 2))(u1), x1)'\n)"
+        },
+        {
+            "elapsed_time": 1.6740597076714039,
+            "num_unique_values": 2014,
+            "num_values_explored": 67210,
+            "solution": "Scanl1(lambda u1, u2: (lambda v1: Subtract(4, v1))(u1), x1)",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_6_function_9',\n    inputs_dict={'x1': [[-231, 79, 1, -5, -150], [172, 105, -57, 174, 0]]},\n    outputs=[[-231, 235, -231, 235, -231], [172, -168, 172, -168, 172]],\n    solution='Scanl1(lambda u1, u2: (lambda v1: Subtract(4, v1))(u1), x1)'\n)"
+        },
+        {
+            "elapsed_time": 3.569367814809084,
+            "num_unique_values": 5094,
+            "num_values_explored": 138037,
+            "solution": "Square(Minimum(Scanl1(lambda u1, u2: Last(x2), x1)))",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_6_function_3',\n    inputs_dict={'x1': [[-9, -9, -9, -3], [-3, -6, -7, -7], [-2, -9, -3, -3]], 'x2': [[-4, -9, -7, -5], [-3, -6, -2, -5], [-8, -7, -7, -4]]},\n    outputs=[81, 25, 16],\n    solution='Square(Min(Head(x1), Last(x2)))'\n)"
+        },
+        {
+            "elapsed_time": 3.9769422356039286,
+            "num_unique_values": 4969,
+            "num_values_explored": 146459,
+            "solution": "Scanl1(lambda u1, u2: Multiply(-1, Last(x1)), x2)",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_6_function_0',\n    inputs_dict={'x1': [[8, 5, 0, 4, 0, 9, 9, 3, 3], [9, 1, 8, 3], [9, 2, 9, 5, 9, 8, 1]], 'x2': [[-94, -58, -51, -40, 14, 63, 70], [-87, -68, -37, 41, 55, 58, 59, 83, 93], [-26, -14, -13, -8, 35, 38, 51, 74, 76, 82]]},\n    outputs=[[-94, -3, -3, -3, -3, -3, -3], [-87, -3, -3, -3, -3, -3, -3, -3, -3], [-26, -1, -1, -1, -1, -1, -1, -1, -1, -1]],\n    solution='Scanl1(lambda u1, u2: Subtract(0, Last(x1)), x2)'\n)"
+        },
+        {
+            "elapsed_time": 2.9985476974397898,
+            "num_unique_values": 4464,
+            "num_values_explored": 149184,
+            "solution": "Subtract(Min(x1, x3), Sum(x2))",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_6_function_7',\n    inputs_dict={'x1': [-61, 88], 'x2': [[189, -11], [182, -26]], 'x3': [-47, -3]},\n    outputs=[-239, -159],\n    solution='Subtract(Min(x1, x3), Sum(x2))'\n)"
+        },
+        {
+            "elapsed_time": 3.696276683360338,
+            "num_unique_values": 4321,
+            "num_values_explored": 150295,
+            "solution": "Subtract(x1, Min(x2, Multiply(x2, 3)))",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_7_function_0',\n    inputs_dict={'x1': [-39, -48], 'x2': [26, -2]},\n    outputs=[-65, -42],\n    solution='Subtract(x1, Min(x2, Multiply(x2, 3)))'\n)"
+        },
+        {
+            "elapsed_time": 2.903459068387747,
+            "num_unique_values": 3531,
+            "num_values_explored": 113684,
+            "solution": "If(IsEven(x1), 0, Add(x1, 3))",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_7_function_4',\n    inputs_dict={'x1': [63, 12, 11, 26, 98]},\n    outputs=[66, 0, 14, 0, 0],\n    solution='If(IsEven(x1), 0, Add(x1, 3))'\n)"
+        },
+        {
+            "elapsed_time": 4.756491856649518,
+            "num_unique_values": 4542,
+            "num_values_explored": 180147,
+            "solution": "Map(lambda u1: IntDivide(Subtract(x2, 3), 4), x1)",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_7_function_1',\n    inputs_dict={'x1': [[-67], [44], [2], [-79]], 'x2': [72, 82, 48, 15]},\n    outputs=[[17], [19], [11], [3]],\n    solution='Map(lambda u1: IntDivide(Subtract(x2, 3), 4), x1)'\n)"
+        },
+        {
+            "elapsed_time": 5.823479784652591,
+            "num_unique_values": 3356,
+            "num_values_explored": 191793,
+            "solution": "Multiply(2, Add(Head(x1), Square(4)))",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_7_function_3',\n    inputs_dict={'x1': [[0, 1, 1, 0, 0], [1, 1], [0, 1], [1]]},\n    outputs=[32, 34, 32, 34],\n    solution='Multiply(2, Add(Square(4), Head(x1)))'\n)"
+        },
+        {
+            "elapsed_time": 10.082369413226843,
+            "num_unique_values": 9134,
+            "num_values_explored": 466453,
+            "solution": "Add(x1, Max(2, Add(x2, 3)))",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_7_function_6',\n    inputs_dict={'x1': [-39, -48], 'x2': [26, -2]},\n    outputs=[-10, -46],\n    solution='Add(x1, Add(3, Max(x2, -1)))'\n)"
+        },
+        {
+            "elapsed_time": 13.829471690580249,
+            "num_unique_values": 7742,
+            "num_values_explored": 533660,
+            "solution": "ZipWith(lambda u1, u2: (lambda v1: Add(x1, v1))(u1), x2, x3)",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_7_function_5',\n    inputs_dict={'x1': [31, 63], 'x2': [[93, 80, 97, 39, 21, 73, 51], [76, 38, 93, 65, 16, 82]], 'x3': [[0, 1], [1, 0]]},\n    outputs=[[124, 111], [139, 101]],\n    solution='ZipWith(lambda u1, u2: (lambda v1: Add(x1, v1))(u1), x2, x3)'\n)"
+        },
+        {
+            "elapsed_time": 12.948945177718997,
+            "num_unique_values": 11984,
+            "num_values_explored": 464957,
+            "solution": "Add(x1, IntDivide(Add(x1, 2), x2))",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_7_function_9',\n    inputs_dict={'x1': [8, 6, 9, 9], 'x2': [5, 5, 9, 2]},\n    outputs=[10, 7, 10, 14],\n    solution='Add(x1, IntDivide(Add(x1, 2), x2))'\n)"
+        },
+        {
+            "elapsed_time": 21.381362775340676,
+            "num_unique_values": 22647,
+            "num_values_explored": 853042,
+            "solution": "ZipWith(lambda u1, u2: (lambda v1: Subtract(v1, 1))(u1), x1, x2)",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_7_function_2',\n    inputs_dict={'x1': [[6, -32, -4, 32, 22, -12, 31], [0, -47, 18, 18, 39, -5], [37, 26, -40, -40]], 'x2': [[108, 129], [124, 190], [139, 241]]},\n    outputs=[[5, -33], [-1, -48], [36, 25]],\n    solution='ZipWith(lambda u1, u2: (lambda v1: Add(-1, v1))(u1), x1, x2)'\n)"
+        },
+        {
+            "elapsed_time": 23.944787494838238,
+            "num_unique_values": 19737,
+            "num_values_explored": 870994,
+            "solution": "Map(lambda u1: IntDivide(Last(x2), Minimum(x1)), x3)",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_7_function_8',\n    inputs_dict={'x1': [[57, 100, 15, 30, 34, 60, 89, 27, 51], [17, 30, 73], [27, 21, 84, 18, 86, 46, 15], [42, 62, 14, 14, 83, 19, 39, 4]], 'x2': [[47, 39, 86, 73, 52, 87, 23, 70, 72], [6, 26, 3], [70, 26, 65, 10, 35, 90, 98], [13, 67, 63, 7, 98, 61, 98, 98]], 'x3': [[-1, -1, -1, -1, -1, -1], [-1], [-1, -1, -1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1, -1, -1]]},\n    outputs=[[4, 4, 4, 4, 4, 4], [0], [6, 6, 6, 6, 6, 6, 6, 6], [24, 24, 24, 24, 24, 24, 24, 24]],\n    solution='Map(lambda u1: IntDivide(Last(x2), Minimum(x1)), x3)'\n)"
+        },
+        {
+            "elapsed_time": 20.273315040394664,
+            "num_unique_values": 32060,
+            "num_values_explored": 550910,
+            "solution": "Scanl1(lambda u1, u2: (lambda v1: IntDivide(4, v1))(u1), Take(3, x1))",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_8_function_0',\n    inputs_dict={'x1': [[1, 1, 1, 1, 0, 0, 0], [2, 2, 2, 1, 0, 0, 0, 0, 0], [2, 2, 1, 1, 1, 0, 0], [2, 2, 1, 1, 1, 0, 0, 0, 0], [2, 2, 2, 2, 2, 1, 1, 1]]},\n    outputs=[[1, 4, 1], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2]],\n    solution='Take(3, Scanl1(lambda u1, u2: (lambda v1: IntDivide(4, v1))(u1), x1))'\n)"
+        },
+        {
+            "elapsed_time": 32.817782333120704,
+            "num_unique_values": 32747,
+            "num_values_explored": 1175733,
+            "solution": "ZipWith(lambda u1, u2: (lambda v1: Add(x1, v1))(u2), x2, x3)",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_7_function_7',\n    inputs_dict={'x1': [36, 42, 16, 60], 'x2': [[-1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1]], 'x3': [[5, 9, 10, 5, 0, 10], [5, 5], [2, 2, 7, 7, 7, 9, 5, 4], [10, 5, 10, 9]]},\n    outputs=[[41, 45, 46, 41, 36], [47, 47], [18, 18, 23, 23, 23, 25, 21], [70, 65, 70, 69]],\n    solution='ZipWith(lambda u1, u2: (lambda v1: Add(x1, v1))(u2), x2, x3)'\n)"
+        },
+        {
+            "elapsed_time": 26.514942314475775,
+            "num_unique_values": 36090,
+            "num_values_explored": 722961,
+            "solution": "Scanl1(lambda u1, u2: (lambda v1: Subtract(Add(x1, 1), v1))(u2), x2)",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_8_function_3',\n    inputs_dict={'x1': [226, 174, 125, 232], 'x2': [[1, 2, 4, 5, 7, 9], [3, 4, 6, 9], [1, 3, 4, 5, 6, 8, 9], [1, 2, 5, 7, 9]]},\n    outputs=[[1, 225, 223, 222, 220, 218], [3, 171, 169, 166], [1, 123, 122, 121, 120, 118, 117], [1, 231, 228, 226, 224]],\n    solution='Scanl1(lambda u1, u2: (lambda v1: Subtract(Add(x1, 1), v1))(u2), x2)'\n)"
+        },
+        {
+            "elapsed_time": 33.1915438901633,
+            "num_unique_values": 32628,
+            "num_values_explored": 1058483,
+            "solution": "Subtract(x1, Max(3, Subtract(Head(x2), 2)))",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_8_function_6',\n    inputs_dict={'x1': [8, 6, 6, 5, 9], 'x2': [[4], [6], [4], [9], [8]]},\n    outputs=[5, 2, 3, -2, 3],\n    solution='Subtract(x1, Max(3, Subtract(Head(x2), 2)))'\n)"
+        },
+        {
+            "elapsed_time": 52.90028765797615,
+            "num_unique_values": 49996,
+            "num_values_explored": 1998561,
+            "solution": "Map(lambda u1: (lambda v1: IntDivide(v1, Add(3, 4)))(u1), x1)",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_8_function_2',\n    inputs_dict={'x1': [[-238, -195, 77, -187, -200], [182, 12], [-118]]},\n    outputs=[[-34, -28, 11, -27, -29], [26, 1], [-17]],\n    solution='Map(lambda u1: (lambda v1: IntDivide(v1, Add(3, 4)))(u1), x1)'\n)"
+        },
+        {
+            "elapsed_time": 33.036144414916635,
+            "num_unique_values": 31492,
+            "num_values_explored": 1091730,
+            "solution": "Map(lambda u1: (lambda v1: IntDivide(v1, Multiply(x1, 4)))(u1), x2)",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_8_function_7',\n    inputs_dict={'x1': [40, 4], 'x2': [[132, 218], [26, 114]]},\n    outputs=[[0, 1], [1, 7]],\n    solution='Map(lambda u1: (lambda v1: IntDivide(v1, Multiply(x1, 4)))(u1), x2)'\n)"
+        },
+        {
+            "elapsed_time": 17.86526083946228,
+            "num_unique_values": 19085,
+            "num_values_explored": 569060,
+            "solution": "Subtract(x1, Add(Square(3), Square(Square(3))))",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_8_function_8',\n    inputs_dict={'x1': [37, 39, 31, 49]},\n    outputs=[-53, -51, -59, -41],\n    solution='Subtract(x1, Add(Square(3), Square(Square(3))))'\n)"
+        },
+        {
+            "elapsed_time": 61.77961831912398,
+            "num_unique_values": 62747,
+            "num_values_explored": 1585074,
+            "solution": "Map(lambda u1: Sum(x1), Filter(lambda u1: (lambda v1: IsOdd(v1))(u1), x2))",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_8_function_5',\n    inputs_dict={'x1': [[-1, -1, -1, -1, 0, 0, 0, 0, 1, 1], [-1, -1, 0, 0, 1, 1, 1], [-1, -1, -1, 0, 0, 0, 1, 1, 1, 1], [-1, -1, -1, -1, -1, 0, 0, 0, 1, 1], [-1, -1, 0, 0, 0, 1, 1, 1, 1, 1]], 'x2': [[-1, -1, -1, -1, 0, 0, 0, 0, 1, 1], [-1, -1, -1, 0, 0, 0, 1], [-1, -1, -1, -1, -1, 0, 0, 0, 1, 1], [-1, -1, 0, 0, 0, 0, 1, 1, 1, 1], [-1, -1, -1, 0, 0, 0, 0, 1, 1, 1]]},\n    outputs=[[-2, -2, -2, -2, -2, -2], [1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [-3, -3, -3, -3, -3, -3], [3, 3, 3, 3, 3, 3]],\n    solution='Map(lambda u1: Sum(x1), Filter(lambda u1: (lambda v1: IsOdd(v1))(u1), x2))'\n)"
+        },
+        {
+            "elapsed_time": 43.78041957132518,
+            "num_unique_values": 59666,
+            "num_values_explored": 1537519,
+            "solution": "Map(lambda u1: (lambda v1: If(IsOdd(x2), v1, 3))(u1), x1)",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_8_function_9',\n    inputs_dict={'x1': [[0, 9, 3, 10, 6, 9, 7, 5, 10, 4], [10, 0], [10, 2], [0, 2, 10]], 'x2': [67, 31, 181, 40]},\n    outputs=[[0, 9, 3, 10, 6, 9, 7, 5, 10, 4], [10, 0], [10, 2], [3, 3, 3]],\n    solution='Map(lambda u1: (lambda v1: If(IsEven(x2), 3, v1))(u1), x1)'\n)"
+        },
+        {
+            "elapsed_time": 31.620763052254915,
+            "num_unique_values": 45844,
+            "num_values_explored": 768405,
+            "solution": "Subtract(IntDivide(x1, 3), Add(3, IntDivide(x1, 2)))",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_9_function_2',\n    inputs_dict={'x1': [34, 165, 79, 52]},\n    outputs=[-9, -30, -16, -12],\n    solution='Subtract(IntDivide(x1, 3), Add(3, IntDivide(x1, 2)))'\n)"
+        },
+        {
+            "elapsed_time": 147.72140560485423,
+            "num_unique_values": 211634,
+            "num_values_explored": 4681184,
+            "solution": "Scanl1(lambda u1, u2: (lambda v1: Min(v1, Access(x2, x3)))(u2), x1)",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_8_function_4',\n    inputs_dict={'x1': [[1, 4, 3, 5, -1], [4, -1, 0, 2], [3, 0, 4, -1], [-1, 5, 2, 1], [4, 5, 0]], 'x2': [3, -1, 1, -1, 2], 'x3': [[-1, 4, 1, 0, 2], [3, 1, 2, -1], [4, 1, 2, 0], [2, 0, 3, 1], [2, 1, 3]]},\n    outputs=[[1, 0, 0, 0, -1], [4, -1, -1, -1], [3, 0, 1, -1], [-1, 1, 1, 1], [4, 3, 0]],\n    solution='Scanl1(lambda u1, u2: (lambda v1: Min(v1, Access(x2, x3)))(u2), x1)'\n)"
+        },
+        {
+            "elapsed_time": 167.68158927187324,
+            "num_unique_values": 193866,
+            "num_values_explored": 6262654,
+            "solution": "Scanl1(lambda u1, u2: x3, Filter(lambda u1: (lambda v1: Greater(v1, x2))(u1), x1))",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_8_function_1',\n    inputs_dict={'x1': [[32, 21, 0, 24, 27], [36, 30, 36, 29, 21, 45, 18], [6, 35, 0, 13, 10, 50, 41, 41, 16, 44], [45, 13, 42, 34, 30], [9, 21, 23, 45, 46, 50, 30, 20]], 'x2': [7, 37, 49, 22, 0], 'x3': [253, 203, 109, 209, 101]},\n    outputs=[[32, 253, 253, 253], [45], [50], [45, 209, 209, 209], [9, 101, 101, 101, 101, 101, 101, 101]],\n    solution='Scanl1(lambda u1, u2: x3, Filter(lambda u1: (lambda v1: Greater(v1, x2))(u1), x1))'\n)"
+        },
+        {
+            "elapsed_time": 163.49949071742594,
+            "num_unique_values": 83891,
+            "num_values_explored": 4697057,
+            "solution": "Subtract(3, Square(IntDivide(Access(2, Reverse(x1)), 4)))",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_9_function_0',\n    inputs_dict={'x1': [[19, 9, 8], [19, 14, 7], [48, 32, 20, 7]]},\n    outputs=[-13, -13, -61],\n    solution='Subtract(3, Square(IntDivide(Access(2, Reverse(x1)), 4)))'\n)"
+        },
+        {
+            "elapsed_time": 179.62267676368356,
+            "num_unique_values": 92701,
+            "num_values_explored": 6173036,
+            "solution": "Map(lambda u1: (lambda v1: Add(-1, v1))(u1), Sort(Scanl1(lambda u1, u2: x1, x2)))",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_9_function_1',\n    inputs_dict={'x1': [14, 45], 'x2': [[40, 2], [47, 42]]},\n    outputs=[[13, 39], [44, 46]],\n    solution='Reverse(Map(lambda u1: (lambda v1: Add(-1, v1))(u1), Scanl1(lambda u1, u2: x1, x2)))'\n)"
+        },
+        {
+            "elapsed_time": 135.93980158306658,
+            "num_unique_values": 129626,
+            "num_values_explored": 5943788,
+            "solution": "Map(lambda u1: (lambda v1: Min(4, (lambda v1: Max(0, v1))(v1)))(u1), x1)",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_9_function_7',\n    inputs_dict={'x1': [[-9, -2, -10, -6, 0, -10, -6, 3, 1], [-1, -5, 8, 5]]},\n    outputs=[[0, 0, 0, 0, 0, 0, 0, 3, 1], [0, 0, 4, 4]],\n    solution='Map(lambda u1: (lambda v1: Min(4, (lambda v1: Max(0, v1))(v1)))(u1), x1)'\n)"
+        },
+        {
+            "elapsed_time": 205.0910007674247,
+            "num_unique_values": 140352,
+            "num_values_explored": 7042840,
+            "solution": "Map(lambda u1: (lambda v1: Subtract(v1, 4))(u1), Scanl1(lambda u1, u2: 1, Sort(x1)))",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_9_function_5',\n    inputs_dict={'x1': [[70, 56, 91, 17, 69, 28], [80, 44, 64, 28, 19, 47], [64, 89, 24, 47, 83, 42]]},\n    outputs=[[13, -3, -3, -3, -3, -3], [15, -3, -3, -3, -3, -3], [20, -3, -3, -3, -3, -3]],\n    solution='Map(lambda u1: (lambda v1: Subtract(v1, 4))(u1), Scanl1(lambda u1, u2: 1, Sort(x1)))'\n)"
+        },
+        {
+            "elapsed_time": 32.700897578150034,
+            "num_unique_values": 32255,
+            "num_values_explored": 801910,
+            "solution": "Map(lambda u1: (lambda v1: IntDivide((lambda v1: Multiply(3, v1))(v1), 4))(u1), x1)",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_9_function_9',\n    inputs_dict={'x1': [[90], [26]]},\n    outputs=[[67], [19]],\n    solution='Map(lambda u1: (lambda v1: IntDivide((lambda v1: Multiply(3, v1))(v1), 4))(u1), x1)'\n)"
+        },
+        {
+            "elapsed_time": 418.36358428001404,
+            "num_unique_values": 330170,
+            "num_values_explored": 16565027,
+            "solution": "Scanl1(lambda u1, u2: Subtract(IntDivide(Last(x1), Head(x2)), 2), x1)",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_9_function_3',\n    inputs_dict={'x1': [[38, 33, 0, -48], [-17, -46, 28, 12, -41]], 'x2': [[2, 9], [9, 3, 3, 5, 8]]},\n    outputs=[[38, -26, -26, -26], [-17, -7, -7, -7, -7]],\n    solution='Scanl1(lambda u1, u2: Subtract(IntDivide(Last(x1), Head(x2)), 2), x1)'\n)"
+        },
+        {
+            "elapsed_time": 600.032651765272,
+            "num_unique_values": 496703,
+            "num_values_explored": 18943289,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_9_function_4',\n    inputs_dict={'x1': [[48], [-3, 14, 19, 45, 9], [8, 9, 15, 17, 4], [15, 38], [33, 20, 26]], 'x2': [29, 8, 42, 30, 30]},\n    outputs=[48, 2, 125, 42, 87],\n    solution='Sum(Take(Minimum(x1), Scanl1(lambda u1, u2: Subtract(x2, 3), x1)))'\n)"
+        },
+        {
+            "elapsed_time": 600.039152354002,
+            "num_unique_values": 837292,
+            "num_values_explored": 20082559,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_9_function_6',\n    inputs_dict={'x1': [[0], [2, 8], [8, 6, 2], [3, 2], [9]], 'x2': [[20, -40, -47, 50, 13, 25, 43, -48, 42], [11, 43, -11, -6, -13, -13, -15], [-25, 46, 4, 43, -43, 0], [47, 33, -4, 25, 46, -46, -14, -10, -16, 4], [-2, 43, 50, -37, -14, -38, -46, -26]]},\n    outputs=[[6], [86, 86], [92, 92, 92], [66, 66], [86]],\n    solution='Map(lambda u1: Multiply(2, Max(3, Access(1, x2))), x1)'\n)"
+        },
+        {
+            "elapsed_time": 304.8365796264261,
+            "num_unique_values": 254641,
+            "num_values_explored": 7357880,
+            "solution": "Subtract(IntDivide(x1, Subtract(x1, Multiply(3, Square(4)))), 2)",
+            "solution_weight": 10,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_10_function_2',\n    inputs_dict={'x1': [34, 165, 79, 52]},\n    outputs=[-5, -1, 0, 11],\n    solution='Subtract(IntDivide(x1, Subtract(x1, Multiply(3, Square(4)))), 2)'\n)"
+        },
+        {
+            "elapsed_time": 600.0356739759445,
+            "num_unique_values": 483019,
+            "num_values_explored": 22200513,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_9_function_8',\n    inputs_dict={'x1': [[7], [10, 8, 1, 3, 6], [6, 6], [5, 8, 10]], 'x2': [[-37, 49], [25, 156], [-106, 83], [-179, -100]], 'x3': [140, 26, -226, -196]},\n    outputs=[[143], [29, 156], [-106, 83], [-179, -100]],\n    solution='ZipWith(lambda u1, u2: (lambda v1: Max(v1, Add(x3, 3)))(u2), x1, x2)'\n)"
+        },
+        {
+            "elapsed_time": 453.0140957273543,
+            "num_unique_values": 425233,
+            "num_values_explored": 16193125,
+            "solution": "Sort(Scanl1(lambda u1, u2: (lambda v1: IntDivide(4, (lambda v1: Max(2, v1))(v1)))(u2), x1))",
+            "solution_weight": 10,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_10_function_1',\n    inputs_dict={'x1': [[-1, -1, 4], [2, 4, 8], [-1, 6, 9]]},\n    outputs=[[-1, 1, 2], [0, 1, 2], [-1, 0, 0]],\n    solution='Sort(Scanl1(lambda u1, u2: (lambda v1: IntDivide(4, (lambda v1: Max(2, v1))(v1)))(u2), x1))'\n)"
+        },
+        {
+            "elapsed_time": 600.0373281911016,
+            "num_unique_values": 682605,
+            "num_values_explored": 24752652,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_10_function_0',\n    inputs_dict={'x1': [178, 95, -7, 63], 'x2': [[28, 32, 37], [-42, -34, -13, 42, 47], [-42, -21, 10, 35], [5, 25]], 'x3': [[3, 126, 134, 140, 171, 178, 228], [2, 13, 35, 93, 185, 220], [45, 62, 81, 89], [60, 116, 149, 214]]},\n    outputs=[71, 47, 32, 47],\n    solution='IntDivide(Add(Last(x2), Max(x1, Access(1, x3))), 3)'\n)"
+        },
+        {
+            "elapsed_time": 145.45668327622116,
+            "num_unique_values": 177725,
+            "num_values_explored": 3267512,
+            "solution": "Map(lambda u1: (lambda v1: Subtract(2, (lambda v1: Square((lambda v1: Square(v1))(v1)))(v1)))(u1), x1)",
+            "solution_weight": 10,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_10_function_6',\n    inputs_dict={'x1': [[1], [-4], [-1]]},\n    outputs=[[1], [-254], [1]],\n    solution='Map(lambda u1: (lambda v1: Subtract(2, (lambda v1: Square((lambda v1: Square(v1))(v1)))(v1)))(u1), x1)'\n)"
+        },
+        {
+            "elapsed_time": 264.22321604192257,
+            "num_unique_values": 303767,
+            "num_values_explored": 7877411,
+            "solution": "Scanl1(lambda u1, u2: 0, Map(lambda u1: (lambda v1: Subtract(4, v1))(u1), Drop(1, x1)))",
+            "solution_weight": 10,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_10_function_9',\n    inputs_dict={'x1': [[-10, -6, -5, -4, -2, 6], [-10, -9, -7, -7, -5, -2]]},\n    outputs=[[10, 0, 0, 0, 0], [13, 0, 0, 0, 0]],\n    solution='Map(lambda u1: (lambda v1: Subtract(4, v1))(u1), Scanl1(lambda u1, u2: 4, Drop(1, x1)))'\n)"
+        },
+        {
+            "elapsed_time": 600.0401027426124,
+            "num_unique_values": 307872,
+            "num_values_explored": 16680968,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_10_function_3',\n    inputs_dict={'x1': [[2, 0, 9], [-8, -5, -7]]},\n    outputs=[[4, 100, 100], [64, 0, 0]],\n    solution='Map(lambda u1: (lambda v1: Square(v1))(u1), Scanl1(lambda u1, u2: Sum(Scanl1(lambda u1, u2: 4, x1)), x1))'\n)"
+        },
+        {
+            "elapsed_time": 600.0445920582861,
+            "num_unique_values": 313951,
+            "num_values_explored": 15603313,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_10_function_4',\n    inputs_dict={'x1': [[0, 1, 0, 1, 0, 1, 1], [0, 1, 0, 0], [1, 0, 1, 0], [0, 0, 0, 1, 1, 0, 1], [1, 0, 1, 0, 1]], 'x2': [[0, 0, 1, 0, 0, 1, 0], [0, 0, 0, 1], [1, 1, 1, 0], [0, 0, 1, 1, 0, 1, 0], [0, 1, 0, 1, 1]], 'x3': [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]},\n    outputs=[[4, 4], [9, 9], [1, 1], [9, 9], [9, 9]],\n    solution='Map(lambda u1: Square(Count(lambda u1: (lambda v1: Equal(v1, Last(x1)))(u1), x2)), x3)'\n)"
+        },
+        {
+            "elapsed_time": 560.3853064570576,
+            "num_unique_values": 250394,
+            "num_values_explored": 14390321,
+            "solution": "Scanl1(lambda u1, u2: Last(x2), Map(lambda u1: Add(-1, -1), Take(3, x1)))",
+            "solution_weight": 10,
+            "success": true,
+            "task": "Task(\n    name='synthetic:weight_10_function_5',\n    inputs_dict={'x1': [[0, 1, 0], [1, 0, 0, 1]], 'x2': [[0, 1, 1], [1, 1, 0, 0]]},\n    outputs=[[-2, 1, 1], [-2, 0, 0]],\n    solution='Take(3, Scanl1(lambda u1, u2: Last(x2), Map(lambda u1: Add(-1, -1), x1)))'\n)"
+        },
+        {
+            "elapsed_time": 600.0459773465991,
+            "num_unique_values": 596840,
+            "num_values_explored": 18188721,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_10_function_7',\n    inputs_dict={'x1': [[1, 4, 3, 5, -1], [4, -1, 0, 2], [3, 0, 4, -1], [-1, 5, 2, 1], [4, 5, 0]], 'x2': [3, -1, 1, -1, 2], 'x3': [[-1, 4, 1, 0, 2], [3, 1, 2, -1], [4, 1, 2, 0], [2, 0, 3, 1], [2, 1, 3]]},\n    outputs=[9, -2, 2, -7, 2],\n    solution='Add(x2, Sum(Map(lambda u1: (lambda v1: IntDivide(v1, Head(x1)))(u1), x3)))'\n)"
+        },
+        {
+            "elapsed_time": 600.0424336735159,
+            "num_unique_values": 313840,
+            "num_values_explored": 18329544,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_10_function_8',\n    inputs_dict={'x1': [95, -121, 170, 179], 'x2': [[1, 1], [1, 1], [1, 1], [1, 1]], 'x3': [[-159, -150, -87, -180], [-182], [-188, -200, -70, -93], [-7, -186, -119, -169, -193, -187, -166, -135, -80]]},\n    outputs=[[1, -1], [-121, -1], [1, -1], [1, -26]],\n    solution='Scanl1(lambda u1, u2: (lambda v1: IntDivide(v1, Head(x3)))(u2), Sort(Scanl1(lambda u1, u2: x1, x2)))'\n)"
+        },
+        {
+            "elapsed_time": 600.0455663632601,
+            "num_unique_values": 529585,
+            "num_values_explored": 18814378,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_11_function_0',\n    inputs_dict={'x1': [3, 3, 5], 'x2': [[2, 3, 3, 5, 8, 8, 9], [1, 1, 3, 3, 5, 5, 7, 8, 8, 8], [2, 3, 4, 5, 6, 6, 6, 8, 9]]},\n    outputs=[-22, -60, -78],\n    solution='Add(3, IntDivide(Sum(Scanl1(lambda u1, u2: (lambda v1: Subtract(v1, x1))(u1), x2)), 2))'\n)"
+        },
+        {
+            "elapsed_time": 600.0444947760552,
+            "num_unique_values": 714403,
+            "num_values_explored": 19096476,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_11_function_1',\n    inputs_dict={'x1': [19, 10, 16, 7], 'x2': [36, 43, 13, 21]},\n    outputs=[1, -46, 0, -21],\n    solution='If(IsEven(x2), 1, Subtract(x1, Multiply(4, IntDivide(x2, 3))))'\n)"
+        },
+        {
+            "elapsed_time": 600.0432689692825,
+            "num_unique_values": 516561,
+            "num_values_explored": 19027524,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_11_function_2',\n    inputs_dict={'x1': [[-1, 0], [-1, -1, 1, 0, 0], [1, 0, 0, 1, 1, 0, -1, 1], [-1, 1, 1, 0], [-1, 0, 0, -1, -1, 0]]},\n    outputs=[0, -16, 2, 0, -48],\n    solution='Min(2, Sum(Drop(4, Scanl1(lambda u1, u2: (lambda v1: Add(v1, v1))(u1), x1))))'\n)"
+        },
+        {
+            "elapsed_time": 600.048194848001,
+            "num_unique_values": 446263,
+            "num_values_explored": 16777879,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_11_function_3',\n    inputs_dict={'x1': [[1, 1], [2, 2], [1, 0], [0, 1]], 'x2': [2, 0, 2, 0]},\n    outputs=[-36, 0, -9, -1],\n    solution='Subtract(0, Square(Add(x2, Square(Count(lambda u1: (lambda v1: IsOdd(v1))(u1), x1)))))'\n)"
+        },
+        {
+            "elapsed_time": 600.0423029512167,
+            "num_unique_values": 421060,
+            "num_values_explored": 19023068,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_11_function_4',\n    inputs_dict={'x1': [2, 0, 4]},\n    outputs=[-20, 16, -164],\n    solution='Multiply(4, Subtract(4, Multiply(Square(3), IntDivide(Square(x1), 3))))'\n)"
+        },
+        {
+            "elapsed_time": 600.0418035518378,
+            "num_unique_values": 420473,
+            "num_values_explored": 15202216,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_11_function_5',\n    inputs_dict={'x1': [[193, 228, 228, 215, 143], [229, 116, 186], [232, 243, 244, 186]], 'x2': [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]},\n    outputs=[[51], [], [51]],\n    solution='Drop(3, ZipWith(lambda u1, u2: Add(2, Square(Add(3, 4))), x1, x2))'\n)"
+        },
+        {
+            "elapsed_time": 600.0442214813083,
+            "num_unique_values": 403433,
+            "num_values_explored": 18165879,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_11_function_6',\n    inputs_dict={'x1': [[-117], [-166], [-99, -202, -90, -14], [-221, -222, -241, -193, -213], [-248]]},\n    outputs=[[], [-166], [-13, -25, -50, -99], [], [-248]],\n    solution='Reverse(Filter(lambda u1: IsEven(Last(x1)), Scanl1(lambda u1, u2: (lambda v1: IntDivide(v1, 2))(u1), x1)))'\n)"
+        },
+        {
+            "elapsed_time": 600.0500644203275,
+            "num_unique_values": 650355,
+            "num_values_explored": 20327139,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_11_function_7',\n    inputs_dict={'x1': [[-20, 63], [0, -42], [93, 45], [-41, -94], [-9, 35]]},\n    outputs=[63, -3, 138, -3, 33],\n    solution='Multiply(3, IntDivide(Max(-1, Max(Last(x1), Sum(x1))), 3))'\n)"
+        },
+        {
+            "elapsed_time": 600.0429530143738,
+            "num_unique_values": 809725,
+            "num_values_explored": 14075788,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_11_function_8',\n    inputs_dict={'x1': [[8], [0, 2]]},\n    outputs=[-13, 196],\n    solution='IntDivide(Square(Subtract(Square(4), Last(x1))), Subtract(3, Last(x1)))'\n)"
+        },
+        {
+            "elapsed_time": 600.0469611156732,
+            "num_unique_values": 428342,
+            "num_values_explored": 18021304,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_11_function_9',\n    inputs_dict={'x1': [[-95], [-99, -47, -202, -131, -161, 180, 216, -193], [184, 117, -154, 4, 41, 15], [246, 129, 14, 78, 256, -95, -74]]},\n    outputs=[[-95], [-99, 19], [184, 187], [246, 249]],\n    solution='Take(2, Scanl1(lambda u1, u2: Add(3, Max(Square(4), Head(x1))), x1))'\n)"
+        },
+        {
+            "elapsed_time": 600.0445338562131,
+            "num_unique_values": 1216962,
+            "num_values_explored": 9621976,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_12_function_0',\n    inputs_dict={'x1': [[204], [31]]},\n    outputs=[[212], [4]],\n    solution='Map(lambda u1: (lambda v1: IntDivide((lambda v1: Square(v1))(v1), Square(Subtract(2, Square(4)))))(u1), x1)'\n)"
+        },
+        {
+            "elapsed_time": 600.0470447260886,
+            "num_unique_values": 1019515,
+            "num_values_explored": 11123144,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_12_function_1',\n    inputs_dict={'x1': [[0], [0, 1]]},\n    outputs=[[144], [72, 144]],\n    solution='Reverse(Scanl1(lambda u1, u2: (lambda v1: IntDivide(v1, 2))(u1), Map(lambda u1: Square(Multiply(3, 4)), x1)))'\n)"
+        },
+        {
+            "elapsed_time": 600.0439506955445,
+            "num_unique_values": 984607,
+            "num_values_explored": 11418267,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_12_function_2',\n    inputs_dict={'x1': [1, 0]},\n    outputs=[-177, -118],\n    solution='Multiply(Add(x1, 2), Add(1, Subtract(4, Multiply(4, Square(4)))))'\n)"
+        },
+        {
+            "elapsed_time": 600.0458169747144,
+            "num_unique_values": 1105445,
+            "num_values_explored": 11782523,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_12_function_3',\n    inputs_dict={'x1': [96, 79]},\n    outputs=[-11, 156],\n    solution='Subtract(If(IsOdd(x1), Add(x1, x1), Subtract(0, Square(3))), 2)'\n)"
+        },
+        {
+            "elapsed_time": 600.0529856216162,
+            "num_unique_values": 1435707,
+            "num_values_explored": 10332320,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_12_function_4',\n    inputs_dict={'x1': [158, 232], 'x2': [0, 0]},\n    outputs=[-4, 237],\n    solution='Subtract(If(IsEven(IntDivide(x1, 3)), x2, Add(x1, Square(3))), 4)'\n)"
+        },
+        {
+            "elapsed_time": 600.0459288991988,
+            "num_unique_values": 884830,
+            "num_values_explored": 10643301,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_12_function_5',\n    inputs_dict={'x1': [115, 177], 'x2': [0, 0]},\n    outputs=[-16, -196],\n    solution='Subtract(x2, Square(Add(Square(4), IntDivide(x1, Subtract(3, Square(3))))))'\n)"
+        },
+        {
+            "elapsed_time": 600.0586129892617,
+            "num_unique_values": 915527,
+            "num_values_explored": 10672089,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_12_function_6',\n    inputs_dict={'x1': [158, 232], 'x2': [0, 0]},\n    outputs=[16, -218],\n    solution='Subtract(Square(4), If(IsEven(IntDivide(x1, 3)), x2, Add(x1, 2)))'\n)"
+        },
+        {
+            "elapsed_time": 600.0603264756501,
+            "num_unique_values": 1233220,
+            "num_values_explored": 10460917,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_12_function_7',\n    inputs_dict={'x1': [115, 177], 'x2': [0, 0]},\n    outputs=[-138, -196],\n    solution='Subtract(x2, Add(x1, IntDivide(x1, Subtract(IntDivide(x1, Square(4)), 2))))'\n)"
+        },
+        {
+            "elapsed_time": 600.0549678914249,
+            "num_unique_values": 1313128,
+            "num_values_explored": 9713101,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_12_function_8',\n    inputs_dict={'x1': [[1], [0]]},\n    outputs=[[-225], [-256]],\n    solution='Map(lambda u1: (lambda v1: Subtract(0, (lambda v1: Square((lambda v1: Subtract(v1, Square(4)))(v1)))(v1)))(u1), x1)'\n)"
+        },
+        {
+            "elapsed_time": 600.0594103522599,
+            "num_unique_values": 1071587,
+            "num_values_explored": 11345913,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='synthetic:weight_12_function_9',\n    inputs_dict={'x1': [67, 33, 99]},\n    outputs=[137, 115, 201],\n    solution='Add(3, Multiply(2, Max(x1, Multiply(4, Subtract(Square(4), 2)))))'\n)"
+        }
+    ],
+    "success_rate": 0.72
+}

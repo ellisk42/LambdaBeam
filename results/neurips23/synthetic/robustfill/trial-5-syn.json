@@ -1,0 +1,702 @@
+[
+    {
+        "name": "synthetic:weight_3_function_0",
+        "success": true,
+        "solution": "Map ( lambda u1 : 1 , x1 )",
+        "num_attempts": 3,
+        "elapsed_time": 2.3003890991210936
+    },
+    {
+        "name": "synthetic:weight_3_function_1",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : x2 , x1 )",
+        "num_attempts": 2545,
+        "elapsed_time": 2.630085754394531
+    },
+    {
+        "name": "synthetic:weight_3_function_2",
+        "success": true,
+        "solution": "Last ( Scanl1 ( lambda u1 , u2 : ( lambda v1 : Subtract ( -1 , v1 ) ) ( u1 ) , Reverse ( Take ( 3 , x1 ) ) ) )",
+        "num_attempts": 13129,
+        "elapsed_time": 4.002827453613281
+    },
+    {
+        "name": "synthetic:weight_3_function_3",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : ( lambda v1 : Min ( v1 , Maximum ( x1 ) ) ) ( u2 ) , Drop ( 4 , x1 ) )",
+        "num_attempts": 4034,
+        "elapsed_time": 2.8232086181640623
+    },
+    {
+        "name": "synthetic:weight_3_function_4",
+        "success": true,
+        "solution": "Drop ( -1 , Take ( x2 , Scanl1 ( lambda u1 , u2 : ( lambda v1 : IntDivide ( v1 , 2 ) ) ( u1 ) , x1 ) ) )",
+        "num_attempts": 40,
+        "elapsed_time": 2.30518798828125
+    },
+    {
+        "name": "synthetic:weight_3_function_5",
+        "success": true,
+        "solution": "Drop ( 1 , Scanl1 ( lambda u1 , u2 : ( lambda v1 : Multiply ( x1 , v1 ) ) ( u2 ) , x2 ) )",
+        "num_attempts": 35,
+        "elapsed_time": 2.3045394897460936
+    },
+    {
+        "name": "synthetic:weight_3_function_6",
+        "success": true,
+        "solution": "Drop ( Access ( 1 , x1 ) , Scanl1 ( lambda u1 , u2 : ( lambda v1 : Max ( 1 , v1 ) ) ( u2 ) , x1 ) )",
+        "num_attempts": 716,
+        "elapsed_time": 2.392864990234375
+    },
+    {
+        "name": "synthetic:weight_3_function_7",
+        "success": true,
+        "solution": "Reverse ( Take ( 2 , Scanl1 ( lambda u1 , u2 : ( lambda v1 : Square ( v1 ) ) ( u2 ) , Reverse ( x1 ) ) ) )",
+        "num_attempts": 223,
+        "elapsed_time": 2.3289230346679686
+    },
+    {
+        "name": "synthetic:weight_3_function_8",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : ( lambda v1 : IntDivide ( v1 , 3 ) ) ( u2 ) , Sort ( Scanl1 ( lambda u1 , u2 : Square ( 3 ) , x1 ) ) )",
+        "num_attempts": 741,
+        "elapsed_time": 2.396107482910156
+    },
+    {
+        "name": "synthetic:weight_3_function_9",
+        "success": true,
+        "solution": "Access ( x1 , x2 )",
+        "num_attempts": 9856,
+        "elapsed_time": 3.5783203125
+    },
+    {
+        "name": "synthetic:weight_4_function_0",
+        "success": true,
+        "solution": "Sum ( Map ( lambda u1 : ( lambda v1 : IntDivide ( v1 , Multiply ( x1 , 3 ) ) ) ( u1 ) , x2 ) )",
+        "num_attempts": 504,
+        "elapsed_time": 2.36536865234375
+    },
+    {
+        "name": "synthetic:weight_4_function_1",
+        "success": true,
+        "solution": "Add ( Square ( 4 ) , Multiply ( Square ( 3 ) , IntDivide ( x1 , Square ( 4 ) ) ) )",
+        "num_attempts": 1849,
+        "elapsed_time": 2.539814758300781
+    },
+    {
+        "name": "synthetic:weight_4_function_2",
+        "success": true,
+        "solution": "If ( IsOdd ( Minimum ( x1 ) ) , 4 , Multiply ( 2 , 4 ) )",
+        "num_attempts": 4925,
+        "elapsed_time": 2.938771057128906
+    },
+    {
+        "name": "synthetic:weight_4_function_3",
+        "success": true,
+        "solution": "Square ( Subtract ( 3 , Count ( lambda u1 : ( lambda v1 : IsOdd ( v1 ) ) ( u1 ) , x1 ) ) )",
+        "num_attempts": 37,
+        "elapsed_time": 2.304798889160156
+    },
+    {
+        "name": "synthetic:weight_4_function_4",
+        "success": true,
+        "solution": "Take ( 2 , Scanl1 ( lambda u1 , u2 : ( lambda v1 : Min ( v1 , Minimum ( x1 ) ) ) ( u2 ) , x2 ) )",
+        "num_attempts": 4948,
+        "elapsed_time": 2.941754150390625
+    },
+    {
+        "name": "synthetic:weight_4_function_5",
+        "success": true,
+        "solution": "Subtract ( 2 , Sum ( Map ( lambda u1 : ( lambda v1 : Min ( v1 , Square ( 4 ) ) ) ( u1 ) , x1 ) ) )",
+        "num_attempts": 3850,
+        "elapsed_time": 2.7993438720703123
+    },
+    {
+        "name": "synthetic:weight_4_function_6",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : Sum ( Scanl1 ( lambda u1 , u2 : ( lambda v1 : Min ( -1 , v1 ) ) ( u2 ) , x2 ) ) , x1 )",
+        "num_attempts": 533,
+        "elapsed_time": 2.369129943847656
+    },
+    {
+        "name": "synthetic:weight_4_function_7",
+        "success": true,
+        "solution": "Take ( -1 , Scanl1 ( lambda u1 , u2 : ( lambda v1 : Max ( 4 , v1 ) ) ( u2 ) , Sort ( x1 ) ) )",
+        "num_attempts": 1187,
+        "elapsed_time": 2.4539535522460936
+    },
+    {
+        "name": "synthetic:weight_4_function_8",
+        "success": true,
+        "solution": "Sum ( Filter ( lambda u1 : ( lambda v1 : IsOdd ( ( lambda v1 : IntDivide ( v1 , x1 ) ) ( v1 ) ) ) ( u1 ) , x2 ) )",
+        "num_attempts": 434,
+        "elapsed_time": 2.3562896728515623
+    },
+    {
+        "name": "synthetic:weight_4_function_9",
+        "success": true,
+        "solution": "Map ( lambda u1 : Square ( Last ( x1 ) ) , Filter ( lambda u1 : ( lambda v1 : IsEven ( v1 ) ) ( u1 ) , x2 ) )",
+        "num_attempts": 5,
+        "elapsed_time": 2.300648498535156
+    },
+    {
+        "name": "synthetic:weight_5_function_0",
+        "success": true,
+        "solution": "ZipWith ( lambda u1 , u2 : ( lambda v1 : Subtract ( Sum ( x2 ) , v1 ) ) ( u2 ) , x1 , Sort ( x2 ) )",
+        "num_attempts": 1046,
+        "elapsed_time": 2.4356658935546873
+    },
+    {
+        "name": "synthetic:weight_5_function_1",
+        "success": true,
+        "solution": "Max ( 2 , Last ( Scanl1 ( lambda u1 , u2 : ( lambda v1 : IntDivide ( Sum ( x1 ) , v1 ) ) ( u1 ) , x2 ) ) )",
+        "num_attempts": 4568,
+        "elapsed_time": 2.89246826171875
+    },
+    {
+        "name": "synthetic:weight_5_function_2",
+        "success": true,
+        "solution": "IntDivide ( Square ( 4 ) , Minimum ( x1 ) )",
+        "num_attempts": 10493,
+        "elapsed_time": 3.660939025878906
+    },
+    {
+        "name": "synthetic:weight_5_function_3",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : Square ( Minimum ( x1 ) ) , Sort ( Scanl1 ( lambda u1 , u2 : Square ( 4 ) , x2 ) ) )",
+        "num_attempts": 2756,
+        "elapsed_time": 2.657452392578125
+    },
+    {
+        "name": "synthetic:weight_5_function_4",
+        "success": true,
+        "solution": "Map ( lambda u1 : ( lambda v1 : If ( IsOdd ( x1 ) , 2 , v1 ) ) ( u1 ) , Scanl1 ( lambda u1 , u2 : 0 , x2 ) )",
+        "num_attempts": 12,
+        "elapsed_time": 2.301556396484375
+    },
+    {
+        "name": "synthetic:weight_5_function_5",
+        "success": true,
+        "solution": "Drop ( IntDivide ( x1 , x3 ) , Scanl1 ( lambda u1 , u2 : ( lambda v1 : Min ( -1 , v1 ) ) ( u2 ) , x2 ) )",
+        "num_attempts": 5620,
+        "elapsed_time": 3.028912353515625
+    },
+    {
+        "name": "synthetic:weight_5_function_6",
+        "success": true,
+        "solution": "Last ( Map ( lambda u1 : ( lambda v1 : Subtract ( Last ( x2 ) , v1 ) ) ( u1 ) , x1 ) )",
+        "num_attempts": 27032,
+        "elapsed_time": 5.80604248046875
+    },
+    {
+        "name": "synthetic:weight_5_function_7",
+        "success": true,
+        "solution": "Subtract ( 4 , IntDivide ( x1 , 4 ) )",
+        "num_attempts": 669,
+        "elapsed_time": 2.386769104003906
+    },
+    {
+        "name": "synthetic:weight_5_function_8",
+        "success": true,
+        "solution": "Take ( 3 , Filter ( lambda u1 : ( lambda v1 : IsOdd ( v1 ) ) ( u1 ) , x1 ) )",
+        "num_attempts": 4194,
+        "elapsed_time": 2.8439605712890623
+    },
+    {
+        "name": "synthetic:weight_5_function_9",
+        "success": true,
+        "solution": "Subtract ( Last ( x2 ) , Square ( x1 ) )",
+        "num_attempts": 15579,
+        "elapsed_time": 4.320591735839844
+    },
+    {
+        "name": "synthetic:weight_6_function_0",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : ( lambda v1 : Subtract ( v1 , Last ( x1 ) ) ) ( u2 ) , Sort ( Scanl1 ( lambda u1 , u2 : 0 , x2 ) ) )",
+        "num_attempts": 5656,
+        "elapsed_time": 3.03358154296875
+    },
+    {
+        "name": "synthetic:weight_6_function_1",
+        "success": true,
+        "solution": "Multiply ( Square ( 4 ) , Add ( x1 , 3 ) )",
+        "num_attempts": 4,
+        "elapsed_time": 2.300518798828125
+    },
+    {
+        "name": "synthetic:weight_6_function_2",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : ( lambda v1 : Subtract ( ( lambda v1 : Max ( 0 , v1 ) ) ( v1 ) , x2 ) ) ( u2 ) , x1 )",
+        "num_attempts": 579,
+        "elapsed_time": 2.3750961303710936
+    },
+    {
+        "name": "synthetic:weight_6_function_3",
+        "success": true,
+        "solution": "Square ( Subtract ( Last ( x2 ) , Count ( lambda u1 : IsEven ( Sum ( x1 ) ) , x1 ) ) )",
+        "num_attempts": 6549,
+        "elapsed_time": 3.149403381347656
+    },
+    {
+        "name": "synthetic:weight_6_function_4",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : ( lambda v1 : IntDivide ( v1 , 3 ) ) ( u1 ) , Sort ( Scanl1 ( lambda u1 , u2 : Sum ( x1 ) , x1 ) ) )",
+        "num_attempts": 130,
+        "elapsed_time": 2.3168609619140623
+    },
+    {
+        "name": "synthetic:weight_6_function_5",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : ( lambda v1 : Subtract ( Subtract ( Head ( x1 ) , 2 ) , v1 ) ) ( u2 ) , x1 )",
+        "num_attempts": 493,
+        "elapsed_time": 2.363941955566406
+    },
+    {
+        "name": "synthetic:weight_6_function_6",
+        "success": true,
+        "solution": "Map ( lambda u1 : ( lambda v1 : Min ( x2 , v1 ) ) ( u1 ) , Scanl1 ( lambda u1 , u2 : Sum ( x1 ) , x1 ) )",
+        "num_attempts": 7997,
+        "elapsed_time": 3.337208557128906
+    },
+    {
+        "name": "synthetic:weight_6_function_7",
+        "success": true,
+        "solution": "Subtract ( If ( IsOdd ( x1 ) , x1 , x3 ) , Sum ( x2 ) )",
+        "num_attempts": 30561,
+        "elapsed_time": 6.263752746582031
+    },
+    {
+        "name": "synthetic:weight_6_function_8",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : ( lambda v1 : IntDivide ( v1 , 2 ) ) ( u1 ) , Sort ( Scanl1 ( lambda u1 , u2 : 3 , x1 ) ) )",
+        "num_attempts": 979,
+        "elapsed_time": 2.4269760131835936
+    },
+    {
+        "name": "synthetic:weight_6_function_9",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : ( lambda v1 : Subtract ( 4 , v1 ) ) ( u1 ) , Map ( lambda u1 : Head ( x1 ) , x1 ) )",
+        "num_attempts": 316,
+        "elapsed_time": 2.340985107421875
+    },
+    {
+        "name": "synthetic:weight_7_function_0",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_7_function_1",
+        "success": true,
+        "solution": "Map ( lambda u1 : IntDivide ( Subtract ( x2 , 3 ) , 4 ) , x1 )",
+        "num_attempts": 226,
+        "elapsed_time": 2.3293121337890623
+    },
+    {
+        "name": "synthetic:weight_7_function_2",
+        "success": true,
+        "solution": "ZipWith ( lambda u1 , u2 : ( lambda v1 : Add ( -1 , v1 ) ) ( u2 ) , x2 , Take ( -1 , x1 ) )",
+        "num_attempts": 18046,
+        "elapsed_time": 4.640560913085937
+    },
+    {
+        "name": "synthetic:weight_7_function_3",
+        "success": true,
+        "solution": "Multiply ( 2 , Add ( Head ( x1 ) , Square ( 4 ) ) )",
+        "num_attempts": 1691,
+        "elapsed_time": 2.5193222045898436
+    },
+    {
+        "name": "synthetic:weight_7_function_4",
+        "success": true,
+        "solution": "If ( IsEven ( x1 ) , 0 , Add ( x1 , 3 ) )",
+        "num_attempts": 102,
+        "elapsed_time": 2.3132293701171873
+    },
+    {
+        "name": "synthetic:weight_7_function_5",
+        "success": true,
+        "solution": "ZipWith ( lambda u1 , u2 : ( lambda v1 : Add ( x1 , v1 ) ) ( u1 ) , x2 , x3 )",
+        "num_attempts": 77,
+        "elapsed_time": 2.309986877441406
+    },
+    {
+        "name": "synthetic:weight_7_function_6",
+        "success": true,
+        "solution": "If ( IsEven ( x1 ) , Subtract ( x1 , x2 ) , Subtract ( -1 , Square ( 3 ) ) )",
+        "num_attempts": 20427,
+        "elapsed_time": 4.949375915527344
+    },
+    {
+        "name": "synthetic:weight_7_function_7",
+        "success": true,
+        "solution": "ZipWith ( lambda u1 , u2 : ( lambda v1 : Add ( v1 , Max ( x1 , 4 ) ) ) ( u2 ) , x2 , x3 )",
+        "num_attempts": 35,
+        "elapsed_time": 2.3045394897460936
+    },
+    {
+        "name": "synthetic:weight_7_function_8",
+        "success": true,
+        "solution": "Map ( lambda u1 : IntDivide ( Last ( x2 ) , Minimum ( x1 ) ) , x3 )",
+        "num_attempts": 22544,
+        "elapsed_time": 5.2239501953125
+    },
+    {
+        "name": "synthetic:weight_7_function_9",
+        "success": true,
+        "solution": "Add ( x1 , Add ( 1 , Square ( IntDivide ( Subtract ( x1 , x2 ) , 3 ) ) ) )",
+        "num_attempts": 48629,
+        "elapsed_time": 8.607167053222657
+    },
+    {
+        "name": "synthetic:weight_8_function_0",
+        "success": true,
+        "solution": "Take ( 3 , Scanl1 ( lambda u1 , u2 : ( lambda v1 : IntDivide ( Add ( 4 , Last ( x1 ) ) , v1 ) ) ( u1 ) , x1 ) )",
+        "num_attempts": 1769,
+        "elapsed_time": 2.529438781738281
+    },
+    {
+        "name": "synthetic:weight_8_function_1",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : x3 , Filter ( lambda u1 : ( lambda v1 : Less ( x2 , v1 ) ) ( u1 ) , x1 ) )",
+        "num_attempts": 10,
+        "elapsed_time": 2.3012969970703123
+    },
+    {
+        "name": "synthetic:weight_8_function_2",
+        "success": true,
+        "solution": "Map ( lambda u1 : ( lambda v1 : IntDivide ( v1 , Add ( 3 , 4 ) ) ) ( u1 ) , x1 )",
+        "num_attempts": 2,
+        "elapsed_time": 2.3002593994140623
+    },
+    {
+        "name": "synthetic:weight_8_function_3",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : ( lambda v1 : Subtract ( Add ( x1 , 1 ) , v1 ) ) ( u2 ) , Sort ( x2 ) )",
+        "num_attempts": 478,
+        "elapsed_time": 2.3619964599609373
+    },
+    {
+        "name": "synthetic:weight_8_function_4",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : ( lambda v1 : Min ( v1 , Access ( x2 , x3 ) ) ) ( u2 ) , x1 )",
+        "num_attempts": 2295,
+        "elapsed_time": 2.5976608276367186
+    },
+    {
+        "name": "synthetic:weight_8_function_5",
+        "success": true,
+        "solution": "Map ( lambda u1 : Sum ( x1 ) , Filter ( lambda u1 : ( lambda v1 : IsOdd ( v1 ) ) ( u1 ) , x2 ) )",
+        "num_attempts": 461,
+        "elapsed_time": 2.359791564941406
+    },
+    {
+        "name": "synthetic:weight_8_function_6",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_8_function_7",
+        "success": true,
+        "solution": "Sort ( Map ( lambda u1 : ( lambda v1 : IntDivide ( ( lambda v1 : IntDivide ( v1 , x1 ) ) ( v1 ) , 4 ) ) ( u1 ) , x2 ) )",
+        "num_attempts": 1625,
+        "elapsed_time": 2.510762023925781
+    },
+    {
+        "name": "synthetic:weight_8_function_8",
+        "success": true,
+        "solution": "Subtract ( x1 , Add ( Square ( 3 ) , Square ( Square ( 3 ) ) ) )",
+        "num_attempts": 2028,
+        "elapsed_time": 2.563031005859375
+    },
+    {
+        "name": "synthetic:weight_8_function_9",
+        "success": true,
+        "solution": "Map ( lambda u1 : ( lambda v1 : If ( IsOdd ( x2 ) , v1 , 3 ) ) ( u1 ) , x1 )",
+        "num_attempts": 56,
+        "elapsed_time": 2.30726318359375
+    },
+    {
+        "name": "synthetic:weight_9_function_0",
+        "success": true,
+        "solution": "Subtract ( 3 , Square ( Add ( 2 , IntDivide ( Sum ( x1 ) , Square ( 4 ) ) ) ) )",
+        "num_attempts": 23763,
+        "elapsed_time": 5.382054138183594
+    },
+    {
+        "name": "synthetic:weight_9_function_1",
+        "success": true,
+        "solution": "Reverse ( Map ( lambda u1 : ( lambda v1 : Add ( -1 , v1 ) ) ( u1 ) , Scanl1 ( lambda u1 , u2 : x1 , x2 ) ) )",
+        "num_attempts": 1514,
+        "elapsed_time": 2.4963653564453123
+    },
+    {
+        "name": "synthetic:weight_9_function_2",
+        "success": true,
+        "solution": "Subtract ( IntDivide ( x1 , 3 ) , Add ( 3 , IntDivide ( x1 , 2 ) ) )",
+        "num_attempts": 28308,
+        "elapsed_time": 5.971539306640625
+    },
+    {
+        "name": "synthetic:weight_9_function_3",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_9_function_4",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_9_function_5",
+        "success": true,
+        "solution": "Map ( lambda u1 : ( lambda v1 : Subtract ( v1 , 4 ) ) ( u1 ) , Scanl1 ( lambda u1 , u2 : 1 , Sort ( x1 ) ) )",
+        "num_attempts": 1638,
+        "elapsed_time": 2.5124481201171873
+    },
+    {
+        "name": "synthetic:weight_9_function_6",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_9_function_7",
+        "success": true,
+        "solution": "Map ( lambda u1 : ( lambda v1 : Max ( 0 , ( lambda v1 : Min ( 4 , v1 ) ) ( v1 ) ) ) ( u1 ) , x1 )",
+        "num_attempts": 27881,
+        "elapsed_time": 5.916157531738281
+    },
+    {
+        "name": "synthetic:weight_9_function_8",
+        "success": true,
+        "solution": "ZipWith ( lambda u1 , u2 : ( lambda v1 : Max ( v1 , Add ( x3 , 3 ) ) ) ( u2 ) , x1 , x2 )",
+        "num_attempts": 1198,
+        "elapsed_time": 2.4553802490234373
+    },
+    {
+        "name": "synthetic:weight_9_function_9",
+        "success": true,
+        "solution": "Map ( lambda u1 : ( lambda v1 : IntDivide ( ( lambda v1 : Multiply ( 3 , v1 ) ) ( v1 ) , 4 ) ) ( u1 ) , x1 )",
+        "num_attempts": 135,
+        "elapsed_time": 2.3175094604492186
+    },
+    {
+        "name": "synthetic:weight_10_function_0",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_10_function_1",
+        "success": true,
+        "solution": "Sort ( Scanl1 ( lambda u1 , u2 : ( lambda v1 : IntDivide ( ( lambda v1 : Subtract ( Square ( 3 ) , v1 ) ) ( v1 ) , 4 ) ) ( u2 ) , x1 ) )",
+        "num_attempts": 23947,
+        "elapsed_time": 5.405918884277344
+    },
+    {
+        "name": "synthetic:weight_10_function_2",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_10_function_3",
+        "success": true,
+        "solution": "Map ( lambda u1 : ( lambda v1 : Square ( v1 ) ) ( u1 ) , Scanl1 ( lambda u1 , u2 : Sum ( Scanl1 ( lambda u1 , u2 : 4 , x1 ) ) , x1 ) )",
+        "num_attempts": 24,
+        "elapsed_time": 2.30311279296875
+    },
+    {
+        "name": "synthetic:weight_10_function_4",
+        "success": true,
+        "solution": "Map ( lambda u1 : Square ( Count ( lambda u1 : ( lambda v1 : Equal ( v1 , Last ( x1 ) ) ) ( u1 ) , x2 ) ) , x3 )",
+        "num_attempts": 6097,
+        "elapsed_time": 3.090779113769531
+    },
+    {
+        "name": "synthetic:weight_10_function_5",
+        "success": true,
+        "solution": "Take ( 3 , Scanl1 ( lambda u1 , u2 : Last ( x2 ) , Map ( lambda u1 : Sum ( Scanl1 ( lambda u1 , u2 : -1 , x1 ) ) , x1 ) ) )",
+        "num_attempts": 53469,
+        "elapsed_time": 9.234913635253907
+    },
+    {
+        "name": "synthetic:weight_10_function_6",
+        "success": true,
+        "solution": "Map ( lambda u1 : Subtract ( 2 , Square ( Square ( Sum ( x1 ) ) ) ) , x1 )",
+        "num_attempts": 126,
+        "elapsed_time": 2.3163421630859373
+    },
+    {
+        "name": "synthetic:weight_10_function_7",
+        "success": true,
+        "solution": "Add ( x2 , Sum ( Map ( lambda u1 : ( lambda v1 : IntDivide ( v1 , Head ( x1 ) ) ) ( u1 ) , x3 ) ) )",
+        "num_attempts": 4351,
+        "elapsed_time": 2.8643234252929686
+    },
+    {
+        "name": "synthetic:weight_10_function_8",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : ( lambda v1 : IntDivide ( v1 , Head ( x3 ) ) ) ( u2 ) , Sort ( Scanl1 ( lambda u1 , u2 : x1 , x2 ) ) )",
+        "num_attempts": 1423,
+        "elapsed_time": 2.4845626831054686
+    },
+    {
+        "name": "synthetic:weight_10_function_9",
+        "success": true,
+        "solution": "Scanl1 ( lambda u1 , u2 : 0 , Drop ( 1 , Scanl1 ( lambda u1 , u2 : ( lambda v1 : Subtract ( 4 , v1 ) ) ( u2 ) , x1 ) ) )",
+        "num_attempts": 359,
+        "elapsed_time": 2.3465621948242186
+    },
+    {
+        "name": "synthetic:weight_11_function_0",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_11_function_1",
+        "success": true,
+        "solution": "If ( IsEven ( x2 ) , 1 , Subtract ( x1 , Multiply ( 4 , IntDivide ( x2 , 3 ) ) ) )",
+        "num_attempts": 54947,
+        "elapsed_time": 9.426609802246094
+    },
+    {
+        "name": "synthetic:weight_11_function_2",
+        "success": true,
+        "solution": "Min ( 2 , Sum ( Drop ( 4 , Scanl1 ( lambda u1 , u2 : ( lambda v1 : Multiply ( 2 , v1 ) ) ( u1 ) , x1 ) ) ) )",
+        "num_attempts": 9550,
+        "elapsed_time": 3.5386322021484373
+    },
+    {
+        "name": "synthetic:weight_11_function_3",
+        "success": true,
+        "solution": "Subtract ( 0 , Square ( Add ( x2 , Square ( Count ( lambda u1 : ( lambda v1 : IsOdd ( v1 ) ) ( u1 ) , x1 ) ) ) ) )",
+        "num_attempts": 30131,
+        "elapsed_time": 6.207981872558594
+    },
+    {
+        "name": "synthetic:weight_11_function_4",
+        "success": true,
+        "solution": "Multiply ( 4 , Subtract ( 4 , Multiply ( Square ( 3 ) , IntDivide ( Square ( x1 ) , 3 ) ) ) )",
+        "num_attempts": 7124,
+        "elapsed_time": 3.223980712890625
+    },
+    {
+        "name": "synthetic:weight_11_function_5",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_11_function_6",
+        "success": true,
+        "solution": "Reverse ( Filter ( lambda u1 : IsEven ( Last ( x1 ) ) , Scanl1 ( lambda u1 , u2 : ( lambda v1 : IntDivide ( v1 , 2 ) ) ( u1 ) , x1 ) ) )",
+        "num_attempts": 3864,
+        "elapsed_time": 2.80115966796875
+    },
+    {
+        "name": "synthetic:weight_11_function_7",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_11_function_8",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_11_function_9",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_12_function_0",
+        "success": true,
+        "solution": "Map ( lambda u1 : ( lambda v1 : IntDivide ( ( lambda v1 : Square ( v1 ) ) ( v1 ) , Square ( Subtract ( 2 , Square ( 4 ) ) ) ) ) ( u1 ) , x1 )",
+        "num_attempts": 31186,
+        "elapsed_time": 6.344815063476562
+    },
+    {
+        "name": "synthetic:weight_12_function_1",
+        "success": true,
+        "solution": "Reverse ( Scanl1 ( lambda u1 , u2 : ( lambda v1 : IntDivide ( v1 , 2 ) ) ( u1 ) , Map ( lambda u1 : Square ( Multiply ( 3 , 4 ) ) , x1 ) ) )",
+        "num_attempts": 16655,
+        "elapsed_time": 4.460148620605469
+    },
+    {
+        "name": "synthetic:weight_12_function_2",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_12_function_3",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_12_function_4",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_12_function_5",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_12_function_6",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_12_function_7",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_12_function_8",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    },
+    {
+        "name": "synthetic:weight_12_function_9",
+        "success": false,
+        "solution": null,
+        "num_attempts": 65536,
+        "elapsed_time": 10.8
+    }
+]
