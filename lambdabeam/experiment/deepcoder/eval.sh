@@ -51,4 +51,3 @@ for i in $(seq ${run} ${limit}); do
         $@
 done
 
-#        --config.use_ur=True \
