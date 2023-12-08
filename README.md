@@ -1,7 +1,9 @@
 # LambdaBeam: Neural Program Search with Higher-Order Functions and Lambdas
 
 This repository contains the source code associated with the paper published at
-  NeurIPS'23 ([OpenReview](https://openreview.net/forum?id=qVMPXrX4FR)):
+NeurIPS'23 ([OpenReview](https://openreview.net/forum?id=qVMPXrX4FR),
+[arXiv](https://arxiv.org/abs/2306.02049), [NeurIPS
+video](https://neurips.cc/virtual/2023/poster/70355)):
 
 > Kensen Shi, Hanjun Dai, Wen-Ding Li, Kevin Ellis, and Charles Sutton.
 > **LambdaBeam: Neural Program Search with Higher-Order Functions and Lambdas.**
@@ -23,7 +25,7 @@ To cite this work, you can use the following BibTeX entry:
 ```
 
 This repository was developed as a fork of
-[CrossBeam](https://github.com/google-research/lambdabeam). As a result, some
+[CrossBeam](https://github.com/google-research/crossbeam). As a result, some
 files are carried over without playing a role in the LambdaBeam system.
 
 ## Setup
@@ -66,13 +68,13 @@ random decisions for subsequent tasks.
 ## View the raw results we collected for NeurIPS'23
 
 For reference, the experimental results we collected for the NeurIPS'23 paper
-can be found in `results/neurips23`.
+can be found in the `results/neurips23/` directory.
 
 ## Generate the training dataset
 
 We do not include the training dataset in this repo, but if you wish to
 generate training data, refer to the files `launch_xm_deepcoder_gen.py`,
-`make_shards.py`, and `filter_trained_data.py` in the `lambdabeam/datasets`
+`make_shards.py`, and `filter_trained_data.py` in the `lambdabeam/datasets/`
 directory, although they may need to be edited according to your setup.
 
 ## Train the model
