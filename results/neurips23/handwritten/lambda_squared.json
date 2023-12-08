@@ -1,0 +1,1005 @@
+{
+    "source": "Generated from results/handwritten/lambda_squared.tsv",
+    "results": [
+        {
+            "name": "none:triple_median",
+            "handwritten_solution": "Access(1, Sort(x))",
+            "solution found": "fun a -> access 1 (sort a)",
+            "runtime": "0.05835771561",
+            "inputs_dict": "{'x': [[9, 7, 4], [23, 54, 38], [-6, 5, -7], [5, 8, 13], [-47, -18, -21]]}",
+            "outputs": "[7, 38, -6, 8, -21]",
+            "success": true,
+            "elapsed_time": 0.05835771561
+        },
+        {
+            "name": "map:fill_first",
+            "handwritten_solution": "Map(lambda u1: Head(x), x)",
+            "solution found": "fun a -> scanl1 (fun c b -> c) a",
+            "runtime": "0.06596326828",
+            "inputs_dict": "{'x': [[3, 6, 1, 4, 7], [-26, 27, 51, -14, 31, -17, -32], [73, 67, 48, 27, 97, 85, 37, 68, 21, 84]]}",
+            "outputs": "[[3, 3, 3, 3, 3], [-26, -26, -26, -26, -26, -26, -26], [73, 73, 73, 73, 73, 73, 73, 73, 73, 73]]",
+            "success": true,
+            "elapsed_time": 0.06596326828
+        },
+        {
+            "name": "none:remove_ends",
+            "handwritten_solution": "Take(-1, Drop(1, x))",
+            "solution found": "fun a -> drop 1 (take -1 a)",
+            "runtime": "0.2905051708",
+            "inputs_dict": "{'x': [[4, 2, 5, 6], [6, -4, 4, -7, 1, 0, -2], [42, 68, 38, 22, 87, 17, 83, 29]]}",
+            "outputs": "[[2, 5], [-4, 4, -7, 1, 0], [68, 38, 22, 87, 17, 83]]",
+            "success": true,
+            "elapsed_time": 0.2905051708
+        },
+        {
+            "name": "none:top_k",
+            "handwritten_solution": "Take(k, Reverse(Sort(x)))",
+            "solution found": "fun b a -> take a (reverse (sort b))",
+            "runtime": "0.386739254",
+            "inputs_dict": "{'x': [[4, 1, 2, 6, 3], [8, 9, 3, 5, 2, 7, 8], [12, 63, 21, 59, 32, 55, 68, -99, 48]], 'k': [2, 4, 3]}",
+            "outputs": "[[6, 4], [9, 8, 8, 7], [68, 63, 59]]",
+            "success": true,
+            "elapsed_time": 0.386739254
+        },
+        {
+            "name": "none:drop_last",
+            "handwritten_solution": "Take(Subtract(0, n), x)",
+            "solution found": "fun b a -> reverse (drop a (reverse b))",
+            "runtime": "0.4007220268",
+            "inputs_dict": "{'x': [[5, 3, 2, 1, 6], [4, -11, 5, -6, -5, 7, 8], [13, 48, 28, 37, 85, 43, 23, 54, 42, 17]], 'n': [2, 5, 3]}",
+            "outputs": "[[5, 3, 2], [4, -11], [13, 48, 28, 37, 85, 43, 23]]",
+            "success": true,
+            "elapsed_time": 0.4007220268
+        },
+        {
+            "name": "map:length",
+            "handwritten_solution": "Sum(Map(lambda u1: 1, x))",
+            "solution found": "fun a -> count (fun b -> is_even 0) a",
+            "runtime": "0.4193470478",
+            "inputs_dict": "{'x': [[65, 24], [9, 45, 2, 16, 4, 2, 63], [8, -4, 28, 27, -32, 23, 15, 2, 0], [0], [-1, 3, 1, 2, 4, -2, 6, -4, -8, 3]]}",
+            "outputs": "[2, 7, 9, 1, 10]",
+            "success": true,
+            "elapsed_time": 0.4193470478
+        },
+        {
+            "name": "none:slice",
+            "handwritten_solution": "Drop(i, Take(j, x))",
+            "solution found": "fun c b a -> drop b (take a c)",
+            "runtime": "0.4693548679",
+            "inputs_dict": "{'x': [[6, 7, 2, 8, 1, 3], [24, 63, 74, 12, 33, 42, 19], [-6, 49, -24, 8, 47, 23, 11, -12, -55, 38]], 'i': [3, 2, 5], 'j': [5, 6, 8]}",
+            "outputs": "[[8, 1], [74, 12, 33, 42], [23, 11, -12]]",
+            "success": true,
+            "elapsed_time": 0.4693548679
+        },
+        {
+            "name": "none:range",
+            "handwritten_solution": "Subtract(Maximum(x), Minimum(x))",
+            "solution found": "fun a -> subtract (maximum a) (minimum a)",
+            "runtime": "0.4946587086",
+            "inputs_dict": "{'x': [[16, -14, 5, 22, -7], [43, 58, 13, 29, 67, 38], [4, 5, 3, 4, 8, 3, 6, 5, 6], [26, 24, 28, 27, 28, 29, 24, 22, 26, 25], [42, -35, 48, -57, 42, 13, 58, 62, -32, -49]]}",
+            "outputs": "[36, 54, 5, 7, 119]",
+            "success": true,
+            "elapsed_time": 0.4946587086
+        },
+        {
+            "name": "none:deepcoder_0",
+            "handwritten_solution": "Sum(Take(k, Sort(b)))",
+            "solution found": "fun b a -> sum (take b (sort a))",
+            "runtime": "0.52064538",
+            "inputs_dict": "{'k': [2, 2, 3, 6, 5], 'b': [[3, 5, 4, 7, 5], [12, 56, 31, 23, 49], [8, 3, 4, 12, 5, 2, 4], [9, 7, 5, 4, 12, 6, 2, 6], [9, 0, 12, -4, 3, -7, 39, 5, 1, -3]]}",
+            "outputs": "[7, 35, 9, 30, -13]",
+            "success": true,
+            "elapsed_time": 0.52064538
+        },
+        {
+            "name": "none:kth_largest",
+            "handwritten_solution": "Access(k, Reverse(Sort(x)))",
+            "solution found": "fun b a -> access a (reverse (sort b))",
+            "runtime": "0.7845726013",
+            "inputs_dict": "{'x': [[5, 9, 4], [7, 8, 6, 2], [18, 38, 24, 74, 37, 87, 64], [-5, 0, -4, 4, 7, -5, 7, -5, 6], [2, -10, 0, -3, -5, 7, 9, -8, 7, 4]], 'k': [0, 2, 4, 3, 7]}",
+            "outputs": "[9, 6, 37, 4, -5]",
+            "success": true,
+            "elapsed_time": 0.7845726013
+        },
+        {
+            "name": "map:sort_square",
+            "handwritten_solution": "Sort(Map(lambda u1: Square(u1), x))",
+            "solution found": "fun a -> sort (map (fun b -> square b) a)",
+            "runtime": "1.302462101",
+            "inputs_dict": "{'x': [[3, 4, 5], [2, 6, -3], [3, 1, -1, 6, 0, 3, 2, 7, -5]]}",
+            "outputs": "[[9, 16, 25], [4, 9, 36], [0, 1, 1, 4, 9, 9, 25, 36, 49]]",
+            "success": true,
+            "elapsed_time": 1.302462101
+        },
+        {
+            "name": "scanl1:follow_cycle",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Access(u1, x), x)",
+            "solution found": "fun a -> scanl1 (fun c b -> access c a) a",
+            "runtime": "1.503483772",
+            "inputs_dict": "{'x': [[4, 0, 2, 3, 1], [3, 5, 0, 1, 6, 4, 2], [8, 4, 7, 5, 6, 0, 9, 1, 3, 2]]}",
+            "outputs": "[[4, 1, 0, 4, 1], [3, 1, 5, 4, 6, 2, 0], [8, 3, 5, 0, 8, 3, 5, 0, 8, 3]]",
+            "success": true,
+            "elapsed_time": 1.503483772
+        },
+        {
+            "name": "filter:sort_even",
+            "handwritten_solution": "Filter(lambda u1: IsEven(u1), Sort(x))",
+            "solution found": "fun a -> filter (fun b -> is_even b) (sort a)",
+            "runtime": "1.91999197",
+            "inputs_dict": "{'x': [[7, 6, 2, 5, 8, 0, 5], [52, 35, 68, 37, 41, 22, 64, 57, 26], [16, -24, 28, -29, -12, -17, 23, 58, 21, -14]]}",
+            "outputs": "[[0, 2, 6, 8], [22, 26, 52, 64, 68], [-24, -14, -12, 16, 28, 58]]",
+            "success": true,
+            "elapsed_time": 1.91999197
+        },
+        {
+            "name": "scanl1:running_max",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Max(u1, u2), x)",
+            "solution found": "fun a -> scanl1 (fun c b -> max c b) a",
+            "runtime": "1.947439432",
+            "inputs_dict": "{'x': [[1, 6, 3, 20], [4, 2, 6, 3, 1, 7, 3, 9], [-6, -5, -2, 0, -1, 3, 3, 2, 5, 4]]}",
+            "outputs": "[[1, 6, 6, 20], [4, 4, 6, 6, 6, 7, 7, 9], [-6, -5, -2, 0, 0, 3, 3, 3, 5, 5]]",
+            "success": true,
+            "elapsed_time": 1.947439432
+        },
+        {
+            "name": "filter:greater",
+            "handwritten_solution": "Filter(lambda u1: Greater(u1, y), x)",
+            "solution found": "fun b a -> filter (fun c -> greater c a) b",
+            "runtime": "2.074166298",
+            "inputs_dict": "{'x': [[1, 3, 4, 2], [6, 4, 3, 5, 9, 2], [25, 0, 79, -1, -45, 31, -4, 7, -2, 11]], 'y': [2, 4, -3]}",
+            "outputs": "[[3, 4], [6, 5, 9], [25, 0, 79, -1, 31, 7, -2, 11]]",
+            "success": true,
+            "elapsed_time": 2.074166298
+        },
+        {
+            "name": "none:decreasing_suffix",
+            "handwritten_solution": "Reverse(Sort(Take(n, Reverse(x))))",
+            "solution found": "fun b a -> reverse (sort (take a (reverse b)))",
+            "runtime": "2.240230799",
+            "inputs_dict": "{'x': [[3, 2, 5, 7], [4, 6, 2, 1, 7, 3, 9], [-78, 49, 28, -42, -13, 76, 84, -49, 31, 8]], 'n': [2, 5, 4]}",
+            "outputs": "[[7, 5], [9, 7, 3, 2, 1], [84, 31, 8, -49]]",
+            "success": true,
+            "elapsed_time": 2.240230799
+        },
+        {
+            "name": "filter:max_odd",
+            "handwritten_solution": "Maximum(Filter(lambda u1: IsOdd(u1), x))",
+            "solution found": "fun a -> maximum (filter (fun b -> is_odd b) a)",
+            "runtime": "2.827412367",
+            "inputs_dict": "{'x': [[32, 57, 60, 53], [7, 12, 6, 18, 13, 14, 5, 6], [-6, 8, 5, -7, -13, 1, -4, 18, 32], [32, 25, 68, 43, 42, 44, 56, 37, 28, 29], [32, 25, 68, 43, 42, 44, 55, 37, 28, 29]]}",
+            "outputs": "[57, 13, 5, 43, 55]",
+            "success": true,
+            "elapsed_time": 2.827412367
+        },
+        {
+            "name": "count:num_match",
+            "handwritten_solution": "Count(lambda u1: Equal(u1, n), x)",
+            "solution found": "fun b a -> count (fun c -> equal c a) b",
+            "runtime": "2.985871553",
+            "inputs_dict": "{'x': [[5, 7, 8, 7, 9, 6], [5, 7, 8, 7, 9, 6], [7, 0, 7, 0, 7, 7], [42, 34, 42, 42, 42, 56, 42, 38, 42, 42], [42, 34, 42, 42, 38, 56, 42, 38, 42, 42]], 'n': [7, 8, 7, 42, 42]}",
+            "outputs": "[2, 1, 4, 7, 6]",
+            "success": true,
+            "elapsed_time": 2.985871553
+        },
+        {
+            "name": "count:count_negative",
+            "handwritten_solution": "Count(lambda u1: Less(u1, 0), x)",
+            "solution found": "fun a -> count (fun b -> greater 0 b) a",
+            "runtime": "3.170224428",
+            "inputs_dict": "{'x': [[6, 7, 0, -4, 1, -5, 2], [11, -4, -1, 19, -5, 18, -8, -13], [25, 16, -15, 18, -3, -12, 1, 29, -21], [-18, 18, 46, -7, -15, -44, -33, 8, -1, 11], [32, 42, -46, -97, 53, 34, 8, -9, 36, 20]]}",
+            "outputs": "[2, 5, 4, 6, 3]",
+            "success": true,
+            "elapsed_time": 3.170224428
+        },
+        {
+            "name": "map:gather",
+            "handwritten_solution": "Map(lambda u1: Access(u1, x), i)",
+            "solution found": "fun b a -> map (fun c -> access c b) a",
+            "runtime": "3.313936949",
+            "inputs_dict": "{'x': [[4, 2, 6, 8], [11, 3, 20, -5, 7], [3, -6, 4, -5, 3, 9, -2, 0, 1, -4]], 'i': [[0, 2, 1, 3], [1, 4, 2, 1, 3, 1, 4, 1], [2, 0, 2, 8, 4, 2, 3, 5]]}",
+            "outputs": "[[4, 6, 2, 8], [3, 7, 20, 3, -5, 3, 7, 3], [4, 3, 4, 1, 3, 4, -5, 9]]",
+            "success": true,
+            "elapsed_time": 3.313936949
+        },
+        {
+            "name": "count:rank",
+            "handwritten_solution": "Count(lambda u1: Less(u1, q), x)",
+            "solution found": "fun b a -> count (fun c -> greater a c) b",
+            "runtime": "3.821408987",
+            "inputs_dict": "{'x': [[28, 43, 69, 38, 42], [35, -54, 48, 17, 49, -24, 32], [-7, -4, 8, -5, -4, -3, -8, 4], [2, 6, 0, 3, 1, 4, 2, 3, 5, 0], [2, 6, 0, 5, 1, 4, 2, 3, 5, 0]], 'q': [44, 18, -3, 4, 4]}",
+            "outputs": "[4, 3, 5, 7, 6]",
+            "success": true,
+            "elapsed_time": 3.821408987
+        },
+        {
+            "name": "none:coins",
+            "handwritten_solution": "Subtract(Subtract(Multiply(x, y), x), y)",
+            "solution found": "fun b a -> subtract (multiply b (add -1 a)) a",
+            "runtime": "6.726673603",
+            "inputs_dict": "{'x': [3, 8, 5, 11, 14], 'y': [5, 13, 14, 7, 9]}",
+            "outputs": "[7, 83, 51, 59, 103]",
+            "success": true,
+            "elapsed_time": 6.726673603
+        },
+        {
+            "name": "none:next_multiple",
+            "handwritten_solution": "Multiply(Add(IntDivide(x, k), 1), k)",
+            "solution found": "fun b a -> add a (multiply a (int_divide b a))",
+            "runtime": "6.829455614",
+            "inputs_dict": "{'x': [3, 8, 13, 27, 58], 'k': [5, 7, 4, 9, 14]}",
+            "outputs": "[5, 14, 16, 36, 70]",
+            "success": true,
+            "elapsed_time": 6.829455614
+        },
+        {
+            "name": "map:zero_min",
+            "handwritten_solution": "Map(lambda u1: Subtract(u1, Minimum(x)), x)",
+            "solution found": "fun a -> map (fun b -> subtract b (minimum a)) a",
+            "runtime": "13.35034657",
+            "inputs_dict": "{'x': [[3, 7, 4, 9], [16, 10, 25, 16, 83], [-4, 3, 1, 0, -5, 5]]}",
+            "outputs": "[[0, 4, 1, 6], [6, 0, 15, 6, 73], [1, 8, 6, 5, 0, 10]]",
+            "success": true,
+            "elapsed_time": 13.35034657
+        },
+        {
+            "name": "map:cube",
+            "handwritten_solution": "Map(lambda u1: Multiply(u1, Square(u1)), x)",
+            "solution found": "fun a -> map (fun b -> multiply b (square b)) a",
+            "runtime": "14.16882443",
+            "inputs_dict": "{'x': [[3], [4, 1, 2], [-1, 5, 0, -4, 2, 3, -2]]}",
+            "outputs": "[[27], [64, 1, 8], [-1, 125, 0, -64, 8, 27, -8]]",
+            "success": true,
+            "elapsed_time": 14.16882443
+        },
+        {
+            "name": "scanl1:product",
+            "handwritten_solution": "Last(Scanl1(lambda u1, u2: Multiply(u1, u2), x))",
+            "solution found": "fun a -> last (scanl1 (fun c b -> multiply c b) a)",
+            "runtime": "15.72453356",
+            "inputs_dict": "{'x': [[3, 6, 5], [2, 1, 4, 2, 3], [3, 4, 1, 5, 2], [5, -2, 1, -1, -3, 1, 2], [-2, 1, 2, 2, -3, -1, 3, -1]]}",
+            "outputs": "[90, 48, 120, -60, 72]",
+            "success": true,
+            "elapsed_time": 15.72453356
+        },
+        {
+            "name": "map:multiply_previous",
+            "handwritten_solution": "Map(lambda u1: Subtract(Square(u1), u1), x)",
+            "solution found": "fun a -> map (fun b -> subtract (square b) b) a",
+            "runtime": "16.04394054",
+            "inputs_dict": "{'x': [[6, 3, 4], [-4, 6, 2, -6, 7], [3, -3, -5, 2, 0, 1, -4, 8, -6]]}",
+            "outputs": "[[30, 6, 12], [20, 30, 2, 42, 42], [6, 12, 30, 2, 0, 0, 20, 56, 42]]",
+            "success": true,
+            "elapsed_time": 16.04394054
+        },
+        {
+            "name": "scanl1:running_sum_reverse",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Add(u1, u2), Reverse(x))",
+            "solution found": "fun a -> scanl1 (fun c b -> add c b) (reverse a)",
+            "runtime": "16.29893112",
+            "inputs_dict": "{'x': [[7, 4, 5], [3, 1, 6, 8, 2], [-4, 13, 9, 0, -3, -8, 5, 2]]}",
+            "outputs": "[[5, 9, 16], [2, 10, 16, 17, 20], [2, 7, -1, -4, -4, 5, 18, 14]]",
+            "success": true,
+            "elapsed_time": 16.29893112
+        },
+        {
+            "name": "none:outer_average",
+            "handwritten_solution": "IntDivide(Add(Head(x), Last(x)), 2)",
+            "solution found": "fun a -> int_divide (add (head a) (last a)) 2",
+            "runtime": "16.31127739",
+            "inputs_dict": "{'x': [[59, 37, 23], [58, 32, 47, 16], [-44, 45, 38, -63, -12, 18], [-8, -4, 18, 12, -5, -6, 2, 0, -14], [35, 85, 53, 68, 47, 17, 86, 27, 75, 91]]}",
+            "outputs": "[41, 37, -13, -11, 63]",
+            "success": true,
+            "elapsed_time": 16.31127739
+        },
+        {
+            "name": "filter:odd_negative",
+            "handwritten_solution": "Filter(lambda u1: IsOdd(Min(u1, 0)), x)",
+            "solution found": "fun a -> filter (fun b -> is_odd (min 0 b)) a",
+            "runtime": "19.16549826",
+            "inputs_dict": "{'x': [[-11, 7, -3, -8, 2], [2, -5, 3, -4, -7, -1, -2], [-17, 23, -40, -25, -31, 42, 0, -23, -7, -16]]}",
+            "outputs": "[[-11, -3], [-5, -7, -1], [-17, -25, -31, -23, -7]]",
+            "success": true,
+            "elapsed_time": 19.16549826
+        },
+        {
+            "name": "scanl1:max_running_sum",
+            "handwritten_solution": "Maximum(Scanl1(lambda u1, u2: Add(u1, u2), x))",
+            "solution found": "fun a -> maximum (scanl1 (fun c b -> add c b) a)",
+            "runtime": "19.2914772",
+            "inputs_dict": "{'x': [[5, 4, -1, 2, -5], [4, 7, -2, -5, 6, -3, 4], [-3, -1, 8, 2, -1, -5, 4, 1], [4, -2, 3, -5, -1, 2, -4, 7, -3, 2], [4, -2, 3, -5, -1, 2, -4, 17, -3, 2]]}",
+            "outputs": "[10, 11, 6, 5, 14]",
+            "success": true,
+            "elapsed_time": 19.2914772
+        },
+        {
+            "name": "count:even_or_positive",
+            "handwritten_solution": "Count(lambda u1: IsEven(Min(u1, 0)), x)",
+            "solution found": "fun a -> count (fun b -> is_even (min 0 b)) a",
+            "runtime": "20.14888072",
+            "inputs_dict": "{'x': [[6, -5, -1, -6, 0, -3, -4], [6, -5, -2, -6, 0, -3, -4], [6, -5, -2, -6, 0, 3, -4], [-9, -3, -7, -8, -11, -53, -32, -5, 23, -11], [-4, -7, -6, 3, 0, -9, -12, 4, 5, -3]]}",
+            "outputs": "[4, 5, 6, 3, 7]",
+            "success": true,
+            "elapsed_time": 20.14888072
+        },
+        {
+            "name": "filter:sum_positive",
+            "handwritten_solution": "Sum(Filter(lambda u1: Greater(u1, 0), x))",
+            "solution found": "fun a -> sum (filter (fun b -> greater b 0) a)",
+            "runtime": "21.36871386",
+            "inputs_dict": "{'x': [[-5, 8, -10, 7, 2], [16, 21, -14, 21, 1, -49, 31], [45, -45, -38, -41, -6, 45, -13, 20], [-46, -32, -29, 33, -3, -13, 9, 23, -39], [-4, 8, 23, 15, 8, -31, -7, -9, -9, 24]]}",
+            "outputs": "[17, 90, 110, 65, 78]",
+            "success": true,
+            "elapsed_time": 21.36871386
+        },
+        {
+            "name": "count:num_under_first",
+            "handwritten_solution": "Count(lambda u1: Less(u1, Head(x)), x)",
+            "solution found": "fun a -> count (fun b -> greater (head a) b) a",
+            "runtime": "22.95823455",
+            "inputs_dict": "{'x': [[5, 2, 6, 7, 1, 3, 8], [26, 0, 19, 22, 39, 47, 1, 26], [65, 33, 16, 53, 34, 95, 86, 4, 12], [-11, 23, -48, -24, -11, -4, 44, 7, -26, -12], [-11, 23, -48, -24, -11, -14, 44, 7, -26, -12]]}",
+            "outputs": "[3, 4, 6, 4, 5]",
+            "success": true,
+            "elapsed_time": 22.95823455
+        },
+        {
+            "name": "count:count_last",
+            "handwritten_solution": "Count(lambda u1: Equal(u1, Last(x)), x)",
+            "solution found": "fun a -> count (fun b -> equal b (last a)) a",
+            "runtime": "24.00277948",
+            "inputs_dict": "{'x': [[11, 10, 9, 7, 10, 19, 10], [47, 23, 44, 3, 23, 40, 23, 44], [47, 23, 44, 3, 23, 40, 23, 23], [-2, 26, -20, -19, 23, -29, -9, 2, -23], [-42, 0, -42, -42, -41, -43, -42, 42, -42, -42]]}",
+            "outputs": "[3, 2, 4, 1, 6]",
+            "success": true,
+            "elapsed_time": 24.00277948
+        },
+        {
+            "name": "map:max_selected",
+            "handwritten_solution": "Maximum(Map(lambda u1: Access(u1, x), i))",
+            "solution found": "fun b a -> maximum (map (fun c -> access c b) a)",
+            "runtime": "44.50773382",
+            "inputs_dict": "{'x': [[3, 8, 4, 2, 6, 5], [-8, -4, 7, 6, 3, -5, 0, -2, 2, 1], [64, 83, 27, 18, 59, 17, 45, 23, 63], [64, 83, 27, 18, 59, 17, 45, 23, 63], [15, -32, 38, 67, -21, 41, 25, -43, -28, 33]], 'i': [[3, 2, 0, 4], [5, 4, 1], [2, 3, 4, 6, 7], [2, 3, 5, 6, 7], [7, 2, 1, 0, 8, 5, 2, 0, 1, 2]]}",
+            "outputs": "[6, 3, 59, 45, 41]",
+            "success": true,
+            "elapsed_time": 44.50773382
+        },
+        {
+            "name": "map:linear_transform",
+            "handwritten_solution": "Map(lambda u1: Subtract(Multiply(u1, 3), 4), x)",
+            "solution found": "fun a -> map (fun b -> subtract (multiply 3 b) 4) a",
+            "runtime": "162.2869284",
+            "inputs_dict": "{'x': [[20, -10, 0], [4, 2, 3, 1, 5], [7, 9, -6, 12, 11, 4, 6, 4]]}",
+            "outputs": "[[56, -34, -4], [8, 2, 5, -1, 11], [17, 23, -22, 32, 29, 8, 14, 8]]",
+            "success": true,
+            "elapsed_time": 162.2869284
+        },
+        {
+            "name": "map:quadratic_transform",
+            "handwritten_solution": "Map(lambda u1: Multiply(u1, Add(u1, 2)), x)",
+            "solution found": "fun a -> map (fun b -> multiply b (add 2 b)) a",
+            "runtime": "171.0479226",
+            "inputs_dict": "{'x': [[3, 5, 1, 6], [7, -1, 4, 0, -2, 3], [5, -3, 9, -10, 11, 2, 7, 10, -8]]}",
+            "outputs": "[[15, 35, 3, 48], [63, -1, 24, 0, 0, 15], [35, 3, 99, 80, 143, 8, 63, 120, 48]]",
+            "success": true,
+            "elapsed_time": 171.0479226
+        },
+        {
+            "name": "zipwith:deepcoder_5",
+            "handwritten_solution": "ZipWith(lambda u1, u2: Min(u1, u2), a, Reverse(a))",
+            "solution found": "fun a -> zip_with (fun c b -> min c b) a (reverse a)",
+            "runtime": "175.6294558",
+            "inputs_dict": "{'a': [[3, 7, 5, 2, 8], [14, 11, 15, 18, 14, 12], [85, 3, 35, 1, 74, 47, 2, 26, 33, 43]]}",
+            "outputs": "[[3, 2, 5, 2, 3], [12, 11, 15, 15, 11, 12], [43, 3, 26, 1, 47, 47, 1, 26, 3, 43]]",
+            "success": true,
+            "elapsed_time": 175.6294558
+        },
+        {
+            "name": "filter:negative_descending",
+            "handwritten_solution": "Filter(lambda u1: Less(u1, 0), Reverse(Sort(x)))",
+            "solution found": "fun a -> filter (fun b -> greater 0 b) (reverse (sort a))",
+            "runtime": "182.3519461",
+            "inputs_dict": "{'x': [[-4, 8, 1, -2, -9, -5], [-11, 10, -13, -19, 0, -12, -10], [3, -38, -48, 32, -43, -19, 23, -36, -44, 48]]}",
+            "outputs": "[[-2, -4, -5, -9], [-10, -11, -12, -13, -19], [-19, -36, -38, -43, -44, -48]]",
+            "success": true,
+            "elapsed_time": 182.3519461
+        },
+        {
+            "name": "scanl1:decay",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Add(IntDivide(u1, 2), u2), x)",
+            "solution found": "fun a -> scanl1 (fun c b -> add b (int_divide c 2)) a",
+            "runtime": "182.691869",
+            "inputs_dict": "{'x': [[7, 2, 6, 1, 5], [10, 14, 8, 3, 12, 6, 2, 7], [15, 12, 27, 39, 12, 11, 25, 0, 0, 3]]}",
+            "outputs": "[[7, 5, 8, 5, 7], [10, 19, 17, 11, 17, 14, 9, 11], [15, 19, 36, 57, 40, 31, 40, 20, 10, 8]]",
+            "success": true,
+            "elapsed_time": 182.691869
+        },
+        {
+            "name": "map:zero_odds",
+            "handwritten_solution": "Map(lambda u1: If(IsOdd(u1), 0, u1), x)",
+            "solution found": "fun a -> map (fun b -> ifelse (is_even b) b 0) a",
+            "runtime": "186.3489966",
+            "inputs_dict": "{'x': [[4, 2, 5, 6, 3], [15, 14, 7, 26, 24, 21], [-42, 25, -39, 0, 34, 12, 55, -14, 21]]}",
+            "outputs": "[[4, 2, 0, 6, 0], [0, 14, 0, 26, 24, 0], [-42, 0, 0, 0, 34, 12, 0, -14, 0]]",
+            "success": true,
+            "elapsed_time": 186.3489966
+        },
+        {
+            "name": "scanl1:make_strictly_increasing",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Max(Add(u1, 1), u2), x)",
+            "solution found": "fun a -> scanl1 (fun c b -> max b (add 1 c)) a",
+            "runtime": "197.1757686",
+            "inputs_dict": "{'x': [[2, 4, 3, 7, 8, 8], [-5, -8, -5, 1, -4, 5, 5, 7], [-40, -23, -59, -9, 0, 4, 2, -4, 18, 14]]}",
+            "outputs": "[[2, 4, 5, 7, 8, 9], [-5, -4, -3, 1, 2, 5, 6, 7], [-40, -23, -22, -9, 0, 4, 5, 6, 18, 19]]",
+            "success": true,
+            "elapsed_time": 197.1757686
+        },
+        {
+            "name": "map:absolute_value",
+            "handwritten_solution": "Map(lambda u1: Max(u1, Subtract(0, u1)), x)",
+            "solution found": "fun a -> map (fun b -> max b (int_divide b -1)) a",
+            "runtime": "197.5360441",
+            "inputs_dict": "{'x': [[8, -4, 2, -3, -7, 6], [-23, 31, -12, -46, 78, 0, -32, -61, 48], [98, -58, 43, -42, -68, 47, -15, -21, 74, -29]]}",
+            "outputs": "[[8, 4, 2, 3, 7, 6], [23, 31, 12, 46, 78, 0, 32, 61, 48], [98, 58, 43, 42, 68, 47, 15, 21, 74, 29]]",
+            "success": true,
+            "elapsed_time": 197.5360441
+        },
+        {
+            "name": "zipwith:sum_mask",
+            "handwritten_solution": "Sum(ZipWith(lambda u1, u2: Multiply(u1, u2), x, m))",
+            "solution found": "fun b a -> sum (zip_with (fun d c -> multiply d c) b a)",
+            "runtime": "226.6473982",
+            "inputs_dict": "{'x': [[6, 11, 2, 7], [4, 5, 9, 0, 7, 9], [3, 13, 17, 5, 0, 14, 18], [2, -12, -5, 9, -13, -2, -9, 5], [-38, 34, 20, 32, 10, -10, 4, -1, -27]], 'm': [[1, 0, 1, 1], [0, 1, 1, 0, 1, 0], [0, 0, 1, 0, 0, 1, 0], [0, 1, 0, 1, 1, 0, 1, 1], [1, 0, 0, 1, 0, 1, 1, 0, 0]]}",
+            "outputs": "[15, 21, 31, -20, -12]",
+            "success": true,
+            "elapsed_time": 226.6473982
+        },
+        {
+            "name": "count:count_at",
+            "handwritten_solution": "Count(lambda u1: Equal(u1, Access(i, x)), x)",
+            "solution found": "fun b a -> count (fun c -> equal c (access a b)) b",
+            "runtime": "231.5067577",
+            "inputs_dict": "{'x': [[14, 11, 28, 11, -17, -1, -21], [24, 33, 24, 24, 23, 0, 24, 25], [26, -7, -21, 20, -26, -7, -29, -7, -23], [48, -21, -97, 3, 88, -21, -21, -20, -21, -21], [48, -21, -97, 3, 88, -21, -21, -21, -21, -21]], 'i': [3, 6, 1, 7, 7]}",
+            "outputs": "[2, 4, 3, 1, 6]",
+            "success": true,
+            "elapsed_time": 231.5067577
+        },
+        {
+            "name": "zipwith:sort_divide",
+            "handwritten_solution": "Sort(ZipWith(lambda u1, u2: IntDivide(u1, u2), m, n))",
+            "solution found": "fun b a -> sort (zip_with (fun d c -> int_divide d c) b a)",
+            "runtime": "258.7726614",
+            "inputs_dict": "{'m': [[43, 68, 27], [28, 41, 57, 52], [78, 68, 25, 76, 67, 38, 49, 74, 47]], 'n': [[5, 7, 13], [6, 2, 6, 4], [10, 4, 19, 12, 19, 7, 7, 15, 3]]}",
+            "outputs": "[[2, 8, 9], [4, 9, 13, 20], [1, 3, 4, 5, 6, 7, 7, 15, 17]]",
+            "success": true,
+            "elapsed_time": 258.7726614
+        },
+        {
+            "name": "scanl1:prefix_running_product",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Multiply(u1, u2), Take(n, x))",
+            "solution found": "fun b a -> scanl1 (fun d c -> multiply d c) (take a b)",
+            "runtime": "261.8002715",
+            "inputs_dict": "{'x': [[2, 1, 5, 2, 3, 1, 2], [1, 3, 2, 1, 4, 1, 5], [5, -1, -2, 1, -3, 2, -1, -3, -1, 2]], 'n': [4, 5, 8]}",
+            "outputs": "[[2, 2, 10, 20], [1, 3, 6, 6, 24], [5, -5, 10, 10, -30, -60, 60, -180]]",
+            "success": true,
+            "elapsed_time": 261.8002715
+        },
+        {
+            "name": "scanl1:running_sum_extra",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Add(Add(u1, u2), n), x)",
+            "solution found": "fun b a -> scanl1 (fun d c -> add d (add c a)) b",
+            "runtime": "265.4760845",
+            "inputs_dict": "{'x': [[3, 2, 6, 4], [-6, 4, -2, 3, 8, -3, -9], [12, -21, 15, 7, -5, 10, 11, -5, -28, 8]], 'n': [1, 3, -2]}",
+            "outputs": "[[3, 6, 13, 18], [-6, 1, 2, 8, 19, 19, 13], [12, -11, 2, 7, 0, 8, 17, 10, -20, -14]]",
+            "success": true,
+            "elapsed_time": 265.4760845
+        },
+        {
+            "name": "map:zero_element",
+            "handwritten_solution": "Map(lambda u1: Subtract(u1, Access(i, x)), x)",
+            "solution found": "fun b a -> map (fun c -> subtract c (access a b)) b",
+            "runtime": "268.3213327",
+            "inputs_dict": "{'x': [[7, 3, 8], [25, 74, 34, 42, 60], [-6, 8, 2, 5, -7, 1, 4, -3, 0, 9]], 'i': [1, 3, 7]}",
+            "outputs": "[[4, 0, 5], [-17, 32, -8, 0, 18], [-3, 11, 5, 8, -4, 4, 7, 0, 3, 12]]",
+            "success": true,
+            "elapsed_time": 268.3213327
+        },
+        {
+            "name": "zipwith:dot",
+            "handwritten_solution": "Sum(ZipWith(lambda u1, u2: Multiply(u1, u2), x, y))",
+            "solution found": "fun b a -> sum (zip_with (fun d c -> multiply d c) b a)",
+            "runtime": "286.9537623",
+            "inputs_dict": "{'x': [[2, 0], [3, 1, 2], [7, 8, 1, 4], [2, -4, 6, -5, -1, 3, 2], [-4, 0, 4, 6, 2, -3, 1, 5, 6, 5]], 'y': [[10, 5], [8, 2, -5], [1, 0, 4, 2], [3, 8, 4, 4, 2, 0, 5], [2, 1, 0, 2, 0, 6, 2, 1, 3, 2]]}",
+            "outputs": "[20, 16, 19, -14, 21]",
+            "success": true,
+            "elapsed_time": 286.9537623
+        },
+        {
+            "name": "map:clip",
+            "handwritten_solution": "Map(lambda u1: Max(Min(u1, b), a), x)",
+            "solution found": "fun c b a -> map (fun d -> max b (min d a)) c",
+            "runtime": "368.0110357",
+            "inputs_dict": "{'x': [[5, -4, 6, 17, -3, 7], [53, 71, 28, 61, 27, 93, 57, 74], [16, -4, -5, 14, 13, -7, -6, 17, -3, 15]], 'a': [0, 52, -5], 'b': [9, 64, 15]}",
+            "outputs": "[[5, 0, 6, 9, 0, 7], [53, 64, 52, 61, 52, 64, 57, 64], [15, -4, -5, 14, 13, -5, -5, 15, -3, 15]]",
+            "success": true,
+            "elapsed_time": 368.0110357
+        },
+        {
+            "name": "map:linear_equation",
+            "handwritten_solution": "Map(lambda u1: Add(Multiply(a, u1), b), x)",
+            "solution found": "fun c b a -> map (fun d -> add a (multiply d b)) c",
+            "runtime": "377.2687771",
+            "inputs_dict": "{'x': [[14, 23, -16], [4, 2, 6, 0, 3], [3, -7, 4, 1, 5, -2, 0, 1, 2, -1]], 'a': [-3, 4, 7], 'b': [25, -7, 10]}",
+            "outputs": "[[-17, -44, 73], [9, 1, 17, -7, 5], [31, -39, 38, 17, 45, -4, 10, 17, 24, 3]]",
+            "success": true,
+            "elapsed_time": 377.2687771
+        },
+        {
+            "name": "filter:find_at",
+            "handwritten_solution": "Filter(lambda u1: Equal(Access(u1, x), y), i)",
+            "solution found": "fun c b a -> filter (fun d -> equal b (access d c)) a",
+            "runtime": "432.3266773",
+            "inputs_dict": "{'x': [[8, 7, 4, 7, 7, 2], [17, -9, -10, -9, -9, 23, -9], [42, 43, 41, 42, 45, 48, 42, 42, 49, 42]], 'y': [7, -9, 42], 'i': [[0, 1, 2, 4, 5], [0, 1, 0, 4, 6, 2, 1, 5, 4, 1], [6, 2, 5, 4, 1, 3, 0, 9, 7, 8]]}",
+            "outputs": "[[1, 4], [1, 4, 6, 1, 4, 1], [6, 3, 0, 9, 7]]",
+            "success": true,
+            "elapsed_time": 432.3266773
+        },
+        {
+            "name": "zipwith:max_mirror_product",
+            "handwritten_solution": "Maximum(ZipWith(lambda u1, u2: Multiply(u1, u2), x, Reverse(x)))",
+            "solution found": "fun a -> maximum (zip_with (fun c b -> multiply c b) a (reverse a))",
+            "runtime": "1223.602023",
+            "inputs_dict": "{'x': [[3, 9, 4, 2, 5], [2, 3, 1, 8, 3, 5], [-4, 5, -3, 5, -7, 3, -3], [-4, 5, -3, 5, -7, 3, -3, 4], [1, 0, 3, 1, 2, 4, 0, 4, 2, 1]]}",
+            "outputs": "[18, 10, 25, -9, 12]",
+            "success": true,
+            "elapsed_time": 1223.602023
+        },
+        {
+            "name": "zipwith:squared_distance",
+            "handwritten_solution": "Sum(ZipWith(lambda u1, u2: Square(Subtract(u1, u2)), x, y))",
+            "solution found": "fun b a -> sum (zip_with (fun d c -> square (subtract d c)) b a)",
+            "runtime": "1529.931189",
+            "inputs_dict": "{'x': [[26], [6, 14], [8, 5, 7], [-3, -2, 9, 4], [-6, 2, -5, 4, -2]], 'y': [[35], [9, 8], [6, 9, 8], [-5, 1, 6, -2], [-1, -2, 1, 4, 7]]}",
+            "outputs": "[81, 45, 21, 58, 158]",
+            "success": true,
+            "elapsed_time": 1529.931189
+        },
+        {
+            "name": "none:hailstone",
+            "handwritten_solution": "If(IsEven(x), IntDivide(x, 2), Add(1, Multiply(3, x)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [8, 26, 5, 7, 23]}",
+            "outputs": "[4, 13, 16, 22, 70]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "none:range_both",
+            "handwritten_solution": "Subtract(Max(Maximum(x), Maximum(y)), Min(Minimum(x), Minimum(y)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[58], [5, 2, 6, 4], [64, 24, 81, 57, 25, 73], [67, 92, 21, 13, 57, 48], [63, -35, 68, -54, -23, 9, 18, -34, -26]], 'y': [[25], [9, 4, 3], [41, 32, 53, 18, 27, 20, 61], [43, 17, 58, 34, 23], [25, 61, -58, -2, -62, 77, 23, 18, 47]]}",
+            "outputs": "[33, 7, 63, 79, 139]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "none:slope",
+            "handwritten_solution": "IntDivide(Subtract(Last(y), Head(y)), Subtract(Last(x), Head(x)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[9, 2], [-3, 1], [37, 32], [-17, -14], [6, -3]], 'y': [[58, 23], [45, -79], [-15, 50], [-46, -4], [5, 77]]}",
+            "outputs": "[5, -31, -13, 14, -8]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "map:triangular",
+            "handwritten_solution": "Map(lambda u1: IntDivide(Add(Square(u1), u1), 2), x)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[1, 2, 3, 4], [0, 5, 2, 1, 6], [7, 2, 5, 9, 2, 0, 4, 1, 3]]}",
+            "outputs": "[[1, 3, 6, 10], [0, 15, 3, 1, 21], [28, 3, 15, 45, 3, 0, 10, 1, 6]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "map:square_keep_sign",
+            "handwritten_solution": "Map(lambda u1: Multiply(If(Less(u1, 0), -1, 1), Square(u1)), x)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[4, -6, 8, -7], [-1, -4, 6, -5, 2], [7, 9, -3, 4, -2, 0, -4, -8, 5, 1]]}",
+            "outputs": "[[16, -36, 64, -49], [-1, -16, 36, -25, 4], [49, 81, -9, 16, -4, 0, -16, -64, 25, 1]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "map:shift_first_to",
+            "handwritten_solution": "Map(lambda u1: Add(u1, Subtract(t, Head(x))), x)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[7, 1, 4, 8, 3], [4, 14, 11, 8, 18, 11, 9, 3], [2, -5, 7, 11, -3, 2, 15, -15, -13]], 't': [2, 10, -5]}",
+            "outputs": "[[2, -4, -1, 3, -2], [10, 20, 17, 14, 24, 17, 15, 9], [-5, -12, 0, 4, -10, -5, 8, -22, -20]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "map:replace",
+            "handwritten_solution": "Map(lambda u1: If(Equal(u1, f), r, u1), x)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[7, 2, 4, 6, 4, 2, 5], [-6, -3, 4, 3, -5, -3, 2, 1, 5], [18, 48, 27, 26, 27, 27, 28, 17, 27, 33]], 'f': [4, -3, 27], 'r': [-1, 7, 99]}",
+            "outputs": "[[7, 2, -1, 6, -1, 2, 5], [-6, 7, 4, 3, -5, 7, 2, 1, 5], [18, 48, 99, 26, 99, 99, 28, 17, 99, 33]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "map:replace_negative",
+            "handwritten_solution": "Map(lambda u1: If(Less(u1, 0), y, u1), x)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[7, -6, 8, -3, -5, 2], [-6, -4, 2, -3, 14, -15, 2, -5, -8], [13, 63, -23, -35, 32, 45, -78, -31, 12, -14]], 'y': [-9, 5, 99]}",
+            "outputs": "[[7, -9, 8, -9, -9, 2], [5, 5, 2, 5, 14, 5, 2, 5, 5], [13, 63, 99, 99, 32, 45, 99, 99, 12, 99]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "map:spread_last",
+            "handwritten_solution": "Take(-1, Map(lambda u1: Add(u1, Last(x)), x))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[4, 2, 6, 3, 5], [-7, 17, -4, -12, 3, -9], [41, 23, 58, 21, 14, 63, 28, 36]]}",
+            "outputs": "[[9, 7, 11, 8], [-16, 8, -13, -21, -6], [77, 59, 94, 57, 50, 99, 64]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "map:median",
+            "handwritten_solution": "Access(IntDivide(Sum(Map(lambda u1: 1, x)), 2), Sort(x))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[6, 5, 2], [42, 86, 31, 58, 75], [18, 2, 34, 7, 0, 56, 32, 48, 54], [18, 2, 34, 37, 0, 56, 32, 48, 54], [85, 48, -42, -15, -25, 23, -52]]}",
+            "outputs": "[5, 58, 32, 34, -15]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "map:is_greater",
+            "handwritten_solution": "Map(lambda u1: If(Greater(u1, y), 1, 0), x)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[19, 13, 17, 18, 20], [5, 7, 4, 5, 6, 2, 3], [-9, -6, 2, -7, 18, -11, -8, 1, -15, -4]], 'y': [17, 4, -7]}",
+            "outputs": "[[1, 0, 0, 1, 1], [1, 1, 0, 1, 1, 0, 0], [0, 1, 1, 0, 1, 0, 0, 1, 0, 1]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "map:divide_even",
+            "handwritten_solution": "Map(lambda u1: If(IsEven(u1), IntDivide(u1, 2), u1), x)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[8, 5, 6, 14, 9], [42, -15, 67, 0, -16, 23, 31, 28], [62, 24, 68, -44, -25, -14, 2, 5, -20, 41]]}",
+            "outputs": "[[4, 5, 3, 7, 9], [21, -15, 67, 0, -8, 23, 31, 14], [31, 12, 34, -22, -25, -7, 1, 5, -10, 41]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "map:multiply_odd",
+            "handwritten_solution": "Map(lambda u1: If(IsOdd(u1), Multiply(u1, n), u1), x)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[3, 1, 2, 5, 4, 7], [15, 21, 28, 7, 33, 26, 42, 27, 18], [7, -22, -1, 28, 9, -17, 5, 13, -4, 11]], 'n': [3, 2, -3]}",
+            "outputs": "[[9, 3, 2, 15, 4, 21], [30, 42, 28, 14, 66, 26, 42, 54, 18], [-21, -22, 3, 28, -27, 51, -15, -39, -4, -33]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "filter:between",
+            "handwritten_solution": "Filter(lambda u1: Less(u1, b), Filter(lambda u1: Greater(u1, a), x))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[7, 6, 1, 4, 9, 3, 5, 8], [11, 78, 73, 35, 70, 59, 16, 74, 24], [-12, -21, 37, 20, 13, 21, 19, 0, -19, -20]], 'a': [3, 15, -20], 'b': [8, 74, 20]}",
+            "outputs": "[[7, 6, 4, 5], [73, 35, 70, 59, 16, 24], [-12, 13, 19, 0, -19]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "filter:multiple",
+            "handwritten_solution": "Filter(lambda u1: Equal(u1, Multiply(IntDivide(u1, n), n)), x)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[24, 19, 22, 16, 10, 44], [21, -35, -25, 0, -17, -14, 15, 42], [11, 84, 79, 16, -57, 97, 27, -23, -39, -32]], 'n': [4, 7, 3]}",
+            "outputs": "[[24, 16, 44], [21, -35, 0, -14, 42], [84, -57, 27, -39]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "filter:find_factors",
+            "handwritten_solution": "Filter(lambda u1: Equal(n, Multiply(IntDivide(n, u1), u1)), x)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[4, 5, 2, 15, 3, 5, 1, 7], [4, 5, 6, 2, 3, 7, 9, 1, 8], [-5, 7, -8, 12, -4, 2, -1, 4, 6, -10]], 'n': [45, 28, 40]}",
+            "outputs": "[[5, 15, 3, 5, 1], [4, 2, 7, 1], [-5, -8, -4, 2, -1, 4, -10]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "filter:fixpoints",
+            "handwritten_solution": "Sort(Filter(lambda u1: Equal(u1, Access(u1, x)), x))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[0, 5, 4, 3, 5, 5, 6, 1], [3, 1, 2, 4, 6, 5, 8, 0, 7], [0, 9, 2, 3, 4, 7, 6, 8, 7, 9]]}",
+            "outputs": "[[0, 3, 5, 5, 5, 6], [1, 2, 5], [0, 2, 3, 4, 6, 9, 9]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "count:total_zeros",
+            "handwritten_solution": "Add(Count(lambda u1: Equal(u1, 0), x), Count(lambda u1: Equal(u1, 0), y))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[-2, 0, 3, 1], [8, 4, 0, 1, 0, 2], [0, 1, 0], [17, 0, -2, 0, -11, -9, -6], [0, 0, 0, 42, 0, 0, 0, 63, 0, -14]], 'y': [[0, 0, 1, -1], [0, 3, 0, 0, 5, 9], [6, 0, 6, 0, 0, 0, 5], [-11, 3, 0, -11, -15, 0, -15, -12], [0, -54, 0, 14, 35, 0, 0]]}",
+            "outputs": "[3, 5, 6, 4, 11]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "count:min_costs",
+            "handwritten_solution": "Take(Count(lambda u1: Greater(u1, 0), r), Sort(c))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'r': [[4, 0, 7, 3, 0], [-5, 2, -1, 0, 5, 1, 3, -6], [1, 0, 3, 2, 0, 4, 0, 2, 3, 4]], 'c': [[6, 8, 2, 5, 9], [11, 25, 14, 7, 16, 5, 10, 18, 10], [61, 32, 44, 67, 17, 73, 25, 68, 95, 43]]}",
+            "outputs": "[[2, 5, 6], [5, 7, 10, 10], [17, 25, 32, 43, 44, 61, 67]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "zipwith:deepcoder_1",
+            "handwritten_solution": "Maximum(ZipWith(lambda u1, u2: Add(Multiply(u1, 3), u2), w, t))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'w': [[6, 2, 4, 7, 9], [10, 30, 20], [8, 6, 5, 9], [7, 5, 1, 6, 2, 7], [14, 7, 2, 9, 3, 13, 10, 11]], 't': [[5, 3, 6, 1, 0], [65, 7, 32], [2, 5, 9, 1], [0, 9, 4, 5, 7, 2], [1, 4, 2, 11, 7, 5, 7, 4]]}",
+            "outputs": "[27, 97, 28, 24, 44]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "zipwith:deepcoder_4",
+            "handwritten_solution": "Sum(ZipWith(lambda u1, u2: Multiply(u1, u2), Sort(x), Reverse(Sort(y))))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[7, 3, 8, 2, 5], [5, 6, 1], [3, 5, 1, 2], [7, 2, 1, 9, 3, 6], [4, 2, 6, 19, 5, 13, 2, 3]], 'y': [[2, 8, 9, 1, 3], [8, 2, 3], [4, 6, 1, 3], [5, 1, 6, 4, 7, 5], [2, 9, 3, 11, 1, 5, 16, 15]]}",
+            "outputs": "[79, 35, 28, 101, 219]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "zipwith:deepcoder_6",
+            "handwritten_solution": "Subtract(Minimum(ZipWith(lambda u1, u2: Add(u1, u2), t, p)), 2)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'t': [[4, 8, 11, 2], [46, 24, 68], [8, 22, 18, 6], [21, 26, 10, 11, 15], [11, 18, 15, 33, 18, 23, 7]], 'p': [[2, 3, 4, 1], [35, 37, 31], [26, 19, 21, 38], [3, 11, 22, 10, 9], [29, 23, 24, 7, 14, 12, 25]]}",
+            "outputs": "[1, 59, 32, 19, 30]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "zipwith:deepcoder_8",
+            "handwritten_solution": "Sum(ZipWith(lambda u1, u2: Max(Subtract(u1, u2), 0), Reverse(s), s))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'s': [[1, 2, 4, 5, 7], [2, 4, 11, 26], [14, 36, 54, 89], [1, 7, 10, 11, 13, 18, 19], [4, 5, 8, 9, 10, 11, 12, 15, 17, 18]]}",
+            "outputs": "[9, 31, 93, 32, 37]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "zipwith:average",
+            "handwritten_solution": "ZipWith(lambda u1, u2: IntDivide(Add(u1, u2), 2), x, y)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[8, 0], [12, 3, 7], [-5, 4, 3, -7, 11, 0]], 'y': [[2, 4], [4, 1, 7], [3, 6, -3, -11, 19, -6]]}",
+            "outputs": "[[5, 2], [8, 2, 7], [-1, 5, 0, -9, 15, -3]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "zipwith:three_sum",
+            "handwritten_solution": "ZipWith(lambda u1, u2: Add(u1, u2), a, ZipWith(lambda u1, u2: Add(u1, u2), b, c))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'a': [[6, 3], [2, 1, 5], [4, 2, 1, 5, 3]], 'b': [[2, 7], [6, -4, 2], [8, 4, 0, 2, 1]], 'c': [[0, 0], [3, 0, -3], [0, 1, 8, 0, 6]]}",
+            "outputs": "[[8, 10], [11, -3, 4], [12, 7, 9, 7, 10]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "zipwith:pair_differences",
+            "handwritten_solution": "ZipWith(lambda u1, u2: Subtract(u2, u1), x, Drop(1, x))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[16, 43, 64], [34, 13, 23, 58, 46], [9, 49, -27, -37, 26, -38, 9, -12, 19]]}",
+            "outputs": "[[27, 21], [-21, 10, 35, -12], [40, -76, -10, 63, -64, 47, -21, 31]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "zipwith:distance",
+            "handwritten_solution": "ZipWith(lambda u1, u2: Max(Subtract(u1, u2), Subtract(u2, u1)), x, y)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[2, 6, 1, 7, 4], [-6, 3, 15, -4, 11, -1, 7, -9], [15, 62, 47, 23, 50, 13, 52, 28, 58]], 'y': [[4, 1, 5, 4, 8], [3, 6, -2, 0, -8, -3, 4, 2], [63, 44, 78, 65, 13, 31, 23, 22, 68]]}",
+            "outputs": "[[2, 5, 4, 3, 4], [9, 3, 17, 4, 19, 2, 3, 11], [48, 18, 31, 42, 37, 18, 29, 6, 10]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "zipwith:is_equal",
+            "handwritten_solution": "ZipWith(lambda u1, u2: If(Equal(u1, u2), 1, 0), x, y)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[5, 2, 7, 3, 5], [0, -2, 6, 4, 5, -4], [-2, -3, 2, 9, 4, -1, 4, 7, 5]], 'y': [[5, 1, 7, 3, 6], [0, -2, 0, -4, 5, -4], [5, -2, 2, 9, 3, -1, -2, 7, 7]]}",
+            "outputs": "[[1, 0, 1, 1, 0], [1, 1, 0, 0, 1, 1], [0, 0, 1, 1, 0, 1, 0, 1, 0]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "zipwith:sorted_min",
+            "handwritten_solution": "ZipWith(lambda u1, u2: Min(u1, u2), Sort(x), Sort(y))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[7, 2, 5, 6], [4, -7, -6, 7, 1, -6], [12, 20, 27, 19, 19, 29, 23, 7, 1]], 'y': [[4, 8, 1, 9], [-8, 2, -6, 0, 9, -1], [26, 18, 25, 0, 9, 28, 19, 22, 17]]}",
+            "outputs": "[[1, 4, 6, 7], [-8, -6, -6, 0, 2, 7], [0, 7, 12, 18, 19, 20, 23, 26, 28]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "zipwith:add_outer_triples",
+            "handwritten_solution": "ZipWith(lambda u1, u2: Add(u1, u2), x, Reverse(Take(3, Reverse(x))))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[3, 2, 6, 8, 1], [4, 3, 7, 6, 2, 5], [-4, 16, -12, -5, 7, 0, -2, -5, -3, -7]]}",
+            "outputs": "[[9, 10, 7], [10, 5, 12], [-9, 13, -19]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "zipwith:double_or_nothing",
+            "handwritten_solution": "ZipWith(lambda u1, u2: If(Greater(u2, 0), Multiply(2, u1), 0), p, w)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'p': [[5, 6, 8, 2, 6], [10, 15, 30, 20, 25, 40, 5], [22, 53, 31, 47, 27, 24, 14, 39, 42, 13]], 'w': [[1, 1, -1, 1, -1], [-1, 1, -1, -1, 1, -1, 1], [1, -1, -1, 1, -1, 1, 1, -1, -1, 1]]}",
+            "outputs": "[[10, 12, 0, 4, 0], [0, 30, 0, 0, 50, 0, 10], [44, 0, 0, 94, 0, 48, 28, 0, 0, 26]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "scanl1:deepcoder_3",
+            "handwritten_solution": "Subtract(Sum(h), Sum(Scanl1(lambda u1, u2: Min(u1, u2), h)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'h': [[8, 5, 7, 2, 5], [8, 5, 7, 1, 5], [6, 4, 8, 2, 7, 3], [6, 7, 8, 6, 7, 5, 2, 5, 7, 4], [10, 8, 9, 9, 6, 8, 10, 5, 2, 7]]}",
+            "outputs": "[5, 6, 10, 14, 13]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "scanl1:running_sum_restart",
+            "handwritten_solution": "Scanl1(lambda u1, u2: If(Equal(u2, 0), 0, Add(u1, u2)), x)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[3, 5, 0, 4, 2], [6, 0, 4, 7, 3, 0, 1, 0, 4, 5], [-6, 3, 8, -4, 0, -3, -1, 0, 8, -5]]}",
+            "outputs": "[[3, 8, 0, 4, 6], [6, 0, 4, 11, 14, 0, 1, 0, 4, 9], [-6, -3, 5, 1, 0, -3, -4, 0, 8, 3]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "scanl1:running_min_no_ends",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Min(u1, u2), Take(-1, Drop(1, x)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[4, 7, 5, 6, 3, 8, 2], [8, 6, 7, 5, 4, 5, 2, 5], [32, 57, 45, 68, 43, -28, -12, -30, -43, -5]]}",
+            "outputs": "[[7, 5, 5, 3, 3], [6, 6, 5, 4, 4, 2], [57, 45, 45, 43, -28, -28, -30, -43]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "scanl1:alternate_signs",
+            "handwritten_solution": "Scanl1(lambda u1, u2: If(Greater(Multiply(u1, u2), 0), Subtract(0, u2), u2), x)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[3, 1, 5, 7, 3, 4], [-5, 3, 6, -3, -2, 9, 4, -8, 5, -3], [50, 28, -68, 56, 43, 21, -12, 48, 87, 57]]}",
+            "outputs": "[[3, -1, 5, -7, 3, -4], [-5, 3, -6, 3, -2, 9, -4, 8, -5, 3], [50, -28, 68, -56, 43, -21, 12, -48, 87, -57]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "scanl1:closest_to_zero",
+            "handwritten_solution": "Scanl1(lambda u1, u2: If(Less(Square(u1), Square(u2)), u1, u2), x)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[7, -5, 6, 4, -7, -2, -1], [-6, 5, 8, -4, -6, 5, 3, 0, -6], [57, 54, -37, 46, -33, -65, 21, -20, -14, 15]]}",
+            "outputs": "[[7, -5, -5, 4, 4, -2, -1], [-6, 5, 5, -4, -4, -4, 3, 0, 0], [57, 54, -37, -37, -33, -33, 21, -20, -14, -14]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "multi:deepcoder_2",
+            "handwritten_solution": "Count(lambda u1: Greater(u1, 0), ZipWith(lambda u1, u2: Subtract(u1, u2), a, b))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'a': [[6, 2, 4, 7, 9], [7, 2, 4, 5, 7, 8, 4, 3], [7, 2, 4, 5, 7, 8, 4, 3], [11, 31, 52, 68, 37, 53, 69, 42, 53, 27], [11, 31, 52, 68, 37, 53, 69, 42, 53, 27]], 'b': [[5, 3, 2, 1, 0], [8, 1, 4, 5, 3, 5, 1, 2], [8, 1, 4, 4, 3, 5, 1, 2], [10, 28, 47, 78, 37, 38, 62, 17, 44, 23], [38, 62, 17, 44, 23, 10, 28, 47, 78, 37]]}",
+            "outputs": "[4, 5, 6, 8, 5]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "multi:deepcoder_7",
+            "handwritten_solution": "Sum(ZipWith(lambda u1, u2: Multiply(u1, u2), s, Scanl1(lambda u1, u2: Add(u1, u2), p)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'s': [[4, 7, 2, 3], [5, 2, 1, 4], [3, 5, 6, 1, 4], [8, 4, 3, 2, 2, 4, 3], [6, 3, 5, 5, 1, 3, 4, 1, 2]], 'p': [[2, 1, 3, 1], [1, 3, 2, 4], [1, 1, 3, 2, 5], [2, 1, 1, 3, 1, 2, 3], [1, 2, 1, 1, 3, 1, 1, 2, 1]]}",
+            "outputs": "[62, 59, 98, 149, 173]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "multi:range_like",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Add(u1, 1), Map(lambda u1: 0, x))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[3, 6, 2], [-6, -3, 6, 1, 0, 2, -1], [0, 0, 0, 0, 0, 0, 0, 0, 0]]}",
+            "outputs": "[[0, 1, 2], [0, 1, 2, 3, 4, 5, 6], [0, 1, 2, 3, 4, 5, 6, 7, 8]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "multi:find_odd_products",
+            "handwritten_solution": "Filter(lambda u1: IsOdd(u1), ZipWith(lambda u1, u2: Multiply(u2, u1), x, Drop(1, x)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[4, 5, 7, 3, 8], [6, -1, 9, 4, -3, 11, 7, -7, 8], [11, 5, 2, 7, 13, 3, 5, 6, 5, 7]]}",
+            "outputs": "[[35, 21], [-9, -33, 77, -49], [55, 91, 39, 15, 35]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "multi:multiply_odds",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Multiply(u1, u2), Filter(lambda u1: IsOdd(u1), x))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[3, 5, 8, 2, 1], [5, 2, 1, 3, 3, 1, 4], [3, -4, -1, 8, 2, 0, -3, 0, 9, -1]]}",
+            "outputs": "[[3, 15, 15], [5, 5, 15, 45, 45], [3, -3, 9, 81, -81]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "multi:running_total",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Add(u1, u2), ZipWith(lambda u1, u2: Add(u1, u2), x, y))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[8, 4, 2, 7], [9, -3, 7, 0, 2, -2, 5, -1, 5], [23, -54, 39, 28, -36, -12, 21, 42, -84, 35]], 'y': [[2, 5, 3, 1], [8, 0, 4, -3, 7, 0, -4, -6, 1], [-52, 32, 18, -43, -32, 73, -28, 32, 56, -24]]}",
+            "outputs": "[[10, 19, 24, 32], [17, 14, 25, 22, 31, 29, 30, 23, 29], [-29, -51, 6, -9, -77, -16, -23, 51, 23, 34]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "multi:add_from_index",
+            "handwritten_solution": "ZipWith(lambda u1, u2: Add(u1, u2), x, Map(lambda u1: Access(u1, y), i))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[3, 6, 7], [11, 23, 8, 15, 4], [-5, 7, 23, -4, 0, -12, 3, 2, -8]], 'y': [[8, 5, 3, 10, 4], [-5, 0, 5], [-20, 14, 8, -4, 22, 0]], 'i': [[0, 3, 1], [2, 0, 2, 0, 1], [1, 4, 5, 2, 3, 3, 0, 1, 4]]}",
+            "outputs": "[[11, 16, 12], [16, 18, 13, 10, 4], [9, 29, 23, 4, -4, -16, -17, 16, 14]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "multi:positive_differences",
+            "handwritten_solution": "Filter(lambda u1: Greater(u1, -1), ZipWith(lambda u1, u2: Subtract(u1, u2), x, y))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x': [[8, 5, 7, 1, 2], [11, 4, 2, 13, 21, 16, 8, 4], [68, 23, 13, 6, 47, 72, 18, 58, 9, 25]], 'y': [[3, 1, 7, 2, 1], [2, 3, 7, 15, 5, 16, 3, 5], [24, 73, 88, 31, 19, 58, 42, 13, 7, 10]]}",
+            "outputs": "[[5, 4, 0, 1], [9, 1, 16, 0, 5], [44, 28, 14, 45, 2, 15]]",
+            "success": false,
+            "elapsed_time": null
+        }
+    ]
+}

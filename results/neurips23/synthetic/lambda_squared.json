@@ -1,0 +1,1005 @@
+{
+    "source": "Generated from results/synthetic/lambda_squared.tsv",
+    "results": [
+        {
+            "name": "synthetic:weight_3_function_0",
+            "handwritten_solution": "Map(lambda u1: 1, x1)",
+            "solution found": "fun a -> map (fun b -> 1) a",
+            "runtime": "0.05274415016",
+            "inputs_dict": "{'x1': [[-159, 106, 174, -57, 248], [-138, -159, 174]]}",
+            "outputs": "[[1, 1, 1, 1, 1], [1, 1, 1]]",
+            "success": true,
+            "elapsed_time": 0.05274415016
+        },
+        {
+            "name": "synthetic:weight_3_function_1",
+            "handwritten_solution": "Scanl1(lambda u1, u2: x2, x1)",
+            "solution found": "fun b a -> scanl1 (fun d c -> a) b",
+            "runtime": "0.06390452385",
+            "inputs_dict": "{'x1': [[9, 0, 1, 3], [1, 8, 4, 5], [5, 7, 0, 6]], 'x2': [2, 8, 6]}",
+            "outputs": "[[9, 2, 2, 2], [1, 8, 8, 8], [5, 6, 6, 6]]",
+            "success": true,
+            "elapsed_time": 0.06390452385
+        },
+        {
+            "name": "synthetic:weight_3_function_2",
+            "handwritten_solution": "Access(2, x1)",
+            "solution found": "fun a -> access 2 a",
+            "runtime": "0.02178168297",
+            "inputs_dict": "{'x1': [[-16, -8, -3, -12, -37, -4, -19], [-8, -30, -15, -28, -2, -36], [-34, -5, -39, -32, -2], [0, -9, -28, -45, -13, -29, -17], [-18, -16, -29, -26]]}",
+            "outputs": "[-3, -15, -39, -28, -29]",
+            "success": true,
+            "elapsed_time": 0.02178168297
+        },
+        {
+            "name": "synthetic:weight_3_function_3",
+            "handwritten_solution": "Drop(4, x1)",
+            "solution found": "fun a -> drop 4 a",
+            "runtime": "0.02531957626",
+            "inputs_dict": "{'x1': [[-231, -2, 204, 9, -49, 207, -82, 154, -3], [127, 135, 85, -56, -192, -215, 106, -164], [-101, 111, -187, 37, 7, -122, -213, 238, -18, -150], [-128, -53, -194, 68, 97, 134, -178, -173], [-172, 22, 228, -113, 153, -97]]}",
+            "outputs": "[[-49, 207, -82, 154, -3], [-192, -215, 106, -164], [7, -122, -213, 238, -18, -150], [97, 134, -178, -173], [153, -97]]",
+            "success": true,
+            "elapsed_time": 0.02531957626
+        },
+        {
+            "name": "synthetic:weight_3_function_4",
+            "handwritten_solution": "Take(x2, x1)",
+            "solution found": "fun b a -> take a b",
+            "runtime": "0.03650069237",
+            "inputs_dict": "{'x1': [[71], [-234, -233, 18, 213, -64], [206, -26, 90, -63], [179]], 'x2': [-100, -186, -188, 237]}",
+            "outputs": "[[], [], [], [179]]",
+            "success": true,
+            "elapsed_time": 0.03650069237
+        },
+        {
+            "name": "synthetic:weight_3_function_5",
+            "handwritten_solution": "Drop(x1, x2)",
+            "solution found": "fun b a -> drop 1 a",
+            "runtime": "0.02379393578",
+            "inputs_dict": "{'x1': [1, 1, 1, 1], 'x2': [[53], [25, 26, 94, 94, 98], [48, 49, 64, 35, 78], [38, 77, 92]]}",
+            "outputs": "[[], [26, 94, 94, 98], [49, 64, 35, 78], [77, 92]]",
+            "success": true,
+            "elapsed_time": 0.02379393578
+        },
+        {
+            "name": "synthetic:weight_3_function_6",
+            "handwritten_solution": "Drop(1, x1)",
+            "solution found": "fun a -> drop 1 a",
+            "runtime": "0.03549361229",
+            "inputs_dict": "{'x1': [[0, 1], [2, 1, 2, 1, 1]]}",
+            "outputs": "[[1], [1, 2, 1, 1]]",
+            "success": true,
+            "elapsed_time": 0.03549361229
+        },
+        {
+            "name": "synthetic:weight_3_function_7",
+            "handwritten_solution": "Drop(2, x1)",
+            "solution found": "fun a -> drop 2 a",
+            "runtime": "0.03347539902",
+            "inputs_dict": "{'x1': [[2, 2, 1, 4], [1, -1, 1, 0]]}",
+            "outputs": "[[1, 4], [1, 0]]",
+            "success": true,
+            "elapsed_time": 0.03347539902
+        },
+        {
+            "name": "synthetic:weight_3_function_8",
+            "handwritten_solution": "Scanl1(lambda u1, u2: 3, x1)",
+            "solution found": "fun a -> scanl1 (fun c b -> 3) a",
+            "runtime": "0.04626226425",
+            "inputs_dict": "{'x1': [[1, 10], [9, 10], [6, 0], [4, 2]]}",
+            "outputs": "[[1, 3], [9, 3], [6, 3], [4, 3]]",
+            "success": true,
+            "elapsed_time": 0.04626226425
+        },
+        {
+            "name": "synthetic:weight_3_function_9",
+            "handwritten_solution": "Access(x1, x2)",
+            "solution found": "fun b a -> access b a",
+            "runtime": "0.02809453011",
+            "inputs_dict": "{'x1': [0, 1, 2, 2, 0], 'x2': [[108, 205, 206, 224, 125, 247, 140, 174, 212, 212], [112, 173, 167, 246, 143, 126, 134, 209], [112, 231, 117, 158, 171, 164, 180], [113, 233, 195, 207, 124], [109, 176, 116]]}",
+            "outputs": "[108, 173, 117, 195, 109]",
+            "success": true,
+            "elapsed_time": 0.02809453011
+        },
+        {
+            "name": "synthetic:weight_4_function_0",
+            "handwritten_solution": "IntDivide(Head(x2), x1)",
+            "solution found": "fun b a -> int_divide (head a) b",
+            "runtime": "0.05823922157",
+            "inputs_dict": "{'x1': [-36, -13, 10, 21], 'x2': [[14, -26], [-8, -27], [-35, -39], [18, 10]]}",
+            "outputs": "[-1, 0, -4, 0]",
+            "success": true,
+            "elapsed_time": 0.05823922157
+        },
+        {
+            "name": "synthetic:weight_4_function_1",
+            "handwritten_solution": "Max(x1, Square(4))",
+            "solution found": "fun a -> max a (square 4)",
+            "runtime": "0.03046607971",
+            "inputs_dict": "{'x1': [34, 14]}",
+            "outputs": "[34, 16]",
+            "success": true,
+            "elapsed_time": 0.03046607971
+        },
+        {
+            "name": "synthetic:weight_4_function_2",
+            "handwritten_solution": "Multiply(4, Minimum(x1))",
+            "solution found": "fun a -> multiply 4 (minimum a)",
+            "runtime": "0.07958650589",
+            "inputs_dict": "{'x1': [[2, 9, 8], [9, 2, 6, 4, 7, 5, 4], [2, 1, 2, 5, 5, 2], [1, 7, 4, 4, 1, 2, 7]]}",
+            "outputs": "[8, 8, 4, 4]",
+            "success": true,
+            "elapsed_time": 0.07958650589
+        },
+        {
+            "name": "synthetic:weight_4_function_3",
+            "handwritten_solution": "IntDivide(4, Sum(x1))",
+            "solution found": "fun a -> int_divide 4 (sum a)",
+            "runtime": "0.05146956444",
+            "inputs_dict": "{'x1': [[0, 1], [2, 1, 2, 1, 1]]}",
+            "outputs": "[4, 0]",
+            "success": true,
+            "elapsed_time": 0.05146956444
+        },
+        {
+            "name": "synthetic:weight_4_function_4",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Minimum(x1), x2)",
+            "solution found": "fun b a -> scanl1 (fun d c -> minimum b) a",
+            "runtime": "0.4908907413",
+            "inputs_dict": "{'x1': [[2, 4, 9, 8, 7, 6], [8, 1, 1, 7, 2], [8, 4, 7, 9, 4, 6, 5], [9, 9, 2, 8, 2], [8, 8, 8, 4, 3]], 'x2': [[65, 144], [47, 112], [109, 198], [55, 35], [197, 208]]}",
+            "outputs": "[[65, 2], [47, 1], [109, 4], [55, 2], [197, 3]]",
+            "success": true,
+            "elapsed_time": 0.4908907413
+        },
+        {
+            "name": "synthetic:weight_4_function_5",
+            "handwritten_solution": "Subtract(2, Sum(x1))",
+            "solution found": "fun a -> subtract 2 (sum a)",
+            "runtime": "0.05088758469",
+            "inputs_dict": "{'x1': [[-213, -36], [-13, -37], [-100, 0]]}",
+            "outputs": "[251, 52, 102]",
+            "success": true,
+            "elapsed_time": 0.05088758469
+        },
+        {
+            "name": "synthetic:weight_4_function_6",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Sum(x2), x1)",
+            "solution found": "fun b a -> scanl1 (fun d c -> sum a) b",
+            "runtime": "0.3583545685",
+            "inputs_dict": "{'x1': [[-71], [-43, 97, 45, -93, 8, -34]], 'x2': [[-37, -42, -27, -57, -85], [-69, -12, -52]]}",
+            "outputs": "[[-71], [-43, -133, -133, -133, -133, -133]]",
+            "success": true,
+            "elapsed_time": 0.3583545685
+        },
+        {
+            "name": "synthetic:weight_4_function_7",
+            "handwritten_solution": "Take(-1, Sort(x1))",
+            "solution found": "fun a -> take 2 (sort a)",
+            "runtime": "0.05573272705",
+            "inputs_dict": "{'x1': [[72, 110, 199], [164, 67, 251], [76, 252, 170]]}",
+            "outputs": "[[72, 110], [67, 164], [76, 170]]",
+            "success": true,
+            "elapsed_time": 0.05573272705
+        },
+        {
+            "name": "synthetic:weight_4_function_8",
+            "handwritten_solution": "Sum(Drop(x1, x2))",
+            "solution found": "fun b a -> sum (drop b a)",
+            "runtime": "0.05544829369",
+            "inputs_dict": "{'x1': [-51, -130, 234], 'x2': [[3, 0, 3, 4, 0], [0, 3, 1, 3], [5, 3, 3, 5, 5, 3]]}",
+            "outputs": "[10, 7, 0]",
+            "success": true,
+            "elapsed_time": 0.05544829369
+        },
+        {
+            "name": "synthetic:weight_4_function_9",
+            "handwritten_solution": "Take(Sum(x1), x2)",
+            "solution found": "fun b a -> drop 2 (reverse a)",
+            "runtime": "0.04215908051",
+            "inputs_dict": "{'x1': [[0, 1, 0], [1, 0, 0, 1]], 'x2': [[0, 1, 1], [1, 1, 0, 0]]}",
+            "outputs": "[[0], [1, 1]]",
+            "success": true,
+            "elapsed_time": 0.04215908051
+        },
+        {
+            "name": "synthetic:weight_5_function_0",
+            "handwritten_solution": "Take(Head(x1), Reverse(x2))",
+            "solution found": "fun b a -> take (head b) (reverse a)",
+            "runtime": "0.1920466423",
+            "inputs_dict": "{'x1': [[81, 51, 51, 23], [1], [93, 75, 70, 43, 14]], 'x2': [[-51, -37], [-97, -33], [-88, -16]]}",
+            "outputs": "[[-37, -51], [-33], [-16, -88]]",
+            "success": true,
+            "elapsed_time": 0.1920466423
+        },
+        {
+            "name": "synthetic:weight_5_function_1",
+            "handwritten_solution": "IntDivide(Sum(x1), Head(x2))",
+            "solution found": "fun b a -> int_divide (sum b) (head a)",
+            "runtime": "0.365298748",
+            "inputs_dict": "{'x1': [[21, 3, 3, 33], [31, 17, 8, 0], [36, 2, 28, 40], [23, 0, 25, 20]], 'x2': [[20, 33, 29, 29], [22, 32, 5, 50], [21, 46, 9, 4], [27, 43, 28, 14]]}",
+            "outputs": "[3, 2, 5, 2]",
+            "success": true,
+            "elapsed_time": 0.365298748
+        },
+        {
+            "name": "synthetic:weight_5_function_2",
+            "handwritten_solution": "IntDivide(Square(4), Head(x1))",
+            "solution found": "fun a -> int_divide (square 4) (head a)",
+            "runtime": "0.1946184635",
+            "inputs_dict": "{'x1': [[-5, -5, -4, -4, -3, -3, -2, -1], [-7, -5, -4, -4, -4, -3, -2, -1], [-9, -8, -6, -4, -4, -2], [-5, -5, -4, -4, -3, -2, -2], [-8, -8, -8, -7, -7, -7, -4, -4, -3, -2]]}",
+            "outputs": "[-4, -3, -2, -4, -2]",
+            "success": true,
+            "elapsed_time": 0.1946184635
+        },
+        {
+            "name": "synthetic:weight_5_function_3",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Square(Minimum(x1)), x2)",
+            "solution found": "fun b a -> scanl1 (fun d c -> square (minimum b)) a",
+            "runtime": "4.907953262",
+            "inputs_dict": "{'x1': [[-9, 0, -4, -7, -6, -3, -5, -10], [0, -8, -7, -10, -4, -3, -2], [-2, -6, -7, -8, -4, -10, 0, -1, -3], [0, -3, -8, -4, -1, -6, -7, -9, -2], [0, -10, -1, -9, -7, -8, -5, -3]], 'x2': [[-4, -1, -8, -9, -6, -7, -3, -10], [-1, -8, -9, -10, -3, -4, -7], [-6, -10, -3, -7, 0, -5, -2, -1, -4], [-1, -10, -5, -3, 0, -6, -4, -8, -2], [-10, -6, -5, -1, -7, 0, -2, -3]]}",
+            "outputs": "[[-4, 100, 100, 100, 100, 100, 100, 100], [-1, 100, 100, 100, 100, 100, 100], [-6, 100, 100, 100, 100, 100, 100, 100, 100], [-1, 81, 81, 81, 81, 81, 81, 81, 81], [-10, 100, 100, 100, 100, 100, 100, 100]]",
+            "success": true,
+            "elapsed_time": 4.907953262
+        },
+        {
+            "name": "synthetic:weight_5_function_4",
+            "handwritten_solution": "Scanl1(lambda u1, u2: IntDivide(2, x1), x2)",
+            "solution found": "fun b a -> scanl1 (fun d c -> int_divide 2 b) a",
+            "runtime": "1.065360069",
+            "inputs_dict": "{'x1': [4, 1], 'x2': [[3, 1, 0, 1], [2, 5, 4, 0]]}",
+            "outputs": "[[3, 0, 0, 0], [2, 2, 2, 2]]",
+            "success": true,
+            "elapsed_time": 1.065360069
+        },
+        {
+            "name": "synthetic:weight_5_function_5",
+            "handwritten_solution": "Drop(IntDivide(x1, x3), x2)",
+            "solution found": "fun c b a -> drop (int_divide 1 c) b",
+            "runtime": "0.1839225292",
+            "inputs_dict": "{'x1': [-61, 88], 'x2': [[189, -11], [182, -26]], 'x3': [-47, -3]}",
+            "outputs": "[[-11], [182, -26]]",
+            "success": true,
+            "elapsed_time": 0.1839225292
+        },
+        {
+            "name": "synthetic:weight_5_function_6",
+            "handwritten_solution": "Subtract(Last(x2), Last(x1))",
+            "solution found": "fun b a -> subtract (last a) (last b)",
+            "runtime": "0.3298125267",
+            "inputs_dict": "{'x1': [[45, 21], [-2, -8, -31, -40], [-33, -49], [-46, 18, 0, -2], [23]], 'x2': [[32], [-32, 14, 8, -29, -18], [-45], [-41, -42], [46, 7]]}",
+            "outputs": "[11, 22, 4, -40, -16]",
+            "success": true,
+            "elapsed_time": 0.3298125267
+        },
+        {
+            "name": "synthetic:weight_5_function_7",
+            "handwritten_solution": "Subtract(4, IntDivide(x1, 4))",
+            "solution found": "fun a -> subtract 4 (int_divide a 4)",
+            "runtime": "0.1157777309",
+            "inputs_dict": "{'x1': [81, -44, -38, -91, 6]}",
+            "outputs": "[-16, 15, 14, 27, 3]",
+            "success": true,
+            "elapsed_time": 0.1157777309
+        },
+        {
+            "name": "synthetic:weight_5_function_8",
+            "handwritten_solution": "Filter(lambda u1: (lambda v1: IsOdd(v1))(u1), x1)",
+            "solution found": "fun a -> filter (fun b -> is_odd b) a",
+            "runtime": "0.205851078",
+            "inputs_dict": "{'x1': [[-45, 22, 21, -1], [-48, -3, -30, -14, 9], [21, 22]]}",
+            "outputs": "[[-45, 21, -1], [-3, 9], [21]]",
+            "success": true,
+            "elapsed_time": 0.205851078
+        },
+        {
+            "name": "synthetic:weight_5_function_9",
+            "handwritten_solution": "Subtract(Last(x2), Square(x1))",
+            "solution found": "fun b a -> subtract (last a) (square b)",
+            "runtime": "0.6380681992",
+            "inputs_dict": "{'x1': [6, 9, 0, -1, 2], 'x2': [[38, -36, -9, -6, -25, 10, -18, 11], [22, 22, -24, 2, -25, -40, 36, -42, 6, 35], [37, -39, -46, 50, -42, 42, -46, -34], [41, 48, -2, -37, -36, -19, 34, 9], [-12, -2, 40, -18, 44, -33, -18]]}",
+            "outputs": "[-25, -46, -34, 8, -22]",
+            "success": true,
+            "elapsed_time": 0.6380681992
+        },
+        {
+            "name": "synthetic:weight_6_function_0",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Subtract(0, Last(x1)), x2)",
+            "solution found": "fun b a -> scanl1 (fun d c -> int_divide (last b) -1) a",
+            "runtime": "24.91783738",
+            "inputs_dict": "{'x1': [[8, 5, 0, 4, 0, 9, 9, 3, 3], [9, 1, 8, 3], [9, 2, 9, 5, 9, 8, 1]], 'x2': [[-94, -58, -51, -40, 14, 63, 70], [-87, -68, -37, 41, 55, 58, 59, 83, 93], [-26, -14, -13, -8, 35, 38, 51, 74, 76, 82]]}",
+            "outputs": "[[-94, -3, -3, -3, -3, -3, -3], [-87, -3, -3, -3, -3, -3, -3, -3, -3], [-26, -1, -1, -1, -1, -1, -1, -1, -1, -1]]",
+            "success": true,
+            "elapsed_time": 24.91783738
+        },
+        {
+            "name": "synthetic:weight_6_function_1",
+            "handwritten_solution": "Multiply(Square(4), Add(x1, 3))",
+            "solution found": "fun a -> multiply (square 4) (add 3 a)",
+            "runtime": "0.3747770786",
+            "inputs_dict": "{'x1': [-2, 4]}",
+            "outputs": "[16, 112]",
+            "success": true,
+            "elapsed_time": 0.3747770786
+        },
+        {
+            "name": "synthetic:weight_6_function_2",
+            "handwritten_solution": "Scanl1(lambda u1, u2: (lambda v1: Subtract(v1, x2))(u2), x1)",
+            "solution found": "fun b a -> scanl1 (fun d c -> subtract c a) b",
+            "runtime": "2.139221668",
+            "inputs_dict": "{'x1': [[1, 0, 1, 0, 0, 0, 1], [0, 0, 0, 1, 1, 1, 0, 1], [0, 1, 1, 0, 1, 1, 1, 1], [0, 1, 1, 0, 0, 0, 1, 0, 1, 0], [1, 1, 1, 1, 0, 0, 0, 1, 1, 1]], 'x2': [0, 0, 0, 1, 1]}",
+            "outputs": "[[1, 0, 1, 0, 0, 0, 1], [0, 0, 0, 1, 1, 1, 0, 1], [0, 1, 1, 0, 1, 1, 1, 1], [0, 0, 0, -1, -1, -1, 0, -1, 0, -1], [1, 0, 0, 0, -1, -1, -1, 0, 0, 0]]",
+            "success": true,
+            "elapsed_time": 2.139221668
+        },
+        {
+            "name": "synthetic:weight_6_function_3",
+            "handwritten_solution": "Square(Min(Head(x1), Last(x2)))",
+            "solution found": "fun b a -> square (min (head b) (last a))",
+            "runtime": "2.295040131",
+            "inputs_dict": "{'x1': [[-9, -9, -9, -3], [-3, -6, -7, -7], [-2, -9, -3, -3]], 'x2': [[-4, -9, -7, -5], [-3, -6, -2, -5], [-8, -7, -7, -4]]}",
+            "outputs": "[81, 25, 16]",
+            "success": true,
+            "elapsed_time": 2.295040131
+        },
+        {
+            "name": "synthetic:weight_6_function_4",
+            "handwritten_solution": "Scanl1(lambda u1, u2: (lambda v1: IntDivide(v1, 3))(u1), x1)",
+            "solution found": "fun a -> scanl1 (fun c b -> int_divide c 3) a",
+            "runtime": "0.8769080639",
+            "inputs_dict": "{'x1': [[5, 9, 3, 4, 1], [9, 2, 8, 2]]}",
+            "outputs": "[[5, 1, 0, 0, 0], [9, 3, 1, 0]]",
+            "success": true,
+            "elapsed_time": 0.8769080639
+        },
+        {
+            "name": "synthetic:weight_6_function_5",
+            "handwritten_solution": "Scanl1(lambda u1, u2: (lambda v1: Subtract(-1, v1))(u2), x1)",
+            "solution found": "fun a -> scanl1 (fun c b -> subtract -1 b) a",
+            "runtime": "1.069532394",
+            "inputs_dict": "{'x1': [[1, 1, 0], [1, 1, 1], [1, 0, 1, 1], [1, 0, 0, 0, 0]]}",
+            "outputs": "[[1, -2, -1], [1, -2, -2], [1, -1, -2, -2], [1, -1, -1, -1, -1]]",
+            "success": true,
+            "elapsed_time": 1.069532394
+        },
+        {
+            "name": "synthetic:weight_6_function_6",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Min(x2, Sum(x1)), x1)",
+            "solution found": "fun b a -> scanl1 (fun d c -> min a (sum b)) b",
+            "runtime": "23.77779841",
+            "inputs_dict": "{'x1': [[1, 3, 4, 4, 5, 7], [1, 2, 2, 3, 6, 6, 7, 7, 9, 9], [2, 3, 4, 5, 6, 7], [1, 1, 1, 1, 3, 3, 4, 5, 9], [1, 1, 1, 2, 3, 6, 7, 8, 8]], 'x2': [90, 95, 10, 77, 67]}",
+            "outputs": "[[1, 24, 24, 24, 24, 24], [1, 52, 52, 52, 52, 52, 52, 52, 52, 52], [2, 10, 10, 10, 10, 10], [1, 28, 28, 28, 28, 28, 28, 28, 28], [1, 37, 37, 37, 37, 37, 37, 37, 37]]",
+            "success": true,
+            "elapsed_time": 23.77779841
+        },
+        {
+            "name": "synthetic:weight_6_function_7",
+            "handwritten_solution": "Subtract(Min(x1, x3), Sum(x2))",
+            "solution found": "fun c b a -> subtract (min c a) (sum b)",
+            "runtime": "0.877976656",
+            "inputs_dict": "{'x1': [-61, 88], 'x2': [[189, -11], [182, -26]], 'x3': [-47, -3]}",
+            "outputs": "[-239, -159]",
+            "success": true,
+            "elapsed_time": 0.877976656
+        },
+        {
+            "name": "synthetic:weight_6_function_8",
+            "handwritten_solution": "Scanl1(lambda u1, u2: (lambda v1: IntDivide(v1, 2))(u1), x1)",
+            "solution found": "fun a -> scanl1 (fun c b -> int_divide c 2) a",
+            "runtime": "0.8380658627",
+            "inputs_dict": "{'x1': [[2, 0, 9], [-8, -5, -7]]}",
+            "outputs": "[[2, 1, 0], [-8, -4, -2]]",
+            "success": true,
+            "elapsed_time": 0.8380658627
+        },
+        {
+            "name": "synthetic:weight_6_function_9",
+            "handwritten_solution": "Scanl1(lambda u1, u2: (lambda v1: Subtract(4, v1))(u1), x1)",
+            "solution found": "fun a -> scanl1 (fun c b -> subtract 4 c) a",
+            "runtime": "1.084259987",
+            "inputs_dict": "{'x1': [[-231, 79, 1, -5, -150], [172, 105, -57, 174, 0]]}",
+            "outputs": "[[-231, 235, -231, 235, -231], [172, -168, 172, -168, 172]]",
+            "success": true,
+            "elapsed_time": 1.084259987
+        },
+        {
+            "name": "synthetic:weight_7_function_0",
+            "handwritten_solution": "Subtract(x1, Min(x2, Multiply(x2, 3)))",
+            "solution found": "fun b a -> subtract b (min a (multiply 3 a))",
+            "runtime": "5.021245241",
+            "inputs_dict": "{'x1': [-39, -48], 'x2': [26, -2]}",
+            "outputs": "[-65, -42]",
+            "success": true,
+            "elapsed_time": 5.021245241
+        },
+        {
+            "name": "synthetic:weight_7_function_1",
+            "handwritten_solution": "Map(lambda u1: IntDivide(Subtract(x2, 3), 4), x1)",
+            "solution found": "fun b a -> map (fun c -> int_divide (subtract a 3) 4) b",
+            "runtime": "219.0991783",
+            "inputs_dict": "{'x1': [[-67], [44], [2], [-79]], 'x2': [72, 82, 48, 15]}",
+            "outputs": "[[17], [19], [11], [3]]",
+            "success": true,
+            "elapsed_time": 219.0991783
+        },
+        {
+            "name": "synthetic:weight_7_function_2",
+            "handwritten_solution": "ZipWith(lambda u1, u2: (lambda v1: Add(-1, v1))(u1), x1, x2)",
+            "solution found": "fun b a -> zip_with (fun d c -> add -1 d) b a",
+            "runtime": "19.46645212",
+            "inputs_dict": "{'x1': [[6, -32, -4, 32, 22, -12, 31], [0, -47, 18, 18, 39, -5], [37, 26, -40, -40]], 'x2': [[108, 129], [124, 190], [139, 241]]}",
+            "outputs": "[[5, -33], [-1, -48], [36, 25]]",
+            "success": true,
+            "elapsed_time": 19.46645212
+        },
+        {
+            "name": "synthetic:weight_7_function_3",
+            "handwritten_solution": "Multiply(2, Add(Square(4), Head(x1)))",
+            "solution found": "fun a -> multiply 2 (add (head a) (square 4))",
+            "runtime": "3.400211334",
+            "inputs_dict": "{'x1': [[0, 1, 1, 0, 0], [1, 1], [0, 1], [1]]}",
+            "outputs": "[32, 34, 32, 34]",
+            "success": true,
+            "elapsed_time": 3.400211334
+        },
+        {
+            "name": "synthetic:weight_7_function_4",
+            "handwritten_solution": "If(IsEven(x1), 0, Add(x1, 3))",
+            "solution found": "fun a -> ifelse (is_even a) 0 (add 3 a)",
+            "runtime": "3.928531885",
+            "inputs_dict": "{'x1': [63, 12, 11, 26, 98]}",
+            "outputs": "[66, 0, 14, 0, 0]",
+            "success": true,
+            "elapsed_time": 3.928531885
+        },
+        {
+            "name": "synthetic:weight_7_function_5",
+            "handwritten_solution": "ZipWith(lambda u1, u2: (lambda v1: Add(x1, v1))(u1), x2, x3)",
+            "solution found": "fun c b a -> zip_with (fun e d -> add e c) b a",
+            "runtime": "22.56538224",
+            "inputs_dict": "{'x1': [31, 63], 'x2': [[93, 80, 97, 39, 21, 73, 51], [76, 38, 93, 65, 16, 82]], 'x3': [[0, 1], [1, 0]]}",
+            "outputs": "[[124, 111], [139, 101]]",
+            "success": true,
+            "elapsed_time": 22.56538224
+        },
+        {
+            "name": "synthetic:weight_7_function_6",
+            "handwritten_solution": "Add(x1, Add(3, Max(x2, -1)))",
+            "solution found": "fun b a -> add 3 (add b (max -1 a))",
+            "runtime": "6.163600683",
+            "inputs_dict": "{'x1': [-39, -48], 'x2': [26, -2]}",
+            "outputs": "[-10, -46]",
+            "success": true,
+            "elapsed_time": 6.163600683
+        },
+        {
+            "name": "synthetic:weight_7_function_7",
+            "handwritten_solution": "ZipWith(lambda u1, u2: (lambda v1: Add(x1, v1))(u2), x2, x3)",
+            "solution found": "fun c b a -> zip_with (fun e d -> add e c) a b",
+            "runtime": "31.86711311",
+            "inputs_dict": "{'x1': [36, 42, 16, 60], 'x2': [[-1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1]], 'x3': [[5, 9, 10, 5, 0, 10], [5, 5], [2, 2, 7, 7, 7, 9, 5, 4], [10, 5, 10, 9]]}",
+            "outputs": "[[41, 45, 46, 41, 36], [47, 47], [18, 18, 23, 23, 23, 25, 21], [70, 65, 70, 69]]",
+            "success": true,
+            "elapsed_time": 31.86711311
+        },
+        {
+            "name": "synthetic:weight_7_function_8",
+            "handwritten_solution": "Map(lambda u1: IntDivide(Last(x2), Minimum(x1)), x3)",
+            "solution found": "fun c b a -> map (fun d -> int_divide (last b) (minimum c)) a",
+            "runtime": "423.9670916",
+            "inputs_dict": "{'x1': [[57, 100, 15, 30, 34, 60, 89, 27, 51], [17, 30, 73], [27, 21, 84, 18, 86, 46, 15], [42, 62, 14, 14, 83, 19, 39, 4]], 'x2': [[47, 39, 86, 73, 52, 87, 23, 70, 72], [6, 26, 3], [70, 26, 65, 10, 35, 90, 98], [13, 67, 63, 7, 98, 61, 98, 98]], 'x3': [[-1, -1, -1, -1, -1, -1], [-1], [-1, -1, -1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1, -1, -1]]}",
+            "outputs": "[[4, 4, 4, 4, 4, 4], [0], [6, 6, 6, 6, 6, 6, 6, 6], [24, 24, 24, 24, 24, 24, 24, 24]]",
+            "success": true,
+            "elapsed_time": 423.9670916
+        },
+        {
+            "name": "synthetic:weight_7_function_9",
+            "handwritten_solution": "Add(x1, IntDivide(Add(x1, 2), x2))",
+            "solution found": "fun b a -> add b (int_divide (add 2 b) a)",
+            "runtime": "5.964896917",
+            "inputs_dict": "{'x1': [8, 6, 9, 9], 'x2': [5, 5, 9, 2]}",
+            "outputs": "[10, 7, 10, 14]",
+            "success": true,
+            "elapsed_time": 5.964896917
+        },
+        {
+            "name": "synthetic:weight_8_function_0",
+            "handwritten_solution": "Take(3, Scanl1(lambda u1, u2: (lambda v1: IntDivide(4, v1))(u1), x1))",
+            "solution found": "fun a -> scanl1 (fun c b -> int_divide 4 c) (take 3 a)",
+            "runtime": "177.3223276",
+            "inputs_dict": "{'x1': [[1, 1, 1, 1, 0, 0, 0], [2, 2, 2, 1, 0, 0, 0, 0, 0], [2, 2, 1, 1, 1, 0, 0], [2, 2, 1, 1, 1, 0, 0, 0, 0], [2, 2, 2, 2, 2, 1, 1, 1]]}",
+            "outputs": "[[1, 4, 1], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2]]",
+            "success": true,
+            "elapsed_time": 177.3223276
+        },
+        {
+            "name": "synthetic:weight_8_function_1",
+            "handwritten_solution": "Scanl1(lambda u1, u2: x3, Filter(lambda u1: (lambda v1: Greater(v1, x2))(u1), x1))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[32, 21, 0, 24, 27], [36, 30, 36, 29, 21, 45, 18], [6, 35, 0, 13, 10, 50, 41, 41, 16, 44], [45, 13, 42, 34, 30], [9, 21, 23, 45, 46, 50, 30, 20]], 'x2': [7, 37, 49, 22, 0], 'x3': [253, 203, 109, 209, 101]}",
+            "outputs": "[[32, 253, 253, 253], [45], [50], [45, 209, 209, 209], [9, 101, 101, 101, 101, 101, 101, 101]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_8_function_2",
+            "handwritten_solution": "Map(lambda u1: (lambda v1: IntDivide(v1, Add(3, 4)))(u1), x1)",
+            "solution found": "fun a -> map (fun b -> int_divide b (add 3 4)) a",
+            "runtime": "158.8286915",
+            "inputs_dict": "{'x1': [[-238, -195, 77, -187, -200], [182, 12], [-118]]}",
+            "outputs": "[[-34, -28, 11, -27, -29], [26, 1], [-17]]",
+            "success": true,
+            "elapsed_time": 158.8286915
+        },
+        {
+            "name": "synthetic:weight_8_function_3",
+            "handwritten_solution": "Scanl1(lambda u1, u2: (lambda v1: Subtract(Add(x1, 1), v1))(u2), x2)",
+            "solution found": "fun b a -> scanl1 (fun d c -> add 1 (subtract b c)) a",
+            "runtime": "229.2238052",
+            "inputs_dict": "{'x1': [226, 174, 125, 232], 'x2': [[1, 2, 4, 5, 7, 9], [3, 4, 6, 9], [1, 3, 4, 5, 6, 8, 9], [1, 2, 5, 7, 9]]}",
+            "outputs": "[[1, 225, 223, 222, 220, 218], [3, 171, 169, 166], [1, 123, 122, 121, 120, 118, 117], [1, 231, 228, 226, 224]]",
+            "success": true,
+            "elapsed_time": 229.2238052
+        },
+        {
+            "name": "synthetic:weight_8_function_4",
+            "handwritten_solution": "Scanl1(lambda u1, u2: (lambda v1: Min(v1, Access(x2, x3)))(u2), x1)",
+            "solution found": "fun c b a -> scanl1 (fun e d -> min d (access b a)) c",
+            "runtime": "428.3373909",
+            "inputs_dict": "{'x1': [[1, 4, 3, 5, -1], [4, -1, 0, 2], [3, 0, 4, -1], [-1, 5, 2, 1], [4, 5, 0]], 'x2': [3, -1, 1, -1, 2], 'x3': [[-1, 4, 1, 0, 2], [3, 1, 2, -1], [4, 1, 2, 0], [2, 0, 3, 1], [2, 1, 3]]}",
+            "outputs": "[[1, 0, 0, 0, -1], [4, -1, -1, -1], [3, 0, 1, -1], [-1, 1, 1, 1], [4, 3, 0]]",
+            "success": true,
+            "elapsed_time": 428.3373909
+        },
+        {
+            "name": "synthetic:weight_8_function_5",
+            "handwritten_solution": "Map(lambda u1: Sum(x1), Filter(lambda u1: (lambda v1: IsOdd(v1))(u1), x2))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[-1, -1, -1, -1, 0, 0, 0, 0, 1, 1], [-1, -1, 0, 0, 1, 1, 1], [-1, -1, -1, 0, 0, 0, 1, 1, 1, 1], [-1, -1, -1, -1, -1, 0, 0, 0, 1, 1], [-1, -1, 0, 0, 0, 1, 1, 1, 1, 1]], 'x2': [[-1, -1, -1, -1, 0, 0, 0, 0, 1, 1], [-1, -1, -1, 0, 0, 0, 1], [-1, -1, -1, -1, -1, 0, 0, 0, 1, 1], [-1, -1, 0, 0, 0, 0, 1, 1, 1, 1], [-1, -1, -1, 0, 0, 0, 0, 1, 1, 1]]}",
+            "outputs": "[[-2, -2, -2, -2, -2, -2], [1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [-3, -3, -3, -3, -3, -3], [3, 3, 3, 3, 3, 3]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_8_function_6",
+            "handwritten_solution": "Subtract(x1, Max(3, Subtract(Head(x2), 2)))",
+            "solution found": "fun b a -> subtract b (max 3 (subtract (head a) 2))",
+            "runtime": "59.29107618",
+            "inputs_dict": "{'x1': [8, 6, 6, 5, 9], 'x2': [[4], [6], [4], [9], [8]]}",
+            "outputs": "[5, 2, 3, -2, 3]",
+            "success": true,
+            "elapsed_time": 59.29107618
+        },
+        {
+            "name": "synthetic:weight_8_function_7",
+            "handwritten_solution": "Map(lambda u1: (lambda v1: IntDivide(v1, Multiply(x1, 4)))(u1), x2)",
+            "solution found": "fun b a -> map (fun c -> int_divide c (multiply 4 b)) a",
+            "runtime": "168.8833821",
+            "inputs_dict": "{'x1': [40, 4], 'x2': [[132, 218], [26, 114]]}",
+            "outputs": "[[0, 1], [1, 7]]",
+            "success": true,
+            "elapsed_time": 168.8833821
+        },
+        {
+            "name": "synthetic:weight_8_function_8",
+            "handwritten_solution": "Subtract(x1, Add(Square(3), Square(Square(3))))",
+            "solution found": "fun a -> subtract a (add (square 3) (square (square 3)))",
+            "runtime": "39.30521798",
+            "inputs_dict": "{'x1': [37, 39, 31, 49]}",
+            "outputs": "[-53, -51, -59, -41]",
+            "success": true,
+            "elapsed_time": 39.30521798
+        },
+        {
+            "name": "synthetic:weight_8_function_9",
+            "handwritten_solution": "Map(lambda u1: (lambda v1: If(IsEven(x2), 3, v1))(u1), x1)",
+            "solution found": "fun b a -> ifelse (is_odd a) b (map (fun c -> 3) b)",
+            "runtime": "247.21439",
+            "inputs_dict": "{'x1': [[0, 9, 3, 10, 6, 9, 7, 5, 10, 4], [10, 0], [10, 2], [0, 2, 10]], 'x2': [67, 31, 181, 40]}",
+            "outputs": "[[0, 9, 3, 10, 6, 9, 7, 5, 10, 4], [10, 0], [10, 2], [3, 3, 3]]",
+            "success": true,
+            "elapsed_time": 247.21439
+        },
+        {
+            "name": "synthetic:weight_9_function_0",
+            "handwritten_solution": "Subtract(3, Square(IntDivide(Access(2, Reverse(x1)), 4)))",
+            "solution found": "fun a -> subtract 3 (square (int_divide (access 2 (reverse a)) 4))",
+            "runtime": "568.340425",
+            "inputs_dict": "{'x1': [[19, 9, 8], [19, 14, 7], [48, 32, 20, 7]]}",
+            "outputs": "[-13, -13, -61]",
+            "success": true,
+            "elapsed_time": 568.340425
+        },
+        {
+            "name": "synthetic:weight_9_function_1",
+            "handwritten_solution": "Reverse(Map(lambda u1: (lambda v1: Add(-1, v1))(u1), Scanl1(lambda u1, u2: x1, x2)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [14, 45], 'x2': [[40, 2], [47, 42]]}",
+            "outputs": "[[13, 39], [44, 46]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_9_function_2",
+            "handwritten_solution": "Subtract(IntDivide(x1, 3), Add(3, IntDivide(x1, 2)))",
+            "solution found": "fun a -> subtract (int_divide (int_divide (subtract 3 a) 2) 3) 3",
+            "runtime": "717.4831395",
+            "inputs_dict": "{'x1': [34, 165, 79, 52]}",
+            "outputs": "[-9, -30, -16, -12]",
+            "success": true,
+            "elapsed_time": 717.4831395
+        },
+        {
+            "name": "synthetic:weight_9_function_3",
+            "handwritten_solution": "Scanl1(lambda u1, u2: Subtract(IntDivide(Last(x1), Head(x2)), 2), x1)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[38, 33, 0, -48], [-17, -46, 28, 12, -41]], 'x2': [[2, 9], [9, 3, 3, 5, 8]]}",
+            "outputs": "[[38, -26, -26, -26], [-17, -7, -7, -7, -7]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_9_function_4",
+            "handwritten_solution": "Sum(Take(Minimum(x1), Scanl1(lambda u1, u2: Subtract(x2, 3), x1)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[48], [-3, 14, 19, 45, 9], [8, 9, 15, 17, 4], [15, 38], [33, 20, 26]], 'x2': [29, 8, 42, 30, 30]}",
+            "outputs": "[48, 2, 125, 42, 87]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_9_function_5",
+            "handwritten_solution": "Map(lambda u1: (lambda v1: Subtract(v1, 4))(u1), Scanl1(lambda u1, u2: 1, Sort(x1)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[70, 56, 91, 17, 69, 28], [80, 44, 64, 28, 19, 47], [64, 89, 24, 47, 83, 42]]}",
+            "outputs": "[[13, -3, -3, -3, -3, -3], [15, -3, -3, -3, -3, -3], [20, -3, -3, -3, -3, -3]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_9_function_6",
+            "handwritten_solution": "Map(lambda u1: Multiply(2, Max(3, Access(1, x2))), x1)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[0], [2, 8], [8, 6, 2], [3, 2], [9]], 'x2': [[20, -40, -47, 50, 13, 25, 43, -48, 42], [11, 43, -11, -6, -13, -13, -15], [-25, 46, 4, 43, -43, 0], [47, 33, -4, 25, 46, -46, -14, -10, -16, 4], [-2, 43, 50, -37, -14, -38, -46, -26]]}",
+            "outputs": "[[6], [86, 86], [92, 92, 92], [66, 66], [86]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_9_function_7",
+            "handwritten_solution": "Map(lambda u1: (lambda v1: Min(4, (lambda v1: Max(0, v1))(v1)))(u1), x1)",
+            "solution found": "fun a -> map (fun b -> max 0 (min 4 b)) a",
+            "runtime": "155.5674927",
+            "inputs_dict": "{'x1': [[-9, -2, -10, -6, 0, -10, -6, 3, 1], [-1, -5, 8, 5]]}",
+            "outputs": "[[0, 0, 0, 0, 0, 0, 0, 3, 1], [0, 0, 4, 4]]",
+            "success": true,
+            "elapsed_time": 155.5674927
+        },
+        {
+            "name": "synthetic:weight_9_function_8",
+            "handwritten_solution": "ZipWith(lambda u1, u2: (lambda v1: Max(v1, Add(x3, 3)))(u2), x1, x2)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[7], [10, 8, 1, 3, 6], [6, 6], [5, 8, 10]], 'x2': [[-37, 49], [25, 156], [-106, 83], [-179, -100]], 'x3': [140, 26, -226, -196]}",
+            "outputs": "[[143], [29, 156], [-106, 83], [-179, -100]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_9_function_9",
+            "handwritten_solution": "Map(lambda u1: (lambda v1: IntDivide((lambda v1: Multiply(3, v1))(v1), 4))(u1), x1)",
+            "solution found": "fun a -> map (fun b -> int_divide (multiply 3 b) 4) a",
+            "runtime": "120.9634197",
+            "inputs_dict": "{'x1': [[90], [26]]}",
+            "outputs": "[[67], [19]]",
+            "success": true,
+            "elapsed_time": 120.9634197
+        },
+        {
+            "name": "synthetic:weight_10_function_0",
+            "handwritten_solution": "IntDivide(Add(Last(x2), Max(x1, Access(1, x3))), 3)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [178, 95, -7, 63], 'x2': [[28, 32, 37], [-42, -34, -13, 42, 47], [-42, -21, 10, 35], [5, 25]], 'x3': [[3, 126, 134, 140, 171, 178, 228], [2, 13, 35, 93, 185, 220], [45, 62, 81, 89], [60, 116, 149, 214]]}",
+            "outputs": "[71, 47, 32, 47]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_10_function_1",
+            "handwritten_solution": "Sort(Scanl1(lambda u1, u2: (lambda v1: IntDivide(4, (lambda v1: Max(2, v1))(v1)))(u2), x1))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[-1, -1, 4], [2, 4, 8], [-1, 6, 9]]}",
+            "outputs": "[[-1, 1, 2], [0, 1, 2], [-1, 0, 0]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_10_function_2",
+            "handwritten_solution": "Subtract(IntDivide(x1, Subtract(x1, Multiply(3, Square(4)))), 2)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [34, 165, 79, 52]}",
+            "outputs": "[-5, -1, 0, 11]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_10_function_3",
+            "handwritten_solution": "Map(lambda u1: (lambda v1: Square(v1))(u1), Scanl1(lambda u1, u2: Sum(Scanl1(lambda u1, u2: 4, x1)), x1))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[2, 0, 9], [-8, -5, -7]]}",
+            "outputs": "[[4, 100, 100], [64, 0, 0]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_10_function_4",
+            "handwritten_solution": "Map(lambda u1: Square(Count(lambda u1: (lambda v1: Equal(v1, Last(x1)))(u1), x2)), x3)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[0, 1, 0, 1, 0, 1, 1], [0, 1, 0, 0], [1, 0, 1, 0], [0, 0, 0, 1, 1, 0, 1], [1, 0, 1, 0, 1]], 'x2': [[0, 0, 1, 0, 0, 1, 0], [0, 0, 0, 1], [1, 1, 1, 0], [0, 0, 1, 1, 0, 1, 0], [0, 1, 0, 1, 1]], 'x3': [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]}",
+            "outputs": "[[4, 4], [9, 9], [1, 1], [9, 9], [9, 9]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_10_function_5",
+            "handwritten_solution": "Take(3, Scanl1(lambda u1, u2: Last(x2), Map(lambda u1: Add(-1, -1), x1)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[0, 1, 0], [1, 0, 0, 1]], 'x2': [[0, 1, 1], [1, 1, 0, 0]]}",
+            "outputs": "[[-2, 1, 1], [-2, 0, 0]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_10_function_6",
+            "handwritten_solution": "Map(lambda u1: (lambda v1: Subtract(2, (lambda v1: Square((lambda v1: Square(v1))(v1)))(v1)))(u1), x1)",
+            "solution found": "fun a -> map (fun b -> subtract 2 (square (square b))) a",
+            "runtime": "132.6830044",
+            "inputs_dict": "{'x1': [[1], [-4], [-1]]}",
+            "outputs": "[[1], [-254], [1]]",
+            "success": true,
+            "elapsed_time": 132.6830044
+        },
+        {
+            "name": "synthetic:weight_10_function_7",
+            "handwritten_solution": "Add(x2, Sum(Map(lambda u1: (lambda v1: IntDivide(v1, Head(x1)))(u1), x3)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[1, 4, 3, 5, -1], [4, -1, 0, 2], [3, 0, 4, -1], [-1, 5, 2, 1], [4, 5, 0]], 'x2': [3, -1, 1, -1, 2], 'x3': [[-1, 4, 1, 0, 2], [3, 1, 2, -1], [4, 1, 2, 0], [2, 0, 3, 1], [2, 1, 3]]}",
+            "outputs": "[9, -2, 2, -7, 2]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_10_function_8",
+            "handwritten_solution": "Scanl1(lambda u1, u2: (lambda v1: IntDivide(v1, Head(x3)))(u2), Sort(Scanl1(lambda u1, u2: x1, x2)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [95, -121, 170, 179], 'x2': [[1, 1], [1, 1], [1, 1], [1, 1]], 'x3': [[-159, -150, -87, -180], [-182], [-188, -200, -70, -93], [-7, -186, -119, -169, -193, -187, -166, -135, -80]]}",
+            "outputs": "[[1, -1], [-121, -1], [1, -1], [1, -26]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_10_function_9",
+            "handwritten_solution": "Map(lambda u1: (lambda v1: Subtract(4, v1))(u1), Scanl1(lambda u1, u2: 4, Drop(1, x1)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[-10, -6, -5, -4, -2, 6], [-10, -9, -7, -7, -5, -2]]}",
+            "outputs": "[[10, 0, 0, 0, 0], [13, 0, 0, 0, 0]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_11_function_0",
+            "handwritten_solution": "Add(3, IntDivide(Sum(Scanl1(lambda u1, u2: (lambda v1: Subtract(v1, x1))(u1), x2)), 2))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [3, 3, 5], 'x2': [[2, 3, 3, 5, 8, 8, 9], [1, 1, 3, 3, 5, 5, 7, 8, 8, 8], [2, 3, 4, 5, 6, 6, 6, 8, 9]]}",
+            "outputs": "[-22, -60, -78]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_11_function_1",
+            "handwritten_solution": "If(IsEven(x2), 1, Subtract(x1, Multiply(4, IntDivide(x2, 3))))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [19, 10, 16, 7], 'x2': [36, 43, 13, 21]}",
+            "outputs": "[1, -46, 0, -21]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_11_function_2",
+            "handwritten_solution": "Min(2, Sum(Drop(4, Scanl1(lambda u1, u2: (lambda v1: Add(v1, v1))(u1), x1))))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[-1, 0], [-1, -1, 1, 0, 0], [1, 0, 0, 1, 1, 0, -1, 1], [-1, 1, 1, 0], [-1, 0, 0, -1, -1, 0]]}",
+            "outputs": "[0, -16, 2, 0, -48]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_11_function_3",
+            "handwritten_solution": "Subtract(0, Square(Add(x2, Square(Count(lambda u1: (lambda v1: IsOdd(v1))(u1), x1)))))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[1, 1], [2, 2], [1, 0], [0, 1]], 'x2': [2, 0, 2, 0]}",
+            "outputs": "[-36, 0, -9, -1]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_11_function_4",
+            "handwritten_solution": "Multiply(4, Subtract(4, Multiply(Square(3), IntDivide(Square(x1), 3))))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [2, 0, 4]}",
+            "outputs": "[-20, 16, -164]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_11_function_5",
+            "handwritten_solution": "Drop(3, ZipWith(lambda u1, u2: Add(2, Square(Add(3, 4))), x1, x2))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[193, 228, 228, 215, 143], [229, 116, 186], [232, 243, 244, 186]], 'x2': [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]}",
+            "outputs": "[[51], [], [51]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_11_function_6",
+            "handwritten_solution": "Reverse(Filter(lambda u1: IsEven(Last(x1)), Scanl1(lambda u1, u2: (lambda v1: IntDivide(v1, 2))(u1), x1)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[-117], [-166], [-99, -202, -90, -14], [-221, -222, -241, -193, -213], [-248]]}",
+            "outputs": "[[], [-166], [-13, -25, -50, -99], [], [-248]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_11_function_7",
+            "handwritten_solution": "Multiply(3, IntDivide(Max(-1, Max(Last(x1), Sum(x1))), 3))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[-20, 63], [0, -42], [93, 45], [-41, -94], [-9, 35]]}",
+            "outputs": "[63, -3, 138, -3, 33]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_11_function_8",
+            "handwritten_solution": "IntDivide(Square(Subtract(Square(4), Last(x1))), Subtract(3, Last(x1)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[8], [0, 2]]}",
+            "outputs": "[-13, 196]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_11_function_9",
+            "handwritten_solution": "Take(2, Scanl1(lambda u1, u2: Add(3, Max(Square(4), Head(x1))), x1))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[-95], [-99, -47, -202, -131, -161, 180, 216, -193], [184, 117, -154, 4, 41, 15], [246, 129, 14, 78, 256, -95, -74]]}",
+            "outputs": "[[-95], [-99, 19], [184, 187], [246, 249]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_12_function_0",
+            "handwritten_solution": "Map(lambda u1: (lambda v1: IntDivide((lambda v1: Square(v1))(v1), Square(Subtract(2, Square(4)))))(u1), x1)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[204], [31]]}",
+            "outputs": "[[212], [4]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_12_function_1",
+            "handwritten_solution": "Reverse(Scanl1(lambda u1, u2: (lambda v1: IntDivide(v1, 2))(u1), Map(lambda u1: Square(Multiply(3, 4)), x1)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[0], [0, 1]]}",
+            "outputs": "[[144], [72, 144]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_12_function_2",
+            "handwritten_solution": "Multiply(Add(x1, 2), Add(1, Subtract(4, Multiply(4, Square(4)))))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [1, 0]}",
+            "outputs": "[-177, -118]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_12_function_3",
+            "handwritten_solution": "Subtract(If(IsOdd(x1), Add(x1, x1), Subtract(0, Square(3))), 2)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [96, 79]}",
+            "outputs": "[-11, 156]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_12_function_4",
+            "handwritten_solution": "Subtract(If(IsEven(IntDivide(x1, 3)), x2, Add(x1, Square(3))), 4)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [158, 232], 'x2': [0, 0]}",
+            "outputs": "[-4, 237]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_12_function_5",
+            "handwritten_solution": "Subtract(x2, Square(Add(Square(4), IntDivide(x1, Subtract(3, Square(3))))))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [115, 177], 'x2': [0, 0]}",
+            "outputs": "[-16, -196]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_12_function_6",
+            "handwritten_solution": "Subtract(Square(4), If(IsEven(IntDivide(x1, 3)), x2, Add(x1, 2)))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [158, 232], 'x2': [0, 0]}",
+            "outputs": "[16, -218]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_12_function_7",
+            "handwritten_solution": "Subtract(x2, Add(x1, IntDivide(x1, Subtract(IntDivide(x1, Square(4)), 2))))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [115, 177], 'x2': [0, 0]}",
+            "outputs": "[-138, -196]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_12_function_8",
+            "handwritten_solution": "Map(lambda u1: (lambda v1: Subtract(0, (lambda v1: Square((lambda v1: Subtract(v1, Square(4)))(v1)))(v1)))(u1), x1)",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [[1], [0]]}",
+            "outputs": "[[-225], [-256]]",
+            "success": false,
+            "elapsed_time": null
+        },
+        {
+            "name": "synthetic:weight_12_function_9",
+            "handwritten_solution": "Add(3, Multiply(2, Max(x1, Multiply(4, Subtract(Square(4), 2)))))",
+            "solution found": "",
+            "runtime": "",
+            "inputs_dict": "{'x1': [67, 33, 99]}",
+            "outputs": "[137, 115, 201]",
+            "success": false,
+            "elapsed_time": null
+        }
+    ]
+}

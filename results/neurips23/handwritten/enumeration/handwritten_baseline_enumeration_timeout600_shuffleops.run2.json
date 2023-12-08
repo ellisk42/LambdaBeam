@@ -1,0 +1,907 @@
+{
+    "num_tasks": 100,
+    "num_tasks_solved": 50,
+    "results": [
+        {
+            "elapsed_time": 0.46817771531641483,
+            "num_unique_values": 1092,
+            "num_values_explored": 17222,
+            "solution": "Sum(Take(k, Sort(b)))",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='none:deepcoder_0',\n    inputs_dict={'k': [2, 2, 3, 6, 5], 'b': [[3, 5, 4, 7, 5], [12, 56, 31, 23, 49], [8, 3, 4, 12, 5, 2, 4], [9, 7, 5, 4, 12, 6, 2, 6], [9, 0, 12, -4, 3, -7, 39, 5, 1, -3]]},\n    outputs=[7, 35, 9, 30, -13],\n    solution='Sum(Take(k, Sort(b)))'\n)"
+        },
+        {
+            "elapsed_time": 0.13825559429824352,
+            "num_unique_values": 468,
+            "num_values_explored": 4962,
+            "solution": "Drop(1, Take(-1, x))",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='none:remove_ends',\n    inputs_dict={'x': [[4, 2, 5, 6], [6, -4, 4, -7, 1, 0, -2], [42, 68, 38, 22, 87, 17, 83, 29]]},\n    outputs=[[2, 5], [-4, 4, -7, 1, 0], [68, 38, 22, 87, 17, 83]],\n    solution='Take(-1, Drop(1, x))'\n)"
+        },
+        {
+            "elapsed_time": 0.6716719642281532,
+            "num_unique_values": 1691,
+            "num_values_explored": 27984,
+            "solution": "Reverse(Drop(n, Reverse(x)))",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='none:drop_last',\n    inputs_dict={'x': [[5, 3, 2, 1, 6], [4, -11, 5, -6, -5, 7, 8], [13, 48, 28, 37, 85, 43, 23, 54, 42, 17]], 'n': [2, 5, 3]},\n    outputs=[[5, 3, 2], [4, -11], [13, 48, 28, 37, 85, 43, 23]],\n    solution='Take(Subtract(0, n), x)'\n)"
+        },
+        {
+            "elapsed_time": 0.6948615331202745,
+            "num_unique_values": 1314,
+            "num_values_explored": 27347,
+            "solution": "Take(k, Reverse(Sort(x)))",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='none:top_k',\n    inputs_dict={'x': [[4, 1, 2, 6, 3], [8, 9, 3, 5, 2, 7, 8], [12, 63, 21, 59, 32, 55, 68, -99, 48]], 'k': [2, 4, 3]},\n    outputs=[[6, 4], [9, 8, 8, 7], [68, 63, 59]],\n    solution='Take(k, Reverse(Sort(x)))'\n)"
+        },
+        {
+            "elapsed_time": 1.044289980083704,
+            "num_unique_values": 2108,
+            "num_values_explored": 42508,
+            "solution": "Drop(i, Take(j, x))",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='none:slice',\n    inputs_dict={'x': [[6, 7, 2, 8, 1, 3], [24, 63, 74, 12, 33, 42, 19], [-6, 49, -24, 8, 47, 23, 11, -12, -55, 38]], 'i': [3, 2, 5], 'j': [5, 6, 8]},\n    outputs=[[8, 1], [74, 12, 33, 42], [23, 11, -12]],\n    solution='Drop(i, Take(j, x))'\n)"
+        },
+        {
+            "elapsed_time": 0.5728501323610544,
+            "num_unique_values": 1407,
+            "num_values_explored": 24422,
+            "solution": "Access(k, Reverse(Sort(x)))",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='none:kth_largest',\n    inputs_dict={'x': [[5, 9, 4], [7, 8, 6, 2], [18, 38, 24, 74, 37, 87, 64], [-5, 0, -4, 4, 7, -5, 7, -5, 6], [2, -10, 0, -3, -5, 7, 9, -8, 7, 4]], 'k': [0, 2, 4, 3, 7]},\n    outputs=[9, 6, 37, 4, -5],\n    solution='Access(k, Reverse(Sort(x)))'\n)"
+        },
+        {
+            "elapsed_time": 0.05971051566302776,
+            "num_unique_values": 62,
+            "num_values_explored": 1015,
+            "solution": "Access(1, Sort(x))",
+            "solution_weight": 4,
+            "success": true,
+            "task": "Task(\n    name='none:triple_median',\n    inputs_dict={'x': [[9, 7, 4], [23, 54, 38], [-6, 5, -7], [5, 8, 13], [-47, -18, -21]]},\n    outputs=[7, 38, -6, 8, -21],\n    solution='Access(1, Sort(x))'\n)"
+        },
+        {
+            "elapsed_time": 2.266531530767679,
+            "num_unique_values": 3749,
+            "num_values_explored": 90876,
+            "solution": "Reverse(Sort(Take(n, Reverse(x))))",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='none:decreasing_suffix',\n    inputs_dict={'x': [[3, 2, 5, 7], [4, 6, 2, 1, 7, 3, 9], [-78, 49, 28, -42, -13, 76, 84, -49, 31, 8]], 'n': [2, 5, 4]},\n    outputs=[[7, 5], [9, 7, 3, 2, 1], [84, 31, 8, -49]],\n    solution='Reverse(Sort(Take(n, Reverse(x))))'\n)"
+        },
+        {
+            "elapsed_time": 0.5621994845569134,
+            "num_unique_values": 1025,
+            "num_values_explored": 20265,
+            "solution": "Subtract(Maximum(x), Minimum(x))",
+            "solution_weight": 5,
+            "success": true,
+            "task": "Task(\n    name='none:range',\n    inputs_dict={'x': [[16, -14, 5, 22, -7], [43, 58, 13, 29, 67, 38], [4, 5, 3, 4, 8, 3, 6, 5, 6], [26, 24, 28, 27, 28, 29, 24, 22, 26, 25], [42, -35, 48, -57, 42, 13, 58, 62, -32, -49]]},\n    outputs=[36, 54, 5, 7, 119],\n    solution='Subtract(Maximum(x), Minimum(x))'\n)"
+        },
+        {
+            "elapsed_time": 4.578575149178505,
+            "num_unique_values": 6341,
+            "num_values_explored": 155551,
+            "solution": "Add(k, Multiply(k, IntDivide(x, k)))",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='none:next_multiple',\n    inputs_dict={'x': [3, 8, 13, 27, 58], 'k': [5, 7, 4, 9, 14]},\n    outputs=[5, 14, 16, 36, 70],\n    solution='Multiply(Add(IntDivide(x, k), 1), k)'\n)"
+        },
+        {
+            "elapsed_time": 7.124244846403599,
+            "num_unique_values": 10535,
+            "num_values_explored": 202830,
+            "solution": "IntDivide(Add(Last(x), Head(x)), 2)",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='none:outer_average',\n    inputs_dict={'x': [[59, 37, 23], [58, 32, 47, 16], [-44, 45, 38, -63, -12, 18], [-8, -4, 18, 12, -5, -6, 2, 0, -14], [35, 85, 53, 68, 47, 17, 86, 27, 75, 91]]},\n    outputs=[41, 37, -13, -11, 63],\n    solution='IntDivide(Add(Head(x), Last(x)), 2)'\n)"
+        },
+        {
+            "elapsed_time": 16.65252085402608,
+            "num_unique_values": 22193,
+            "num_values_explored": 661565,
+            "solution": "Subtract(Multiply(x, y), Add(x, y))",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='none:coins',\n    inputs_dict={'x': [3, 8, 5, 11, 14], 'y': [5, 13, 14, 7, 9]},\n    outputs=[7, 83, 51, 59, 103],\n    solution='Subtract(Subtract(Multiply(x, y), x), y)'\n)"
+        },
+        {
+            "elapsed_time": 66.44220234453678,
+            "num_unique_values": 61645,
+            "num_values_explored": 2490450,
+            "solution": "Map(lambda u1: (lambda v1: Multiply(v1, (lambda v1: Square(v1))(v1)))(u1), x)",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='map:cube',\n    inputs_dict={'x': [[3], [4, 1, 2], [-1, 5, 0, -4, 2, 3, -2]]},\n    outputs=[[27], [64, 1, 8], [-1, 125, 0, -64, 8, 27, -8]],\n    solution='Map(lambda u1: Multiply(u1, Square(u1)), x)'\n)"
+        },
+        {
+            "elapsed_time": 83.13617309182882,
+            "num_unique_values": 91822,
+            "num_values_explored": 3278470,
+            "solution": "Map(lambda u1: (lambda v1: Subtract((lambda v1: Square(v1))(v1), v1))(u1), x)",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='map:multiply_previous',\n    inputs_dict={'x': [[6, 3, 4], [-4, 6, 2, -6, 7], [3, -3, -5, 2, 0, 1, -4, 8, -6]]},\n    outputs=[[30, 6, 12], [20, 30, 2, 42, 42], [6, 12, 30, 2, 0, 0, 20, 56, 42]],\n    solution='Map(lambda u1: Subtract(Square(u1), u1), x)'\n)"
+        },
+        {
+            "elapsed_time": 133.22642334364355,
+            "num_unique_values": 169042,
+            "num_values_explored": 4320741,
+            "solution": "Map(lambda u1: (lambda v1: Max(v1, (lambda v1: IntDivide(v1, -1))(v1)))(u1), x)",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='map:absolute_value',\n    inputs_dict={'x': [[8, -4, 2, -3, -7, 6], [-23, 31, -12, -46, 78, 0, -32, -61, 48], [98, -58, 43, -42, -68, 47, -15, -21, 74, -29]]},\n    outputs=[[8, 4, 2, 3, 7, 6], [23, 31, 12, 46, 78, 0, 32, 61, 48], [98, 58, 43, 42, 68, 47, 15, 21, 74, 29]],\n    solution='Map(lambda u1: Max(u1, Subtract(0, u1)), x)'\n)"
+        },
+        {
+            "elapsed_time": 270.0559786800295,
+            "num_unique_values": 229039,
+            "num_values_explored": 9269599,
+            "solution": "Map(lambda u1: (lambda v1: Subtract((lambda v1: Multiply(3, v1))(v1), 4))(u1), x)",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='map:linear_transform',\n    inputs_dict={'x': [[20, -10, 0], [4, 2, 3, 1, 5], [7, 9, -6, 12, 11, 4, 6, 4]]},\n    outputs=[[56, -34, -4], [8, 2, 5, -1, 11], [17, 23, -22, 32, 29, 8, 14, 8]],\n    solution='Map(lambda u1: Subtract(Multiply(u1, 3), 4), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.0457890555263,
+            "num_unique_values": 459860,
+            "num_values_explored": 16332867,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='none:hailstone',\n    inputs_dict={'x': [8, 26, 5, 7, 23]},\n    outputs=[4, 13, 16, 22, 70],\n    solution='If(IsEven(x), IntDivide(x, 2), Add(1, Multiply(3, x)))'\n)"
+        },
+        {
+            "elapsed_time": 600.0241578798741,
+            "num_unique_values": 758579,
+            "num_values_explored": 20022821,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='none:range_both',\n    inputs_dict={'x': [[58], [5, 2, 6, 4], [64, 24, 81, 57, 25, 73], [67, 92, 21, 13, 57, 48], [63, -35, 68, -54, -23, 9, 18, -34, -26]], 'y': [[25], [9, 4, 3], [41, 32, 53, 18, 27, 20, 61], [43, 17, 58, 34, 23], [25, 61, -58, -2, -62, 77, 23, 18, 47]]},\n    outputs=[33, 7, 63, 79, 139],\n    solution='Subtract(Max(Maximum(x), Maximum(y)), Min(Minimum(x), Minimum(y)))'\n)"
+        },
+        {
+            "elapsed_time": 600.0241580717266,
+            "num_unique_values": 723552,
+            "num_values_explored": 18741623,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='none:slope',\n    inputs_dict={'x': [[9, 2], [-3, 1], [37, 32], [-17, -14], [6, -3]], 'y': [[58, 23], [45, -79], [-15, 50], [-46, -4], [5, 77]]},\n    outputs=[5, -31, -13, 14, -8],\n    solution='IntDivide(Subtract(Last(y), Head(y)), Subtract(Last(x), Head(x)))'\n)"
+        },
+        {
+            "elapsed_time": 1.3617186918854713,
+            "num_unique_values": 2945,
+            "num_values_explored": 52194,
+            "solution": "Sort(Map(lambda u1: (lambda v1: Square(v1))(u1), x))",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='map:sort_square',\n    inputs_dict={'x': [[3, 4, 5], [2, 6, -3], [3, 1, -1, 6, 0, 3, 2, 7, -5]]},\n    outputs=[[9, 16, 25], [4, 9, 36], [0, 1, 1, 4, 9, 9, 25, 36, 49]],\n    solution='Sort(Map(lambda u1: Square(u1), x))'\n)"
+        },
+        {
+            "elapsed_time": 6.3611850049346685,
+            "num_unique_values": 11735,
+            "num_values_explored": 301148,
+            "solution": "Map(lambda u1: (lambda v1: Subtract(v1, Minimum(x)))(u1), x)",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='map:zero_min',\n    inputs_dict={'x': [[3, 7, 4, 9], [16, 10, 25, 16, 83], [-4, 3, 1, 0, -5, 5]]},\n    outputs=[[0, 4, 1, 6], [6, 0, 15, 6, 73], [1, 8, 6, 5, 0, 10]],\n    solution='Map(lambda u1: Subtract(u1, Minimum(x)), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.0294642802328,
+            "num_unique_values": 737356,
+            "num_values_explored": 21281865,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='map:triangular',\n    inputs_dict={'x': [[1, 2, 3, 4], [0, 5, 2, 1, 6], [7, 2, 5, 9, 2, 0, 4, 1, 3]]},\n    outputs=[[1, 3, 6, 10], [0, 15, 3, 1, 21], [28, 3, 15, 45, 3, 0, 10, 1, 6]],\n    solution='Map(lambda u1: IntDivide(Add(Square(u1), u1), 2), x)'\n)"
+        },
+        {
+            "elapsed_time": 59.37052351422608,
+            "num_unique_values": 117816,
+            "num_values_explored": 2355681,
+            "solution": "Map(lambda u1: (lambda v1: Subtract(v1, Access(i, x)))(u1), x)",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='map:zero_element',\n    inputs_dict={'x': [[7, 3, 8], [25, 74, 34, 42, 60], [-6, 8, 2, 5, -7, 1, 4, -3, 0, 9]], 'i': [1, 3, 7]},\n    outputs=[[4, 0, 5], [-17, 32, -8, 0, 18], [-3, 11, 5, 8, -4, 4, 7, 0, 3, 12]],\n    solution='Map(lambda u1: Subtract(u1, Access(i, x)), x)'\n)"
+        },
+        {
+            "elapsed_time": 3.914890419691801,
+            "num_unique_values": 7565,
+            "num_values_explored": 154823,
+            "solution": "Map(lambda u1: (lambda v1: Access(v1, x))(u1), i)",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='map:gather',\n    inputs_dict={'x': [[4, 2, 6, 8], [11, 3, 20, -5, 7], [3, -6, 4, -5, 3, 9, -2, 0, 1, -4]], 'i': [[0, 2, 1, 3], [1, 4, 2, 1, 3, 1, 4, 1], [2, 0, 2, 8, 4, 2, 3, 5]]},\n    outputs=[[4, 6, 2, 8], [3, 7, 20, 3, -5, 3, 7, 3], [4, 3, 4, 1, 3, 4, -5, 9]],\n    solution='Map(lambda u1: Access(u1, x), i)'\n)"
+        },
+        {
+            "elapsed_time": 600.0294753648341,
+            "num_unique_values": 511527,
+            "num_values_explored": 27659048,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='map:linear_equation',\n    inputs_dict={'x': [[14, 23, -16], [4, 2, 6, 0, 3], [3, -7, 4, 1, 5, -2, 0, 1, 2, -1]], 'a': [-3, 4, 7], 'b': [25, -7, 10]},\n    outputs=[[-17, -44, 73], [9, 1, 17, -7, 5], [31, -39, 38, 17, 45, -4, 10, 17, 24, 3]],\n    solution='Map(lambda u1: Add(Multiply(a, u1), b), x)'\n)"
+        },
+        {
+            "elapsed_time": 12.521356124430895,
+            "num_unique_values": 17068,
+            "num_values_explored": 351877,
+            "solution": "Maximum(Map(lambda u1: (lambda v1: Access(v1, x))(u1), i))",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='map:max_selected',\n    inputs_dict={'x': [[3, 8, 4, 2, 6, 5], [-8, -4, 7, 6, 3, -5, 0, -2, 2, 1], [64, 83, 27, 18, 59, 17, 45, 23, 63], [64, 83, 27, 18, 59, 17, 45, 23, 63], [15, -32, 38, 67, -21, 41, 25, -43, -28, 33]], 'i': [[3, 2, 0, 4], [5, 4, 1], [2, 3, 4, 6, 7], [2, 3, 5, 6, 7], [7, 2, 1, 0, 8, 5, 2, 0, 1, 2]]},\n    outputs=[6, 3, 59, 45, 41],\n    solution='Maximum(Map(lambda u1: Access(u1, x), i))'\n)"
+        },
+        {
+            "elapsed_time": 340.1343354154378,
+            "num_unique_values": 281212,
+            "num_values_explored": 11950928,
+            "solution": "Map(lambda u1: (lambda v1: Multiply(v1, (lambda v1: Add(2, v1))(v1)))(u1), x)",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='map:quadratic_transform',\n    inputs_dict={'x': [[3, 5, 1, 6], [7, -1, 4, 0, -2, 3], [5, -3, 9, -10, 11, 2, 7, 10, -8]]},\n    outputs=[[15, 35, 3, 48], [63, -1, 24, 0, 0, 15], [35, 3, 99, 80, 143, 8, 63, 120, 48]],\n    solution='Map(lambda u1: Multiply(u1, Add(u1, 2)), x)'\n)"
+        },
+        {
+            "elapsed_time": 253.5314886253327,
+            "num_unique_values": 207147,
+            "num_values_explored": 8228164,
+            "solution": "Map(lambda u1: (lambda v1: If((lambda v1: IsEven(v1))(v1), v1, 0))(u1), x)",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='map:zero_odds',\n    inputs_dict={'x': [[4, 2, 5, 6, 3], [15, 14, 7, 26, 24, 21], [-42, 25, -39, 0, 34, 12, 55, -14, 21]]},\n    outputs=[[4, 2, 0, 6, 0], [0, 14, 0, 26, 24, 0], [-42, 0, 0, 0, 34, 12, 0, -14, 0]],\n    solution='Map(lambda u1: If(IsOdd(u1), 0, u1), x)'\n)"
+        },
+        {
+            "elapsed_time": 102.15636217780411,
+            "num_unique_values": 121242,
+            "num_values_explored": 3492598,
+            "solution": "Take(-1, Map(lambda u1: (lambda v1: Add(v1, Last(x)))(u1), x))",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='map:spread_last',\n    inputs_dict={'x': [[4, 2, 6, 3, 5], [-7, 17, -4, -12, 3, -9], [41, 23, 58, 21, 14, 63, 28, 36]]},\n    outputs=[[9, 7, 11, 8], [-16, 8, -13, -21, -6], [77, 59, 94, 57, 50, 99, 64]],\n    solution='Take(-1, Map(lambda u1: Add(u1, Last(x)), x))'\n)"
+        },
+        {
+            "elapsed_time": 0.055583616718649864,
+            "num_unique_values": 73,
+            "num_values_explored": 1093,
+            "solution": "Map(lambda u1: Head(x), x)",
+            "solution_weight": 4,
+            "success": true,
+            "task": "Task(\n    name='map:fill_first',\n    inputs_dict={'x': [[3, 6, 1, 4, 7], [-26, 27, 51, -14, 31, -17, -32], [73, 67, 48, 27, 97, 85, 37, 68, 21, 84]]},\n    outputs=[[3, 3, 3, 3, 3], [-26, -26, -26, -26, -26, -26, -26], [73, 73, 73, 73, 73, 73, 73, 73, 73, 73]],\n    solution='Map(lambda u1: Head(x), x)'\n)"
+        },
+        {
+            "elapsed_time": 0.06204250268638134,
+            "num_unique_values": 105,
+            "num_values_explored": 1775,
+            "solution": "Sum(Map(lambda u1: 1, x))",
+            "solution_weight": 4,
+            "success": true,
+            "task": "Task(\n    name='map:length',\n    inputs_dict={'x': [[65, 24], [9, 45, 2, 16, 4, 2, 63], [8, -4, 28, 27, -32, 23, 15, 2, 0], [0], [-1, 3, 1, 2, 4, -2, 6, -4, -8, 3]]},\n    outputs=[2, 7, 9, 1, 10],\n    solution='Sum(Map(lambda u1: 1, x))'\n)"
+        },
+        {
+            "elapsed_time": 600.0430950075388,
+            "num_unique_values": 269469,
+            "num_values_explored": 21529180,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='map:clip',\n    inputs_dict={'x': [[5, -4, 6, 17, -3, 7], [53, 71, 28, 61, 27, 93, 57, 74], [16, -4, -5, 14, 13, -7, -6, 17, -3, 15]], 'a': [0, 52, -5], 'b': [9, 64, 15]},\n    outputs=[[5, 0, 6, 9, 0, 7], [53, 64, 52, 61, 52, 64, 57, 64], [15, -4, -5, 14, 13, -5, -5, 15, -3, 15]],\n    solution='Map(lambda u1: Max(Min(u1, b), a), x)'\n)"
+        },
+        {
+            "elapsed_time": 526.5906596425921,
+            "num_unique_values": 713553,
+            "num_values_explored": 18929107,
+            "solution": "Map(lambda u1: (lambda v1: Add(v1, Subtract(t, Head(x))))(u1), x)",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='map:shift_first_to',\n    inputs_dict={'x': [[7, 1, 4, 8, 3], [4, 14, 11, 8, 18, 11, 9, 3], [2, -5, 7, 11, -3, 2, 15, -15, -13]], 't': [2, 10, -5]},\n    outputs=[[2, -4, -1, 3, -2], [10, 20, 17, 14, 24, 17, 15, 9], [-5, -12, 0, 4, -10, -5, 8, -22, -20]],\n    solution='Map(lambda u1: Add(u1, Subtract(t, Head(x))), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.0454823914915,
+            "num_unique_values": 755672,
+            "num_values_explored": 19816576,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='map:square_keep_sign',\n    inputs_dict={'x': [[4, -6, 8, -7], [-1, -4, 6, -5, 2], [7, 9, -3, 4, -2, 0, -4, -8, 5, 1]]},\n    outputs=[[16, -36, 64, -49], [-1, -16, 36, -25, 4], [49, 81, -9, 16, -4, 0, -16, -64, 25, 1]],\n    solution='Map(lambda u1: Multiply(If(Less(u1, 0), -1, 1), Square(u1)), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.0255860239267,
+            "num_unique_values": 588613,
+            "num_values_explored": 20913149,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='map:replace',\n    inputs_dict={'x': [[7, 2, 4, 6, 4, 2, 5], [-6, -3, 4, 3, -5, -3, 2, 1, 5], [18, 48, 27, 26, 27, 27, 28, 17, 27, 33]], 'f': [4, -3, 27], 'r': [-1, 7, 99]},\n    outputs=[[7, 2, -1, 6, -1, 2, 5], [-6, 7, 4, 3, -5, 7, 2, 1, 5], [18, 48, 99, 26, 99, 99, 28, 17, 99, 33]],\n    solution='Map(lambda u1: If(Equal(u1, f), r, u1), x)'\n)"
+        },
+        {
+            "elapsed_time": 2.0131312366575003,
+            "num_unique_values": 3880,
+            "num_values_explored": 79077,
+            "solution": "Filter(lambda u1: (lambda v1: Greater(v1, y))(u1), x)",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='filter:greater',\n    inputs_dict={'x': [[1, 3, 4, 2], [6, 4, 3, 5, 9, 2], [25, 0, 79, -1, -45, 31, -4, 7, -2, 11]], 'y': [2, 4, -3]},\n    outputs=[[3, 4], [6, 5, 9], [25, 0, 79, -1, 31, 7, -2, 11]],\n    solution='Filter(lambda u1: Greater(u1, y), x)'\n)"
+        },
+        {
+            "elapsed_time": 0.6931686140596867,
+            "num_unique_values": 1128,
+            "num_values_explored": 24554,
+            "solution": "Filter(lambda u1: (lambda v1: IsEven(v1))(u1), Sort(x))",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='filter:sort_even',\n    inputs_dict={'x': [[7, 6, 2, 5, 8, 0, 5], [52, 35, 68, 37, 41, 22, 64, 57, 26], [16, -24, 28, -29, -12, -17, 23, 58, 21, -14]]},\n    outputs=[[0, 2, 6, 8], [22, 26, 52, 64, 68], [-24, -14, -12, 16, 28, 58]],\n    solution='Filter(lambda u1: IsEven(u1), Sort(x))'\n)"
+        },
+        {
+            "elapsed_time": 2.242307882755995,
+            "num_unique_values": 4267,
+            "num_values_explored": 85206,
+            "solution": "Maximum(Filter(lambda u1: (lambda v1: IsOdd(v1))(u1), x))",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='filter:max_odd',\n    inputs_dict={'x': [[32, 57, 60, 53], [7, 12, 6, 18, 13, 14, 5, 6], [-6, 8, 5, -7, -13, 1, -4, 18, 32], [32, 25, 68, 43, 42, 44, 56, 37, 28, 29], [32, 25, 68, 43, 42, 44, 55, 37, 28, 29]]},\n    outputs=[57, 13, 5, 43, 55],\n    solution='Maximum(Filter(lambda u1: IsOdd(u1), x))'\n)"
+        },
+        {
+            "elapsed_time": 600.0415783580393,
+            "num_unique_values": 555223,
+            "num_values_explored": 22194174,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='map:replace_negative',\n    inputs_dict={'x': [[7, -6, 8, -3, -5, 2], [-6, -4, 2, -3, 14, -15, 2, -5, -8], [13, 63, -23, -35, 32, 45, -78, -31, 12, -14]], 'y': [-9, 5, 99]},\n    outputs=[[7, -9, 8, -9, -9, 2], [5, 5, 2, 5, 14, 5, 2, 5, 5], [13, 63, 99, 99, 32, 45, 99, 99, 12, 99]],\n    solution='Map(lambda u1: If(Less(u1, 0), y, u1), x)'\n)"
+        },
+        {
+            "elapsed_time": 33.028019128367305,
+            "num_unique_values": 50803,
+            "num_values_explored": 1065101,
+            "solution": "Filter(lambda u1: (lambda v1: IsOdd((lambda v1: Min(0, v1))(v1)))(u1), x)",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='filter:odd_negative',\n    inputs_dict={'x': [[-11, 7, -3, -8, 2], [2, -5, 3, -4, -7, -1, -2], [-17, 23, -40, -25, -31, 42, 0, -23, -7, -16]]},\n    outputs=[[-11, -3], [-5, -7, -1], [-17, -25, -31, -23, -7]],\n    solution='Filter(lambda u1: IsOdd(Min(u1, 0)), x)'\n)"
+        },
+        {
+            "elapsed_time": 16.834520552307367,
+            "num_unique_values": 24614,
+            "num_values_explored": 615341,
+            "solution": "Sum(Filter(lambda u1: (lambda v1: Less(-1, v1))(u1), x))",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='filter:sum_positive',\n    inputs_dict={'x': [[-5, 8, -10, 7, 2], [16, 21, -14, 21, 1, -49, 31], [45, -45, -38, -41, -6, 45, -13, 20], [-46, -32, -29, 33, -3, -13, 9, 23, -39], [-4, 8, 23, 15, 8, -31, -7, -9, -9, 24]]},\n    outputs=[17, 90, 110, 65, 78],\n    solution='Sum(Filter(lambda u1: Greater(u1, 0), x))'\n)"
+        },
+        {
+            "elapsed_time": 21.27781238593161,
+            "num_unique_values": 49051,
+            "num_values_explored": 733900,
+            "solution": "Reverse(Sort(Filter(lambda u1: (lambda v1: Less(v1, -1))(u1), x)))",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='filter:negative_descending',\n    inputs_dict={'x': [[-4, 8, 1, -2, -9, -5], [-11, 10, -13, -19, 0, -12, -10], [3, -38, -48, 32, -43, -19, 23, -36, -44, 48]]},\n    outputs=[[-2, -4, -5, -9], [-10, -11, -12, -13, -19], [-19, -36, -38, -43, -44, -48]],\n    solution='Filter(lambda u1: Less(u1, 0), Reverse(Sort(x)))'\n)"
+        },
+        {
+            "elapsed_time": 347.0262271557003,
+            "num_unique_values": 313833,
+            "num_values_explored": 10293501,
+            "solution": "Access(IntDivide(Sum(Map(lambda u1: -1, x)), 2), Sort(x))",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='map:median',\n    inputs_dict={'x': [[6, 5, 2], [42, 86, 31, 58, 75], [18, 2, 34, 7, 0, 56, 32, 48, 54], [18, 2, 34, 37, 0, 56, 32, 48, 54], [85, 48, -42, -15, -25, 23, -52]]},\n    outputs=[5, 58, 32, 34, -15],\n    solution='Access(IntDivide(Sum(Map(lambda u1: 1, x)), 2), Sort(x))'\n)"
+        },
+        {
+            "elapsed_time": 600.0426129996777,
+            "num_unique_values": 591051,
+            "num_values_explored": 20735704,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='map:is_greater',\n    inputs_dict={'x': [[19, 13, 17, 18, 20], [5, 7, 4, 5, 6, 2, 3], [-9, -6, 2, -7, 18, -11, -8, 1, -15, -4]], 'y': [17, 4, -7]},\n    outputs=[[1, 0, 0, 1, 1], [1, 1, 0, 1, 1, 0, 0], [0, 1, 1, 0, 1, 0, 0, 1, 0, 1]],\n    solution='Map(lambda u1: If(Greater(u1, y), 1, 0), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.0500811543316,
+            "num_unique_values": 556087,
+            "num_values_explored": 19164349,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='map:divide_even',\n    inputs_dict={'x': [[8, 5, 6, 14, 9], [42, -15, 67, 0, -16, 23, 31, 28], [62, 24, 68, -44, -25, -14, 2, 5, -20, 41]]},\n    outputs=[[4, 5, 3, 7, 9], [21, -15, 67, 0, -8, 23, 31, 14], [31, 12, 34, -22, -25, -7, 1, 5, -10, 41]],\n    solution='Map(lambda u1: If(IsEven(u1), IntDivide(u1, 2), u1), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.050552168861,
+            "num_unique_values": 617159,
+            "num_values_explored": 22651440,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='map:multiply_odd',\n    inputs_dict={'x': [[3, 1, 2, 5, 4, 7], [15, 21, 28, 7, 33, 26, 42, 27, 18], [7, -22, -1, 28, 9, -17, 5, 13, -4, 11]], 'n': [3, 2, -3]},\n    outputs=[[9, 3, 2, 15, 4, 21], [30, 42, 28, 14, 66, 26, 42, 54, 18], [-21, -22, 3, 28, -27, 51, -15, -39, -4, -33]],\n    solution='Map(lambda u1: If(IsOdd(u1), Multiply(u1, n), u1), x)'\n)"
+        },
+        {
+            "elapsed_time": 2.789348976686597,
+            "num_unique_values": 4751,
+            "num_values_explored": 98975,
+            "solution": "Count(lambda u1: (lambda v1: Equal(n, v1))(u1), x)",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='count:num_match',\n    inputs_dict={'x': [[5, 7, 8, 7, 9, 6], [5, 7, 8, 7, 9, 6], [7, 0, 7, 0, 7, 7], [42, 34, 42, 42, 42, 56, 42, 38, 42, 42], [42, 34, 42, 42, 38, 56, 42, 38, 42, 42]], 'n': [7, 8, 7, 42, 42]},\n    outputs=[2, 1, 4, 7, 6],\n    solution='Count(lambda u1: Equal(u1, n), x)'\n)"
+        },
+        {
+            "elapsed_time": 2.7870831843465567,
+            "num_unique_values": 7716,
+            "num_values_explored": 103837,
+            "solution": "Count(lambda u1: (lambda v1: Less(v1, q))(u1), x)",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='count:rank',\n    inputs_dict={'x': [[28, 43, 69, 38, 42], [35, -54, 48, 17, 49, -24, 32], [-7, -4, 8, -5, -4, -3, -8, 4], [2, 6, 0, 3, 1, 4, 2, 3, 5, 0], [2, 6, 0, 5, 1, 4, 2, 3, 5, 0]], 'q': [44, 18, -3, 4, 4]},\n    outputs=[4, 3, 5, 7, 6],\n    solution='Count(lambda u1: Less(u1, q), x)'\n)"
+        },
+        {
+            "elapsed_time": 16.034055434167385,
+            "num_unique_values": 20289,
+            "num_values_explored": 558427,
+            "solution": "Count(lambda u1: (lambda v1: Less(v1, Head(x)))(u1), x)",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='count:num_under_first',\n    inputs_dict={'x': [[5, 2, 6, 7, 1, 3, 8], [26, 0, 19, 22, 39, 47, 1, 26], [65, 33, 16, 53, 34, 95, 86, 4, 12], [-11, 23, -48, -24, -11, -4, 44, 7, -26, -12], [-11, 23, -48, -24, -11, -14, 44, 7, -26, -12]]},\n    outputs=[3, 4, 6, 4, 5],\n    solution='Count(lambda u1: Less(u1, Head(x)), x)'\n)"
+        },
+        {
+            "elapsed_time": 3.5195962861180305,
+            "num_unique_values": 6249,
+            "num_values_explored": 124675,
+            "solution": "Count(lambda u1: (lambda v1: Greater(0, v1))(u1), x)",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='count:count_negative',\n    inputs_dict={'x': [[6, 7, 0, -4, 1, -5, 2], [11, -4, -1, 19, -5, 18, -8, -13], [25, 16, -15, 18, -3, -12, 1, 29, -21], [-18, 18, 46, -7, -15, -44, -33, 8, -1, 11], [32, 42, -46, -97, 53, 34, 8, -9, 36, 20]]},\n    outputs=[2, 5, 4, 6, 3],\n    solution='Count(lambda u1: Less(u1, 0), x)'\n)"
+        },
+        {
+            "elapsed_time": 13.119126703590155,
+            "num_unique_values": 18110,
+            "num_values_explored": 432029,
+            "solution": "Count(lambda u1: (lambda v1: Equal(v1, Last(x)))(u1), x)",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='count:count_last',\n    inputs_dict={'x': [[11, 10, 9, 7, 10, 19, 10], [47, 23, 44, 3, 23, 40, 23, 44], [47, 23, 44, 3, 23, 40, 23, 23], [-2, 26, -20, -19, 23, -29, -9, 2, -23], [-42, 0, -42, -42, -41, -43, -42, 42, -42, -42]]},\n    outputs=[3, 2, 4, 1, 6],\n    solution='Count(lambda u1: Equal(u1, Last(x)), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.0243555996567,
+            "num_unique_values": 426224,
+            "num_values_explored": 18201354,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='filter:between',\n    inputs_dict={'x': [[7, 6, 1, 4, 9, 3, 5, 8], [11, 78, 73, 35, 70, 59, 16, 74, 24], [-12, -21, 37, 20, 13, 21, 19, 0, -19, -20]], 'a': [3, 15, -20], 'b': [8, 74, 20]},\n    outputs=[[7, 6, 4, 5], [73, 35, 70, 59, 16, 24], [-12, 13, 19, 0, -19]],\n    solution='Filter(lambda u1: Less(u1, b), Filter(lambda u1: Greater(u1, a), x))'\n)"
+        },
+        {
+            "elapsed_time": 600.0276023484766,
+            "num_unique_values": 614783,
+            "num_values_explored": 22344545,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='filter:multiple',\n    inputs_dict={'x': [[24, 19, 22, 16, 10, 44], [21, -35, -25, 0, -17, -14, 15, 42], [11, 84, 79, 16, -57, 97, 27, -23, -39, -32]], 'n': [4, 7, 3]},\n    outputs=[[24, 16, 44], [21, -35, 0, -14, 42], [84, -57, 27, -39]],\n    solution='Filter(lambda u1: Equal(u1, Multiply(IntDivide(u1, n), n)), x)'\n)"
+        },
+        {
+            "elapsed_time": 29.087598372250795,
+            "num_unique_values": 38071,
+            "num_values_explored": 778615,
+            "solution": "Count(lambda u1: (lambda v1: IsEven((lambda v1: Min(0, v1))(v1)))(u1), x)",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='count:even_or_positive',\n    inputs_dict={'x': [[6, -5, -1, -6, 0, -3, -4], [6, -5, -2, -6, 0, -3, -4], [6, -5, -2, -6, 0, 3, -4], [-9, -3, -7, -8, -11, -53, -32, -5, 23, -11], [-4, -7, -6, 3, 0, -9, -12, 4, 5, -3]]},\n    outputs=[4, 5, 6, 3, 7],\n    solution='Count(lambda u1: IsEven(Min(u1, 0)), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.0415395144373,
+            "num_unique_values": 486096,
+            "num_values_explored": 23147892,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='filter:find_factors',\n    inputs_dict={'x': [[4, 5, 2, 15, 3, 5, 1, 7], [4, 5, 6, 2, 3, 7, 9, 1, 8], [-5, 7, -8, 12, -4, 2, -1, 4, 6, -10]], 'n': [45, 28, 40]},\n    outputs=[[5, 15, 3, 5, 1], [4, 2, 7, 1], [-5, -8, -4, 2, -1, 4, -10]],\n    solution='Filter(lambda u1: Equal(n, Multiply(IntDivide(n, u1), u1)), x)'\n)"
+        },
+        {
+            "elapsed_time": 204.39639340899885,
+            "num_unique_values": 248513,
+            "num_values_explored": 7148133,
+            "solution": "Count(lambda u1: (lambda v1: Equal(v1, Access(i, x)))(u1), x)",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='count:count_at',\n    inputs_dict={'x': [[14, 11, 28, 11, -17, -1, -21], [24, 33, 24, 24, 23, 0, 24, 25], [26, -7, -21, 20, -26, -7, -29, -7, -23], [48, -21, -97, 3, 88, -21, -21, -20, -21, -21], [48, -21, -97, 3, 88, -21, -21, -21, -21, -21]], 'i': [3, 6, 1, 7, 7]},\n    outputs=[2, 4, 3, 1, 6],\n    solution='Count(lambda u1: Equal(u1, Access(i, x)), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.0501122605056,
+            "num_unique_values": 452360,
+            "num_values_explored": 18525592,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='filter:fixpoints',\n    inputs_dict={'x': [[0, 5, 4, 3, 5, 5, 6, 1], [3, 1, 2, 4, 6, 5, 8, 0, 7], [0, 9, 2, 3, 4, 7, 6, 8, 7, 9]]},\n    outputs=[[0, 3, 5, 5, 5, 6], [1, 2, 5], [0, 2, 3, 4, 6, 9, 9]],\n    solution='Sort(Filter(lambda u1: Equal(u1, Access(u1, x)), x))'\n)"
+        },
+        {
+            "elapsed_time": 600.0488064736128,
+            "num_unique_values": 842946,
+            "num_values_explored": 19945878,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='filter:find_at',\n    inputs_dict={'x': [[8, 7, 4, 7, 7, 2], [17, -9, -10, -9, -9, 23, -9], [42, 43, 41, 42, 45, 48, 42, 42, 49, 42]], 'y': [7, -9, 42], 'i': [[0, 1, 2, 4, 5], [0, 1, 0, 4, 6, 2, 1, 5, 4, 1], [6, 2, 5, 4, 1, 3, 0, 9, 7, 8]]},\n    outputs=[[1, 4], [1, 4, 6, 1, 4, 1], [6, 3, 0, 9, 7]],\n    solution='Filter(lambda u1: Equal(Access(u1, x), y), i)'\n)"
+        },
+        {
+            "elapsed_time": 600.0536622367799,
+            "num_unique_values": 685006,
+            "num_values_explored": 19390233,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='count:total_zeros',\n    inputs_dict={'x': [[-2, 0, 3, 1], [8, 4, 0, 1, 0, 2], [0, 1, 0], [17, 0, -2, 0, -11, -9, -6], [0, 0, 0, 42, 0, 0, 0, 63, 0, -14]], 'y': [[0, 0, 1, -1], [0, 3, 0, 0, 5, 9], [6, 0, 6, 0, 0, 0, 5], [-11, 3, 0, -11, -15, 0, -15, -12], [0, -54, 0, 14, 35, 0, 0]]},\n    outputs=[3, 5, 6, 4, 11],\n    solution='Add(Count(lambda u1: Equal(u1, 0), x), Count(lambda u1: Equal(u1, 0), y))'\n)"
+        },
+        {
+            "elapsed_time": 600.0267056487501,
+            "num_unique_values": 381705,
+            "num_values_explored": 16799761,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='count:min_costs',\n    inputs_dict={'r': [[4, 0, 7, 3, 0], [-5, 2, -1, 0, 5, 1, 3, -6], [1, 0, 3, 2, 0, 4, 0, 2, 3, 4]], 'c': [[6, 8, 2, 5, 9], [11, 25, 14, 7, 16, 5, 10, 18, 10], [61, 32, 44, 67, 17, 73, 25, 68, 95, 43]]},\n    outputs=[[2, 5, 6], [5, 7, 10, 10], [17, 25, 32, 43, 44, 61, 67]],\n    solution='Take(Count(lambda u1: Greater(u1, 0), r), Sort(c))'\n)"
+        },
+        {
+            "elapsed_time": 600.043614609167,
+            "num_unique_values": 699558,
+            "num_values_explored": 18907548,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='zipwith:deepcoder_1',\n    inputs_dict={'w': [[6, 2, 4, 7, 9], [10, 30, 20], [8, 6, 5, 9], [7, 5, 1, 6, 2, 7], [14, 7, 2, 9, 3, 13, 10, 11]], 't': [[5, 3, 6, 1, 0], [65, 7, 32], [2, 5, 9, 1], [0, 9, 4, 5, 7, 2], [1, 4, 2, 11, 7, 5, 7, 4]]},\n    outputs=[27, 97, 28, 24, 44],\n    solution='Maximum(ZipWith(lambda u1, u2: Add(Multiply(u1, 3), u2), w, t))'\n)"
+        },
+        {
+            "elapsed_time": 600.0400536060333,
+            "num_unique_values": 448746,
+            "num_values_explored": 18568437,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='zipwith:deepcoder_4',\n    inputs_dict={'x': [[7, 3, 8, 2, 5], [5, 6, 1], [3, 5, 1, 2], [7, 2, 1, 9, 3, 6], [4, 2, 6, 19, 5, 13, 2, 3]], 'y': [[2, 8, 9, 1, 3], [8, 2, 3], [4, 6, 1, 3], [5, 1, 6, 4, 7, 5], [2, 9, 3, 11, 1, 5, 16, 15]]},\n    outputs=[79, 35, 28, 101, 219],\n    solution='Sum(ZipWith(lambda u1, u2: Multiply(u1, u2), Sort(x), Reverse(Sort(y))))'\n)"
+        },
+        {
+            "elapsed_time": 291.37812023609877,
+            "num_unique_values": 224285,
+            "num_values_explored": 10186455,
+            "solution": "ZipWith(lambda u1, u2: (lambda v1, v2: Min(v1, v2))(u1, u2), a, Reverse(a))",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='zipwith:deepcoder_5',\n    inputs_dict={'a': [[3, 7, 5, 2, 8], [14, 11, 15, 18, 14, 12], [85, 3, 35, 1, 74, 47, 2, 26, 33, 43]]},\n    outputs=[[3, 2, 5, 2, 3], [12, 11, 15, 15, 11, 12], [43, 3, 26, 1, 47, 47, 1, 26, 3, 43]],\n    solution='ZipWith(lambda u1, u2: Min(u1, u2), a, Reverse(a))'\n)"
+        },
+        {
+            "elapsed_time": 600.0470742899925,
+            "num_unique_values": 377234,
+            "num_values_explored": 14670424,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='zipwith:deepcoder_6',\n    inputs_dict={'t': [[4, 8, 11, 2], [46, 24, 68], [8, 22, 18, 6], [21, 26, 10, 11, 15], [11, 18, 15, 33, 18, 23, 7]], 'p': [[2, 3, 4, 1], [35, 37, 31], [26, 19, 21, 38], [3, 11, 22, 10, 9], [29, 23, 24, 7, 14, 12, 25]]},\n    outputs=[1, 59, 32, 19, 30],\n    solution='Subtract(Minimum(ZipWith(lambda u1, u2: Add(u1, u2), t, p)), 2)'\n)"
+        },
+        {
+            "elapsed_time": 478.1980214603245,
+            "num_unique_values": 224009,
+            "num_values_explored": 17302033,
+            "solution": "Sort(ZipWith(lambda u1, u2: (lambda v1, v2: IntDivide(v1, v2))(u1, u2), m, n))",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='zipwith:sort_divide',\n    inputs_dict={'m': [[43, 68, 27], [28, 41, 57, 52], [78, 68, 25, 76, 67, 38, 49, 74, 47]], 'n': [[5, 7, 13], [6, 2, 6, 4], [10, 4, 19, 12, 19, 7, 7, 15, 3]]},\n    outputs=[[2, 8, 9], [4, 9, 13, 20], [1, 3, 4, 5, 6, 7, 7, 15, 17]],\n    solution='Sort(ZipWith(lambda u1, u2: IntDivide(u1, u2), m, n))'\n)"
+        },
+        {
+            "elapsed_time": 600.042866319418,
+            "num_unique_values": 563570,
+            "num_values_explored": 17351004,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='zipwith:deepcoder_8',\n    inputs_dict={'s': [[1, 2, 4, 5, 7], [2, 4, 11, 26], [14, 36, 54, 89], [1, 7, 10, 11, 13, 18, 19], [4, 5, 8, 9, 10, 11, 12, 15, 17, 18]]},\n    outputs=[9, 31, 93, 32, 37],\n    solution='Sum(ZipWith(lambda u1, u2: Max(Subtract(u1, u2), 0), Reverse(s), s))'\n)"
+        },
+        {
+            "elapsed_time": 600.0457471963018,
+            "num_unique_values": 399402,
+            "num_values_explored": 20349629,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='zipwith:dot',\n    inputs_dict={'x': [[2, 0], [3, 1, 2], [7, 8, 1, 4], [2, -4, 6, -5, -1, 3, 2], [-4, 0, 4, 6, 2, -3, 1, 5, 6, 5]], 'y': [[10, 5], [8, 2, -5], [1, 0, 4, 2], [3, 8, 4, 4, 2, 0, 5], [2, 1, 0, 2, 0, 6, 2, 1, 3, 2]]},\n    outputs=[20, 16, 19, -14, 21],\n    solution='Sum(ZipWith(lambda u1, u2: Multiply(u1, u2), x, y))'\n)"
+        },
+        {
+            "elapsed_time": 600.0430679600686,
+            "num_unique_values": 288392,
+            "num_values_explored": 22993359,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='zipwith:average',\n    inputs_dict={'x': [[8, 0], [12, 3, 7], [-5, 4, 3, -7, 11, 0]], 'y': [[2, 4], [4, 1, 7], [3, 6, -3, -11, 19, -6]]},\n    outputs=[[5, 2], [8, 2, 7], [-1, 5, 0, -9, 15, -3]],\n    solution='ZipWith(lambda u1, u2: IntDivide(Add(u1, u2), 2), x, y)'\n)"
+        },
+        {
+            "elapsed_time": 600.0377026554197,
+            "num_unique_values": 299778,
+            "num_values_explored": 17507519,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='zipwith:three_sum',\n    inputs_dict={'a': [[6, 3], [2, 1, 5], [4, 2, 1, 5, 3]], 'b': [[2, 7], [6, -4, 2], [8, 4, 0, 2, 1]], 'c': [[0, 0], [3, 0, -3], [0, 1, 8, 0, 6]]},\n    outputs=[[8, 10], [11, -3, 4], [12, 7, 9, 7, 10]],\n    solution='ZipWith(lambda u1, u2: Add(u1, u2), a, ZipWith(lambda u1, u2: Add(u1, u2), b, c))'\n)"
+        },
+        {
+            "elapsed_time": 396.92770081572235,
+            "num_unique_values": 422904,
+            "num_values_explored": 11602652,
+            "solution": "Sum(ZipWith(lambda u1, u2: (lambda v1, v2: Multiply(v1, v2))(u1, u2), x, m))",
+            "solution_weight": 9,
+            "success": true,
+            "task": "Task(\n    name='zipwith:sum_mask',\n    inputs_dict={'x': [[6, 11, 2, 7], [4, 5, 9, 0, 7, 9], [3, 13, 17, 5, 0, 14, 18], [2, -12, -5, 9, -13, -2, -9, 5], [-38, 34, 20, 32, 10, -10, 4, -1, -27]], 'm': [[1, 0, 1, 1], [0, 1, 1, 0, 1, 0], [0, 0, 1, 0, 0, 1, 0], [0, 1, 0, 1, 1, 0, 1, 1], [1, 0, 0, 1, 0, 1, 1, 0, 0]]},\n    outputs=[15, 21, 31, -20, -12],\n    solution='Sum(ZipWith(lambda u1, u2: Multiply(u1, u2), x, m))'\n)"
+        },
+        {
+            "elapsed_time": 600.0416886992753,
+            "num_unique_values": 474650,
+            "num_values_explored": 16729412,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='zipwith:pair_differences',\n    inputs_dict={'x': [[16, 43, 64], [34, 13, 23, 58, 46], [9, 49, -27, -37, 26, -38, 9, -12, 19]]},\n    outputs=[[27, 21], [-21, 10, 35, -12], [40, -76, -10, 63, -64, 47, -21, 31]],\n    solution='ZipWith(lambda u1, u2: Subtract(u2, u1), x, Drop(1, x))'\n)"
+        },
+        {
+            "elapsed_time": 600.0433416478336,
+            "num_unique_values": 406775,
+            "num_values_explored": 22243112,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='zipwith:distance',\n    inputs_dict={'x': [[2, 6, 1, 7, 4], [-6, 3, 15, -4, 11, -1, 7, -9], [15, 62, 47, 23, 50, 13, 52, 28, 58]], 'y': [[4, 1, 5, 4, 8], [3, 6, -2, 0, -8, -3, 4, 2], [63, 44, 78, 65, 13, 31, 23, 22, 68]]},\n    outputs=[[2, 5, 4, 3, 4], [9, 3, 17, 4, 19, 2, 3, 11], [48, 18, 31, 42, 37, 18, 29, 6, 10]],\n    solution='ZipWith(lambda u1, u2: Max(Subtract(u1, u2), Subtract(u2, u1)), x, y)'\n)"
+        },
+        {
+            "elapsed_time": 600.0416940450668,
+            "num_unique_values": 894168,
+            "num_values_explored": 21952407,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='zipwith:squared_distance',\n    inputs_dict={'x': [[26], [6, 14], [8, 5, 7], [-3, -2, 9, 4], [-6, 2, -5, 4, -2]], 'y': [[35], [9, 8], [6, 9, 8], [-5, 1, 6, -2], [-1, -2, 1, 4, 7]]},\n    outputs=[81, 45, 21, 58, 158],\n    solution='Sum(ZipWith(lambda u1, u2: Square(Subtract(u1, u2)), x, y))'\n)"
+        },
+        {
+            "elapsed_time": 600.0414786804467,
+            "num_unique_values": 316233,
+            "num_values_explored": 19515279,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='zipwith:is_equal',\n    inputs_dict={'x': [[5, 2, 7, 3, 5], [0, -2, 6, 4, 5, -4], [-2, -3, 2, 9, 4, -1, 4, 7, 5]], 'y': [[5, 1, 7, 3, 6], [0, -2, 0, -4, 5, -4], [5, -2, 2, 9, 3, -1, -2, 7, 7]]},\n    outputs=[[1, 0, 1, 1, 0], [1, 1, 0, 0, 1, 1], [0, 0, 1, 1, 0, 1, 0, 1, 0]],\n    solution='ZipWith(lambda u1, u2: If(Equal(u1, u2), 1, 0), x, y)'\n)"
+        },
+        {
+            "elapsed_time": 6.1545666847378016,
+            "num_unique_values": 14909,
+            "num_values_explored": 251167,
+            "solution": "Scanl1(lambda u1, u2: (lambda v1, v2: Max(v1, v2))(u1, u2), x)",
+            "solution_weight": 7,
+            "success": true,
+            "task": "Task(\n    name='scanl1:running_max',\n    inputs_dict={'x': [[1, 6, 3, 20], [4, 2, 6, 3, 1, 7, 3, 9], [-6, -5, -2, 0, -1, 3, 3, 2, 5, 4]]},\n    outputs=[[1, 6, 6, 20], [4, 4, 6, 6, 6, 7, 7, 9], [-6, -5, -2, 0, 0, 3, 3, 3, 5, 5]],\n    solution='Scanl1(lambda u1, u2: Max(u1, u2), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.0431385431439,
+            "num_unique_values": 376492,
+            "num_values_explored": 20980984,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='zipwith:sorted_min',\n    inputs_dict={'x': [[7, 2, 5, 6], [4, -7, -6, 7, 1, -6], [12, 20, 27, 19, 19, 29, 23, 7, 1]], 'y': [[4, 8, 1, 9], [-8, 2, -6, 0, 9, -1], [26, 18, 25, 0, 9, 28, 19, 22, 17]]},\n    outputs=[[1, 4, 6, 7], [-8, -6, -6, 0, 2, 7], [0, 7, 12, 18, 19, 20, 23, 26, 28]],\n    solution='ZipWith(lambda u1, u2: Min(u1, u2), Sort(x), Sort(y))'\n)"
+        },
+        {
+            "elapsed_time": 74.16438422352076,
+            "num_unique_values": 110312,
+            "num_values_explored": 2564719,
+            "solution": "Maximum(Scanl1(lambda u1, u2: (lambda v1, v2: Add(v1, v2))(u1, u2), x))",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='scanl1:max_running_sum',\n    inputs_dict={'x': [[5, 4, -1, 2, -5], [4, 7, -2, -5, 6, -3, 4], [-3, -1, 8, 2, -1, -5, 4, 1], [4, -2, 3, -5, -1, 2, -4, 7, -3, 2], [4, -2, 3, -5, -1, 2, -4, 17, -3, 2]]},\n    outputs=[10, 11, 6, 5, 14],\n    solution='Maximum(Scanl1(lambda u1, u2: Add(u1, u2), x))'\n)"
+        },
+        {
+            "elapsed_time": 46.53834583610296,
+            "num_unique_values": 73617,
+            "num_values_explored": 1795555,
+            "solution": "Scanl1(lambda u1, u2: (lambda v1, v2: Add(v1, v2))(u1, u2), Reverse(x))",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='scanl1:running_sum_reverse',\n    inputs_dict={'x': [[7, 4, 5], [3, 1, 6, 8, 2], [-4, 13, 9, 0, -3, -8, 5, 2]]},\n    outputs=[[5, 9, 16], [2, 10, 16, 17, 20], [2, 7, -1, -4, -4, 5, 18, 14]],\n    solution='Scanl1(lambda u1, u2: Add(u1, u2), Reverse(x))'\n)"
+        },
+        {
+            "elapsed_time": 600.040142705664,
+            "num_unique_values": 616418,
+            "num_values_explored": 18516272,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='zipwith:add_outer_triples',\n    inputs_dict={'x': [[3, 2, 6, 8, 1], [4, 3, 7, 6, 2, 5], [-4, 16, -12, -5, 7, 0, -2, -5, -3, -7]]},\n    outputs=[[9, 10, 7], [10, 5, 12], [-9, 13, -19]],\n    solution='ZipWith(lambda u1, u2: Add(u1, u2), x, Reverse(Take(3, Reverse(x))))'\n)"
+        },
+        {
+            "elapsed_time": 600.0491367150098,
+            "num_unique_values": 679698,
+            "num_values_explored": 19158109,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='zipwith:max_mirror_product',\n    inputs_dict={'x': [[3, 9, 4, 2, 5], [2, 3, 1, 8, 3, 5], [-4, 5, -3, 5, -7, 3, -3], [-4, 5, -3, 5, -7, 3, -3, 4], [1, 0, 3, 1, 2, 4, 0, 4, 2, 1]]},\n    outputs=[18, 10, 25, -9, 12],\n    solution='Maximum(ZipWith(lambda u1, u2: Multiply(u1, u2), x, Reverse(x)))'\n)"
+        },
+        {
+            "elapsed_time": 600.0434270966798,
+            "num_unique_values": 358077,
+            "num_values_explored": 20028153,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='zipwith:double_or_nothing',\n    inputs_dict={'p': [[5, 6, 8, 2, 6], [10, 15, 30, 20, 25, 40, 5], [22, 53, 31, 47, 27, 24, 14, 39, 42, 13]], 'w': [[1, 1, -1, 1, -1], [-1, 1, -1, -1, 1, -1, 1], [1, -1, -1, 1, -1, 1, 1, -1, -1, 1]]},\n    outputs=[[10, 12, 0, 4, 0], [0, 30, 0, 0, 50, 0, 10], [44, 0, 0, 94, 0, 48, 28, 0, 0, 26]],\n    solution='ZipWith(lambda u1, u2: Multiply(u1, Add(1, u2)), p, w)'\n)"
+        },
+        {
+            "elapsed_time": 600.0462901648134,
+            "num_unique_values": 547783,
+            "num_values_explored": 15656812,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='scanl1:deepcoder_3',\n    inputs_dict={'h': [[8, 5, 7, 2, 5], [8, 5, 7, 1, 5], [6, 4, 8, 2, 7, 3], [6, 7, 8, 6, 7, 5, 2, 5, 7, 4], [10, 8, 9, 9, 6, 8, 10, 5, 2, 7]]},\n    outputs=[5, 6, 10, 14, 13],\n    solution='Subtract(Sum(h), Sum(Scanl1(lambda u1, u2: Min(u1, u2), h)))'\n)"
+        },
+        {
+            "elapsed_time": 68.085438773036,
+            "num_unique_values": 96289,
+            "num_values_explored": 2319914,
+            "solution": "Last(Scanl1(lambda u1, u2: (lambda v1, v2: Multiply(v1, v2))(u1, u2), x))",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='scanl1:product',\n    inputs_dict={'x': [[3, 6, 5], [2, 1, 4, 2, 3], [3, 4, 1, 5, 2], [5, -2, 1, -1, -3, 1, 2], [-2, 1, 2, 2, -3, -1, 3, -1]]},\n    outputs=[90, 48, 120, -60, 72],\n    solution='Last(Scanl1(lambda u1, u2: Multiply(u1, u2), x))'\n)"
+        },
+        {
+            "elapsed_time": 600.0357388053089,
+            "num_unique_values": 571672,
+            "num_values_explored": 19233733,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='scanl1:running_sum_restart',\n    inputs_dict={'x': [[3, 5, 0, 4, 2], [6, 0, 4, 7, 3, 0, 1, 0, 4, 5], [-6, 3, 8, -4, 0, -3, -1, 0, 8, -5]]},\n    outputs=[[3, 8, 0, 4, 6], [6, 0, 4, 11, 14, 0, 1, 0, 4, 9], [-6, -3, 5, 1, 0, -3, -4, 0, 8, 3]],\n    solution='Scanl1(lambda u1, u2: If(Equal(u2, 0), 0, Add(u1, u2)), x)'\n)"
+        },
+        {
+            "elapsed_time": 1.6319421473890543,
+            "num_unique_values": 2856,
+            "num_values_explored": 67398,
+            "solution": "Scanl1(lambda u1, u2: (lambda v1: Access(v1, x))(u1), x)",
+            "solution_weight": 6,
+            "success": true,
+            "task": "Task(\n    name='scanl1:follow_cycle',\n    inputs_dict={'x': [[4, 0, 2, 3, 1], [3, 5, 0, 1, 6, 4, 2], [8, 4, 7, 5, 6, 0, 9, 1, 3, 2]]},\n    outputs=[[4, 1, 0, 4, 1], [3, 1, 5, 4, 6, 2, 0], [8, 3, 5, 0, 8, 3, 5, 0, 8, 3]],\n    solution='Scanl1(lambda u1, u2: Access(u1, x), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.0304733645171,
+            "num_unique_values": 676115,
+            "num_values_explored": 26916742,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='scanl1:running_sum_extra',\n    inputs_dict={'x': [[3, 2, 6, 4], [-6, 4, -2, 3, 8, -3, -9], [12, -21, 15, 7, -5, 10, 11, -5, -28, 8]], 'n': [1, 3, -2]},\n    outputs=[[3, 6, 13, 18], [-6, 1, 2, 8, 19, 19, 13], [12, -11, 2, 7, 0, 8, 17, 10, -20, -14]],\n    solution='Scanl1(lambda u1, u2: Add(Add(u1, u2), n), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.0494351070374,
+            "num_unique_values": 494353,
+            "num_values_explored": 21853890,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='scanl1:decay',\n    inputs_dict={'x': [[7, 2, 6, 1, 5], [10, 14, 8, 3, 12, 6, 2, 7], [15, 12, 27, 39, 12, 11, 25, 0, 0, 3]]},\n    outputs=[[7, 5, 8, 5, 7], [10, 19, 17, 11, 17, 14, 9, 11], [15, 19, 36, 57, 40, 31, 40, 20, 10, 8]],\n    solution='Scanl1(lambda u1, u2: Add(IntDivide(u1, 2), u2), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.0486709941179,
+            "num_unique_values": 331891,
+            "num_values_explored": 20749109,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='scanl1:prefix_running_product',\n    inputs_dict={'x': [[2, 1, 5, 2, 3, 1, 2], [1, 3, 2, 1, 4, 1, 5], [5, -1, -2, 1, -3, 2, -1, -3, -1, 2]], 'n': [4, 5, 8]},\n    outputs=[[2, 2, 10, 20], [1, 3, 6, 6, 24], [5, -5, 10, 10, -30, -60, 60, -180]],\n    solution='Scanl1(lambda u1, u2: Multiply(u1, u2), Take(n, x))'\n)"
+        },
+        {
+            "elapsed_time": 600.0476640760899,
+            "num_unique_values": 514493,
+            "num_values_explored": 16629557,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='scanl1:running_min_no_ends',\n    inputs_dict={'x': [[4, 7, 5, 6, 3, 8, 2], [8, 6, 7, 5, 4, 5, 2, 5], [32, 57, 45, 68, 43, -28, -12, -30, -43, -5]]},\n    outputs=[[7, 5, 5, 3, 3], [6, 6, 5, 4, 4, 2], [57, 45, 45, 43, -28, -28, -30, -43]],\n    solution='Scanl1(lambda u1, u2: Min(u1, u2), Take(-1, Drop(1, x)))'\n)"
+        },
+        {
+            "elapsed_time": 37.24752804636955,
+            "num_unique_values": 46626,
+            "num_values_explored": 1518979,
+            "solution": "Scanl1(lambda u1, u2: (lambda v1: Add(1, v1))(u1), Map(lambda u1: 0, x))",
+            "solution_weight": 8,
+            "success": true,
+            "task": "Task(\n    name='multi:range_like',\n    inputs_dict={'x': [[3, 6, 2], [-6, -3, 6, 1, 0, 2, -1], [0, 0, 0, 0, 0, 0, 0, 0, 0]]},\n    outputs=[[0, 1, 2], [0, 1, 2, 3, 4, 5, 6], [0, 1, 2, 3, 4, 5, 6, 7, 8]],\n    solution='Scanl1(lambda u1, u2: Add(u1, 1), Map(lambda u1: 0, x))'\n)"
+        },
+        {
+            "elapsed_time": 600.0320043135434,
+            "num_unique_values": 505095,
+            "num_values_explored": 17004367,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='scanl1:alternate_signs',\n    inputs_dict={'x': [[3, 1, 5, 7, 3, 4], [-5, 3, 6, -3, -2, 9, 4, -8, 5, -3], [50, 28, -68, 56, 43, 21, -12, 48, 87, 57]]},\n    outputs=[[3, -1, 5, -7, 3, -4], [-5, 3, -6, 3, -2, 9, -4, 8, -5, 3], [50, -28, 68, -56, 43, -21, 12, -48, 87, -57]],\n    solution='Scanl1(lambda u1, u2: If(Greater(Multiply(u1, u2), 0), Subtract(0, u2), u2), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.0231717471033,
+            "num_unique_values": 538954,
+            "num_values_explored": 17239550,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='scanl1:make_strictly_increasing',\n    inputs_dict={'x': [[2, 4, 3, 7, 8, 8], [-5, -8, -5, 1, -4, 5, 5, 7], [-40, -23, -59, -9, 0, 4, 2, -4, 18, 14]]},\n    outputs=[[2, 4, 5, 7, 8, 9], [-5, -4, -3, 1, 2, 5, 6, 7], [-40, -23, -22, -9, 0, 4, 5, 6, 18, 19]],\n    solution='Scanl1(lambda u1, u2: Max(Add(u1, 1), u2), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.0537216328084,
+            "num_unique_values": 738721,
+            "num_values_explored": 19031120,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='scanl1:closest_to_zero',\n    inputs_dict={'x': [[7, -5, 6, 4, -7, -2, -1], [-6, 5, 8, -4, -6, 5, 3, 0, -6], [57, 54, -37, 46, -33, -65, 21, -20, -14, 15]]},\n    outputs=[[7, -5, -5, 4, 4, -2, -1], [-6, 5, 5, -4, -4, -4, 3, 0, 0], [57, 54, -37, -37, -33, -33, 21, -20, -14, -14]],\n    solution='Scanl1(lambda u1, u2: If(Less(Square(u1), Square(u2)), u1, u2), x)'\n)"
+        },
+        {
+            "elapsed_time": 600.0501336399466,
+            "num_unique_values": 553363,
+            "num_values_explored": 15805206,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='multi:deepcoder_2',\n    inputs_dict={'a': [[6, 2, 4, 7, 9], [7, 2, 4, 5, 7, 8, 4, 3], [7, 2, 4, 5, 7, 8, 4, 3], [11, 31, 52, 68, 37, 53, 69, 42, 53, 27], [11, 31, 52, 68, 37, 53, 69, 42, 53, 27]], 'b': [[5, 3, 2, 1, 0], [8, 1, 4, 5, 3, 5, 1, 2], [8, 1, 4, 4, 3, 5, 1, 2], [10, 28, 47, 78, 37, 38, 62, 17, 44, 23], [38, 62, 17, 44, 23, 10, 28, 47, 78, 37]]},\n    outputs=[4, 5, 6, 8, 5],\n    solution='Count(lambda u1: Greater(u1, 0), ZipWith(lambda u1, u2: Subtract(u1, u2), a, b))'\n)"
+        },
+        {
+            "elapsed_time": 600.040852131322,
+            "num_unique_values": 541535,
+            "num_values_explored": 15896698,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='multi:deepcoder_7',\n    inputs_dict={'s': [[4, 7, 2, 3], [5, 2, 1, 4], [3, 5, 6, 1, 4], [8, 4, 3, 2, 2, 4, 3], [6, 3, 5, 5, 1, 3, 4, 1, 2]], 'p': [[2, 1, 3, 1], [1, 3, 2, 4], [1, 1, 3, 2, 5], [2, 1, 1, 3, 1, 2, 3], [1, 2, 1, 1, 3, 1, 1, 2, 1]]},\n    outputs=[62, 59, 98, 149, 173],\n    solution='Sum(ZipWith(lambda u1, u2: Multiply(u1, u2), s, Scanl1(lambda u1, u2: Add(u1, u2), p)))'\n)"
+        },
+        {
+            "elapsed_time": 600.0282558165491,
+            "num_unique_values": 688397,
+            "num_values_explored": 18533013,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='multi:find_odd_products',\n    inputs_dict={'x': [[4, 5, 7, 3, 8], [6, -1, 9, 4, -3, 11, 7, -7, 8], [11, 5, 2, 7, 13, 3, 5, 6, 5, 7]]},\n    outputs=[[35, 21], [-9, -33, 77, -49], [55, 91, 39, 15, 35]],\n    solution='Filter(lambda u1: IsOdd(u1), ZipWith(lambda u1, u2: Multiply(u2, u1), x, Drop(1, x)))'\n)"
+        },
+        {
+            "elapsed_time": 600.0480421986431,
+            "num_unique_values": 601004,
+            "num_values_explored": 18614996,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='multi:multiply_odds',\n    inputs_dict={'x': [[3, 5, 8, 2, 1], [5, 2, 1, 3, 3, 1, 4], [3, -4, -1, 8, 2, 0, -3, 0, 9, -1]]},\n    outputs=[[3, 15, 15], [5, 5, 15, 45, 45], [3, -3, 9, 81, -81]],\n    solution='Scanl1(lambda u1, u2: Multiply(u1, u2), Filter(lambda u1: IsOdd(u1), x))'\n)"
+        },
+        {
+            "elapsed_time": 600.0481514967978,
+            "num_unique_values": 261044,
+            "num_values_explored": 18037605,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='multi:running_total',\n    inputs_dict={'x': [[8, 4, 2, 7], [9, -3, 7, 0, 2, -2, 5, -1, 5], [23, -54, 39, 28, -36, -12, 21, 42, -84, 35]], 'y': [[2, 5, 3, 1], [8, 0, 4, -3, 7, 0, -4, -6, 1], [-52, 32, 18, -43, -32, 73, -28, 32, 56, -24]]},\n    outputs=[[10, 19, 24, 32], [17, 14, 25, 22, 31, 29, 30, 23, 29], [-29, -51, 6, -9, -77, -16, -23, 51, 23, 34]],\n    solution='Scanl1(lambda u1, u2: Add(u1, u2), ZipWith(lambda u1, u2: Add(u1, u2), x, y))'\n)"
+        },
+        {
+            "elapsed_time": 600.0524211283773,
+            "num_unique_values": 538474,
+            "num_values_explored": 22733416,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='multi:add_from_index',\n    inputs_dict={'x': [[3, 6, 7], [11, 23, 8, 15, 4], [-5, 7, 23, -4, 0, -12, 3, 2, -8]], 'y': [[8, 5, 3, 10, 4], [-5, 0, 5], [-20, 14, 8, -4, 22, 0]], 'i': [[0, 3, 1], [2, 0, 2, 0, 1], [1, 4, 5, 2, 3, 3, 0, 1, 4]]},\n    outputs=[[11, 16, 12], [16, 18, 13, 10, 4], [9, 29, 23, 4, -4, -16, -17, 16, 14]],\n    solution='ZipWith(lambda u1, u2: Add(u1, u2), x, Map(lambda u1: Access(u1, y), i))'\n)"
+        },
+        {
+            "elapsed_time": 600.0439610835165,
+            "num_unique_values": 366135,
+            "num_values_explored": 22746052,
+            "solution": null,
+            "solution_weight": null,
+            "success": false,
+            "task": "Task(\n    name='multi:positive_differences',\n    inputs_dict={'x': [[8, 5, 7, 1, 2], [11, 4, 2, 13, 21, 16, 8, 4], [68, 23, 13, 6, 47, 72, 18, 58, 9, 25]], 'y': [[3, 1, 7, 2, 1], [2, 3, 7, 15, 5, 16, 3, 5], [24, 73, 88, 31, 19, 58, 42, 13, 7, 10]]},\n    outputs=[[5, 4, 0, 1], [9, 1, 16, 0, 5], [44, 28, 14, 45, 2, 15]],\n    solution='Filter(lambda u1: Greater(u1, -1), ZipWith(lambda u1, u2: Subtract(u1, u2), x, y))'\n)"
+        }
+    ],
+    "success_rate": 0.5
+}
