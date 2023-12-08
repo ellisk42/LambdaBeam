@@ -35,5 +35,6 @@ setup(name='lambdabeam',
         'tqdm',
         'torch',
         'torch_scatter',
+        'setuptools==59.5.0',
       ]
 )
