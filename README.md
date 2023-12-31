@@ -30,19 +30,26 @@ files are carried over without playing a role in the LambdaBeam system.
 
 ## Setup
 
-To install dependencies, run the following from the root `lambdabeam/`
-directory:
+(Optional) setup a virtual environment
 
 ```
-pip3 install -e .
+conda create -n lambdabeam python=3.8
+conda activate lambdabeam
 ```
 
-It may help to install [PyTorch](https://pytorch.org/get-started/locally/) and
+It may help to install an older version of [PyTorch](https://pytorch.org/get-started/locally/) and
 `torch-scatter` with CUDA, for example with the following commands:
 
 ```
 pip3 install torch==1.10.2+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 pip3 install torch-scatter -f https://data.pyg.org/whl/torch-1.10.0+cu113.html
+```
+
+To install other dependencies, run the following from the root `lambdabeam/`
+directory:
+
+```
+pip3 install -e .
 ```
 
 ## Run tests
